@@ -11,7 +11,6 @@ const GridContainer = styled.div`
 
 const StarBackground = () => {
   (async () => {
-    await loadStarsPreset(tsParticles); // this is required only if you are not using the bundle script
   
     await tsParticles.load("tsparticles", {
       background: {
