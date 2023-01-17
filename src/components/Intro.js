@@ -28,7 +28,7 @@ const Intro = (props) => {
   return (
     <main>
         <Flex>
-            <Center w="100%">
+            <Center w="100%" style={{zIndex: 1}}>
                 <Container1 main>
                     <motion.div initial="hidden" animate="visible" variants={{
                         hidden: {

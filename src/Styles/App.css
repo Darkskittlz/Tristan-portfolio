@@ -1,6 +1,27 @@
 :root {
   --black: rgb(0, 0, 0);
-  --white: rgb(255, 255, 255);
+  --white: rgba(255, 255, 255, 0.997);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--text-color);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #000000;
 }
 
 body {
@@ -9,6 +30,7 @@ body {
   color: var(--text-color);
   font-weight: var(--font-weight);
   transition: background 0.3s ease-in-out, color 0.6s ease-in-out;
+  overflow-x: hidden;
 }
 
 body.light {
@@ -63,11 +85,13 @@ nav a {
 
 .homePageContainer {
   display: flex;
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(5px);
   justify-content: center;
   border-radius: 10px;
   flex-direction: column;
   width: 100%;
+  z-index: 1;
+  position: relative;
 
   @media screen (max-width: 960px) {
     width: 95%;
@@ -134,4 +158,3 @@ nav a {
 div.chakra-select__icon-wrapper.css-162mkon {
   display: none;
 }
-

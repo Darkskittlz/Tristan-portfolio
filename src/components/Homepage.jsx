@@ -18,12 +18,15 @@ import Technologies from './Technologies';
 import { SectionDivider } from '../Styles/GlobalStyles';
 import Totoro from './threeJS/Totoro';
 import ChakraModal from './Modal';
+import StarBackground from '../ParticleBackground4';
+
 
 
 const GridContainer = styled.div`
     height: 100%;
     width: 50%;
     margin-left: 26%;
+	z-index:0;
 
 	@media (max-width: 960px) {
 		margin-left: 34px;
@@ -34,15 +37,8 @@ const GridContainer = styled.div`
 
 const FooterContainer = styled.div`
     display: flex;
-    width: 90%;
+    width: 100%;
 
-	@media (max-width: 667px) {
-		margin-left: 10%;
-	}
-
-	@media (max-width: 960px) {
-		margin-left: 20%;
-	}
 `
 
 const Animation = keyframes`
@@ -59,6 +55,7 @@ const HeadingContainer = styled.div`
 	width: 100%;
 	flex-direction: column;
 	margin-bottom: 10px;
+	z-index: 999;
 	
 	h1 {
 		color: var(--text-color);
@@ -93,9 +90,10 @@ export const PortfolioContainer = styled.div`
 
 
 const Homepage = () => {
+
 	return (
 		<GridContainer>
-			<ParticleComponent />
+			<StarBackground />
 			<Layout >
 
 				<Suspense fallback={null}>
@@ -182,7 +180,7 @@ const Homepage = () => {
 							</Link>
 						</Box>
 					</Section>
-					
+
 					<Section delay={0.7}>
 						<Timeline />
 					</Section>

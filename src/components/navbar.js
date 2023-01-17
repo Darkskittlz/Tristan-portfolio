@@ -29,14 +29,18 @@ import {Modal} from "./Modal";
 
 
 const IconContainer = styled.div`
-background-size: 30px 30px;
-// margin-right: 10px;
+background-size: 50px 50px;
 filter: grayscale(100%);
 border: none;
 border-radius: 50%;
 transition: background-color 0.3s ease-in-out, filter 0.3s ease-in-out;
 
     img {
+        background-color: gray;
+        padding: 5px;
+        margin-left: -5px;
+        margin-right: -5px;
+        border-radius: 10px;
         height: 40px;
         width: 35px;
     }
@@ -51,6 +55,9 @@ const GridContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    z-index: 999;
+    position: relative;
+    backdrop-filter: blur(20px);
 
 	@media (max-width: 960px) {
 		flex-direction: column;

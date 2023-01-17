@@ -52,12 +52,13 @@ export default function Totoro() {
   return (
     <GridContainer>
       <Canvas style={{
-          backdropFilter: "blur(50px)",
+          backdropFilter: "blur(10px)",
           backgroundColor: "rgb(255,255,255, 0.1)",
           borderRadius: "10px",
           margin:"10px",
           height: "30vh",
-          width: "50vh"
+          width: "50vh",
+          zIndex: "1"
         }}>
 
       <OrthographicCamera

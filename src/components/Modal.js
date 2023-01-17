@@ -31,6 +31,7 @@ const GridContainer = styled.div`
   justify-content: center;
   padding: 10px;
   align-items: center;
+  z-index:2;
 `
 
 const Grid2Container = styled.div`
@@ -38,13 +39,15 @@ const Grid2Container = styled.div`
   width: 100%;
   justify-content: center;
   align-content: center;
-
-
-
+  z-index:100;
+  position: relative;
 `
 
 const ModalContainer = styled.div`
   display: flex;
+  z-index:100;
+  position: relative;
+
 
   @media screen and (max-width: 960px) {
     width: 90%;
@@ -52,40 +55,18 @@ const ModalContainer = styled.div`
 `
 
 
-const Header = styled.h1`
-  font-size: 22px;
-  margin-bottom: 20px;
-  text-align: center;
-  color: var(--text-color);
-
-  @media screen and (max-width: 960px) {
-    font-size: 20px;
-    text-align: left;
-  }
-`
-
-const CloseContainer = styled.div`
-  display: flex;
-  width: 100%;
-  padding-right: 200px;
-  justify-content: flex-end;
-
-  @media screen and (max-width: 960px) {
-    padding-right: 10px;
-  }
-`
-
 const TimeContainer = styled.div`
     font-size: 22px;
     font-weight: 400;
     display: flex;
     margin-top: 5px;
     grid-gap: 10px;
+    z-index:2;
     align-items: flex-end;
 
     h1 {
         font-size: 25px;
-        color: white;
+        color: var(--text-color);
         font-weight: 600;
     }
 `
@@ -95,13 +76,14 @@ const DateContainer = styled.div`
     font-weight: 400;
     display: flex;
     align-items: center;
+    z-index:2;
     grid-gap: 10px;
     margin-bottom: -25px;
 
     h1 {
         font-size: 23px;
         font-weight: 600;
-        color: white;
+        color: var(--text-color);
     }
 `
 
@@ -109,12 +91,13 @@ const DateContainer = styled.div`
 const IMGContainer = styled.div`
   width: 100%;
   justify-content: center;
+  z-index:999;
   display: flex;
 
 
   img {
     border-radius: 10px;
-
+    z-index:999;
     @media screen and (max-width: 960px) {
       height: 150px;
     }
@@ -218,7 +201,8 @@ export default function ChakraModal() {
                   justifyContent: "center",  
                   marginTop: "-200px",
                   alignContent: "center",
-                  backdropFilter: "blur(50px)"
+                  backdropFilter: "blur(50px)",
+                  zIndex: 999
                 }}
               >
                 <form ref={form} id="myForm" onSubmit={(event) => handleSubmit(event)}>
@@ -232,7 +216,8 @@ export default function ChakraModal() {
                       display: "flex", 
                       justifyContent: "center",
                       gridGap: "50px",
-                      marginBottom: "5px"
+                      marginBottom: "5px",
+                      zIndex: 999
                     }}>
                       <TimeContainer>
                           <h1>Time: </h1><Clock format={'h:mm a'} ticking={true} id="time"/>
@@ -257,6 +242,7 @@ export default function ChakraModal() {
                     css={{
                       display: "Flex", 
                       justifyContent: "center",
+                      zIndex: 999
                     }}
                     pb={6}
                   >

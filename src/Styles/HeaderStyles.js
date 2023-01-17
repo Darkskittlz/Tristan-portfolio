@@ -104,7 +104,7 @@ export const SocialIcons = styled.a`
     margin-left: 7px;
     margin-right: 10px;
     &:hover {
-        background-color: #ffffff;
+        background-color: none;
         transform: scale(1.2);
         cursor: pointer;
       }

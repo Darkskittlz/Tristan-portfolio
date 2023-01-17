@@ -52,6 +52,8 @@ const BodyContainer = styled.div`
 const FooterContainer = styled.div`
     display: flex;
     width: 100%;
+    margin-top: 40px;
+
 
     @media (max-width: 960px) {
         margin-top: 190px;
