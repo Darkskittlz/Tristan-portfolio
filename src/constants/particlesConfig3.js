@@ -36,11 +36,9 @@ const particlesConfig3 = {
       }
     },
     "particles": {
-      "color": "var(--text-color)",
+      "color": {value: "#fff"},
       "links": {
-        "color": {
-          "value": "white"
-        },
+        "color": "#fff",
         "distance": 150,
         "opacity": 0.4
       },
