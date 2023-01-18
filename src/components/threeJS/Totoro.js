@@ -56,7 +56,7 @@ export default function Totoro() {
           backgroundColor: "rgb(255,255,255, 0.1)",
           borderRadius: "10px",
           margin:"10px",
-          height: "30vh",
+          height: "38vh",
           width: "50vh",
           zIndex: "1"
         }}>
@@ -64,12 +64,12 @@ export default function Totoro() {
       <OrthographicCamera
         makeDefault
         zoom={8}
-        top={180}
+        top={195}
         left={200}
         right={-200}
         near={1}
         far={2000}
-        position={[0, 0, 200]}
+        position={[50, 50, 200]}
       />
 
         <ambientLight intensity={1} />

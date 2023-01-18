@@ -96,9 +96,9 @@ const Homepage = () => {
 			<StarBackground />
 			<Layout >
 
-				<Suspense fallback={null}>
+				{/* <Suspense fallback={null}>
 					<Totoro />
-				</Suspense>
+				</Suspense> */}
 
 
 				<Section delay={0.1}>

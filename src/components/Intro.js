@@ -14,6 +14,11 @@ const SectionTitle = styled.h2`
     max-width: 100%;
 `
 
+const GridContainer = styled.div`
+    margin-top: 20px;
+    margin-bottom: 20px;
+`
+
 const Intro = (props) => {
     const textRef = useRef();
 
@@ -26,32 +31,34 @@ const Intro = (props) => {
         });
     }, []);
   return (
-    <main>
-        <Flex>
-            <Center w="100%" style={{zIndex: 1}}>
-                <Container1 main>
-                    <motion.div initial="hidden" animate="visible" variants={{
-                        hidden: {
-                            scale: .8,
-                            opacity: 0
-                        },
-                        visible: {
-                            scale: 1,
-                            opacity: 1,
-                            transition: {
-                                delay: .4
-                            }
-                        }, 
-                    }}>
-                        <Container2>
-                            <SectionTitle>Tristan Neal</SectionTitle>
-                            <h3> <span id="spanText" ref={textRef}></span></h3>    
-                        </Container2>
-                    </motion.div>
-                </Container1>  
-            </Center>
-        </Flex>
-    </main>
+    <GridContainer>
+        <main>
+            <Flex>
+                <Center w="100%" style={{zIndex: 1}}>
+                    <Container1 main>
+                        <motion.div initial="hidden" animate="visible" variants={{
+                            hidden: {
+                                scale: .8,
+                                opacity: 0
+                            },
+                            visible: {
+                                scale: 1,
+                                opacity: 1,
+                                transition: {
+                                    delay: .4
+                                }
+                            }, 
+                        }}>
+                            <Container2>
+                                <SectionTitle>Tristan Neal</SectionTitle>
+                                <h3> <span id="spanText" ref={textRef}></span></h3>    
+                            </Container2>
+                        </motion.div>
+                    </Container1>  
+                </Center>
+            </Flex>
+        </main>
+    </GridContainer>
     )
 }
 
