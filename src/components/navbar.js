@@ -152,9 +152,9 @@ const Navbar = props => {
                                     <Link color="var(--text-color)" href='/posts'>
                                         <MenuItem as={Link}>Blog</MenuItem>
                                     </Link>
-                                    <Link color="var(--text-color)" href='/tutorials'>
+                                    {/* <Link color="var(--text-color)" href='/tutorials'>
                                         <MenuItem as={Link}>Tutorials</MenuItem>
-                                    </Link>
+                                    </Link> */}
                                 </MenuList>
                             </Menu>
                         </Box>
