@@ -23,6 +23,7 @@ import { SectionDivider } from '../Styles/GlobalStyles'
 import Totoro from './threeJS/Totoro'
 import CyberPunkModel from './threeJS/CyberpunkDesk'
 import OldDesk from './threeJS/OldDesk'
+import Portrait from './threeJS/alice'
 
 
 const GridContainer = styled.div`
@@ -78,7 +79,7 @@ const Works = props => {
                 <ParticleComponent />
                 <Layout>
                     <Suspense fallback={null}>
-                        <CyberPunkModel />
+                        <Portrait />
                     </Suspense>
                     <Container className="homePageContainer">
                         <Heading as="h2" size="lg" fontSize="80px" mb={14}>
