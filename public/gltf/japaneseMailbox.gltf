@@ -1,0 +1,437 @@
+{
+  "accessors": [
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 13031,
+      "max": [
+        0.17311778664588928,
+        0.7762873768806458,
+        0.08191970735788345
+      ],
+      "min": [
+        -0.06471028178930283,
+        -0.009600440971553326,
+        -0.08191970735788345
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 156372,
+      "componentType": 5126,
+      "count": 13031,
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 13031,
+      "max": [
+        0.9976926445960999,
+        0.9947766065597534
+      ],
+      "min": [
+        0.0023008764255791903,
+        0.0023010969161987305
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5125,
+      "count": 23052,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 5,
+      "componentType": 5126,
+      "count": 4,
+      "max": [
+        1.0,
+        5.788349464014807e-16,
+        5.788349464014807e-16,
+        0.0,
+        5.788349464014807e-16,
+        4.726545810699463,
+        4.726545810699463,
+        0.0,
+        0.0,
+        4.726545810699463,
+        1.0,
+        0.0,
+        0.2524785101413727,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "min": [
+        -4.726545810699463,
+        -3.54434175039173e-32,
+        0.0,
+        0.0,
+        0.0,
+        -2.8941747320074035e-16,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -4.726545810699463,
+        0.0,
+        -4.709748445785532e-18,
+        -0.3056042790412903,
+        -2.6994667053222656,
+        1.0
+      ],
+      "type": "MAT4"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5123,
+      "count": 13031,
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5126,
+      "count": 13031,
+      "max": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "min": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "type": "VEC4"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "Ellie3D (https://sketchfab.com/Ellie3D)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/3d-models/japanese-mailbox-a5667f86065f45a4a5721bc4429f6d39",
+      "title": "Japanese Mailbox"
+    },
+    "generator": "Sketchfab-12.67.0",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 104248,
+      "byteStride": 8,
+      "name": "shortBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 92208,
+      "byteOffset": 104248,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 104248,
+      "byteOffset": 196456,
+      "byteStride": 8,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 312744,
+      "byteOffset": 300704,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 208496,
+      "byteOffset": 613448,
+      "byteStride": 16,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 256,
+      "byteOffset": 821944,
+      "name": "floatBufferViews"
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 822200,
+      "uri": "scene.bin"
+    }
+  ],
+  "images": [
+    {
+      "uri": "textures/Material.001_baseColor.png"
+    },
+    {
+      "uri": "textures/Material.001_metallicRoughness.png"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "name": "Material.001",
+      "occlusionTexture": {
+        "index": 1
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicRoughnessTexture": {
+          "index": 1
+        },
+        "roughnessFactor": 0.5732463260553661
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Mailbox_Material.001_0",
+      "primitives": [
+        {
+          "attributes": {
+            "JOINTS_0": 5,
+            "NORMAL": 1,
+            "POSITION": 0,
+            "TEXCOORD_0": 2,
+            "WEIGHTS_0": 6
+          },
+          "indices": 3,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        0.0,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Sketchfab_model"
+    },
+    {
+      "children": [
+        2
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        -1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Japanese_Mailbox_Final.fbx"
+    },
+    {
+      "children": [
+        3
+      ],
+      "name": "RootNode"
+    },
+    {
+      "children": [
+        4
+      ],
+      "matrix": [
+        -0.2115709930658332,
+        -1.8496124339827533e-08,
+        0.0,
+        0.0,
+        -3.01340115011066e-15,
+        3.446929004733563e-08,
+        0.21157099306583121,
+        0.0,
+        -1.8496124339827288e-08,
+        0.2115709930658304,
+        -3.446929002384653e-08,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "MailboxRig"
+    },
+    {
+      "children": [
+        5,
+        7,
+        6
+      ],
+      "name": "Object_4"
+    },
+    {
+      "children": [
+        8
+      ],
+      "name": "_rootJoint"
+    },
+    {
+      "matrix": [
+        0.999999990940843,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.999999990940843,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.999999990940843,
+        0.0,
+        0.0,
+        -1.1199383642690464e-09,
+        0.0,
+        1.0
+      ],
+      "name": "Object_6"
+    },
+    {
+      "mesh": 0,
+      "name": "Object_7",
+      "skin": 0
+    },
+    {
+      "children": [
+        9
+      ],
+      "name": "Base_00",
+      "rotation": [
+        0.7071068286895752,
+        -9.35848016627304e-24,
+        9.35848016627304e-24,
+        0.7071067094802856
+      ],
+      "translation": [
+        -2.760522381738896e-38,
+        8.271806125530277e-25,
+        0.03845801576972008
+      ]
+    },
+    {
+      "children": [
+        10
+      ],
+      "name": "Door_01",
+      "rotation": [
+        -0.7071068286895752,
+        -4.7647649764253275e-30,
+        -4.764764224108943e-30,
+        0.7071067094802856
+      ],
+      "translation": [
+        -0.2524785101413727,
+        2.661008834838867,
+        -0.3056042790412903
+      ]
+    },
+    {
+      "name": "Door_end_02",
+      "rotation": [
+        1.3234889800848443e-23,
+        -6.617444900424222e-24,
+        -5.27076385482153e-31,
+        1.0
+      ],
+      "translation": [
+        -5.551115123125783e-17,
+        0.4580953121185303,
+        0.0
+      ]
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Sketchfab_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "skins": [
+    {
+      "inverseBindMatrices": 4,
+      "joints": [
+        5,
+        8,
+        9,
+        10
+      ],
+      "skeleton": 5
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    },
+    {
+      "sampler": 0,
+      "source": 1
+    }
+  ]
+}

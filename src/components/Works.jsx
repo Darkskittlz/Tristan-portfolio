@@ -5,12 +5,12 @@ import styled from 'styled-components'
 import ParticleComponent from '../ParticleBackground3'
 import Footer from './footer'
 import '../Styles/App.css';
-import { 
+import {
     SimpleGrid,
-    LinkOverlay, 
-    Container, 
+    LinkOverlay,
+    Container,
     Heading,
-    Text, 
+    Text,
     LinkBox,
     Image,
     Box
@@ -21,6 +21,8 @@ import SPA from "../assets/images/works/SPA.png"
 import Breezeline from "../assets/images/works/breezeline.png"
 import { SectionDivider } from '../Styles/GlobalStyles'
 import Totoro from './threeJS/Totoro'
+import CyberPunkModel from './threeJS/CyberpunkDesk'
+import OldDesk from './threeJS/OldDesk'
 
 
 const GridContainer = styled.div`
@@ -72,292 +74,293 @@ const Grid2Container = styled.div`
 const Works = props => {
     return (
         <>
-        <GridContainer>
-          <ParticleComponent />
-            <Layout>
-            <Suspense fallback={null}>
-				<Totoro />
-			</Suspense>
-              <Container className="homePageContainer">
-                <Heading as="h2" size="lg" fontSize="80px" mb={14}>
-                    Works 
-                    <SectionDivider />
-                </Heading>
+            <GridContainer>
+                <ParticleComponent />
+                <Layout>
+                    <Suspense fallback={null}>
+                        <CyberPunkModel />
+                    </Suspense>
+                    <Container className="homePageContainer">
+                        <Heading as="h2" size="lg" fontSize="80px" mb={14}>
+                            Works
+                            <SectionDivider />
+                        </Heading>
 
-                    <Grid2Container>
-                        <Box>
-                            <Section delay={0.2}>
-                                <LinkBox cursor='pointer'>
-                                    <Container className="projectContainer">
+                        <Grid2Container>
+                            <Box>
+                                <Section delay={0.2}>
+                                    <LinkBox cursor='pointer'>
+                                        <Container className="projectContainer">
+                                            <Image
+                                                fit="cover"
+                                                src={Wednesday}
+                                                alt="AliceMeowz Project"
+                                                className="projectThumbnail"
+                                                placeholder="blur"
+                                                loading="lazy"
+                                            />
+                                        </Container>
+                                        <LinkOverlay href={`works/Wednesday`}>
+                                            <Text
+                                                style={{
+                                                    color: "var(--text-color)",
+                                                    textDecoration: "inherit",
+                                                    textAlign: "center",
+                                                    marginTop: "10px"
+                                                }}
+                                                fontSize={20}
+                                            >Wednesday</Text>
+                                        </LinkOverlay>
+                                    </LinkBox>
+                                </Section>
+                            </Box>
+
+                            <Box>
+                                <Section delay={0.3}>
+                                    <LinkBox cursor='pointer'>
                                         <Image
                                             fit="cover"
-                                            src={Wednesday}
-                                            alt="AliceMeowz Project"	
+                                            src={SPA}
+                                            alt="SPA Portfolio"
                                             className="projectThumbnail"
                                             placeholder="blur"
                                             loading="lazy"
                                         />
-                                    </Container>
-                                    <LinkOverlay href={`works/Wednesday`}>
-                                        <Text 
-                                            style={{
-                                                color: "var(--text-color)",
-                                                textDecoration: "inherit",
-                                                textAlign: "center",
-                                                marginTop: "10px"
-                                            }}
-                                            fontSize={20}
-                                        >Wednesday</Text>
-                                    </LinkOverlay>
-                                </LinkBox>
-                            </Section>
-                        </Box>
+                                        <LinkOverlay href={`works/SPAPortfolio`}>
+                                            <Text
+                                                style={{
+                                                    color: "var(--text-color)",
+                                                    textDecoration: "inherit",
+                                                    textAlign: "center",
+                                                    marginTop: "10px"
+                                                }}
+                                                fontSize={20}
+                                            >SPA Portfolio</Text>
+                                        </LinkOverlay>
+                                    </LinkBox>
+                                </Section>
+                            </Box>
 
-                        <Box>
-                            <Section delay={0.3}>
-                                <LinkBox cursor='pointer'>
-                                    <Image
-                                        fit="cover"
-                                        src={SPA}
-                                        alt="SPA Portfolio"	
-                                        className="projectThumbnail"
-                                        placeholder="blur"
-                                        loading="lazy"
-                                    />
-                                    <LinkOverlay href={`works/SPAPortfolio`}>
-                                        <Text 
-                                            style={{
-                                                color: "var(--text-color)",
-                                                textDecoration: "inherit",
-                                                textAlign: "center",
-                                                marginTop: "10px"
-                                            }}
-                                            fontSize={20}
-                                        >SPA Portfolio</Text>
-                                    </LinkOverlay>
-                                </LinkBox>
-                            </Section>                            
-                        </Box>                        
+                            <Box>
+                                <Section delay={0.4}>
+                                    <LinkBox cursor='pointer'>
+                                        <Image
+                                            fit="cover"
+                                            src="/images/works/bg (1).png"
+                                            alt="Backgrounds Project"
+                                            className="projectThumbnail"
+                                            placeholder="blur"
+                                            loading="lazy"
+                                        />
+                                        <LinkOverlay href={`works/Backgrounds`}>
+                                            <Text
+                                                style={{
+                                                    color: "var(--text-color)",
+                                                    textDecoration: "inherit",
+                                                    textAlign: "center",
+                                                    marginTop: "10px"
+                                                }}
+                                                fontSize={20}
+                                            >Backgrounds</Text>
+                                        </LinkOverlay>
+                                    </LinkBox>
+                                </Section>
+                            </Box>
 
-                        <Box>
-                            <Section delay={0.4}>
-                                <LinkBox cursor='pointer'>
-                                    <Image
-                                        fit="cover"
-                                        src="/images/works/bg (1).png"
-                                        alt="Backgrounds Project"	
-                                        className="projectThumbnail"
-                                        placeholder="blur"
-                                        loading="lazy"
-                                    />
-                                    <LinkOverlay href={`works/Backgrounds`}>
-                                        <Text 
-                                            style={{
-                                                color: "var(--text-color)",
-                                                textDecoration: "inherit",
-                                                textAlign: "center",
-                                                marginTop: "10px"
-                                            }}
-                                            fontSize={20}
-                                        >Backgrounds</Text>
-                                    </LinkOverlay>
-                                </LinkBox>
-                            </Section>
-                        </Box>
+                            <Box>
+                                <Section delay={0.5}>
+                                    <LinkBox cursor='pointer'>
+                                        <Image
+                                            fit="cover"
+                                            src="/images/works/bandingo.png"
+                                            alt="Bandingo Project"
+                                            className="projectThumbnail"
+                                            placeholder="blur"
+                                            loading="lazy"
+                                        />
+                                        <LinkOverlay href={`works/Bandingo`}>
+                                            <Text
+                                                style={{
+                                                    color: "var(--text-color)",
+                                                    textDecoration: "inherit",
+                                                    textAlign: "center",
+                                                    marginTop: "10px"
+                                                }}
+                                                fontSize={20}
+                                            >Bandingo</Text>
+                                        </LinkOverlay>
+                                    </LinkBox>
+                                </Section>
+                            </Box>
 
-                        <Box>
-                            <Section delay={0.5}>
-                                <LinkBox cursor='pointer'>
-                                    <Image
-                                        fit="cover"
-                                        src="/images/works/bandingo.png"
-                                        alt="Bandingo Project"	
-                                        className="projectThumbnail"
-                                        placeholder="blur"
-                                        loading="lazy"
-                                    />
-                                    <LinkOverlay href={`works/Bandingo`}>
-                                        <Text 
-                                            style={{
-                                                color: "var(--text-color)",
-                                                textDecoration: "inherit",
-                                                textAlign: "center",
-                                                marginTop: "10px"
-                                            }}
-                                            fontSize={20}
-                                        >Bandingo</Text>
-                                    </LinkOverlay>
-                                </LinkBox>
-                            </Section>                            
-                        </Box>                        
+                            <Box>
+                                <Section delay={0.6}>
+                                    <LinkBox cursor='pointer'>
+                                        <Image
+                                            fit="cover"
+                                            src="/images/works/devShop.png"
+                                            alt="Collab Project"
+                                            className="projectThumbnail"
+                                            placeholder="blur"
+                                            loading="lazy"
+                                        />
+                                        <LinkOverlay href={`works/Collab`}>
+                                            <Text
+                                                style={{
+                                                    color: "var(--text-color)",
+                                                    textDecoration: "inherit",
+                                                    textAlign: "center",
+                                                    marginTop: "10px"
+                                                }}
+                                                fontSize={20}
+                                            >Collaboration</Text>
+                                        </LinkOverlay>
+                                    </LinkBox>
+                                </Section>
+                            </Box>
 
-                        <Box>
-                            <Section delay={0.6}>
-                                <LinkBox cursor='pointer'>
-                                    <Image
-                                        fit="cover"
-                                        src="/images/works/devShop.png"
-                                        alt="Collab Project"	
-                                        className="projectThumbnail"
-                                        placeholder="blur"
-                                        loading="lazy"
-                                    />
-                                    <LinkOverlay href={`works/Collab`}>
-                                        <Text 
-                                            style={{
-                                                color: "var(--text-color)",
-                                                textDecoration: "inherit",
-                                                textAlign: "center",
-                                                marginTop: "10px"
-                                            }}
-                                            fontSize={20}
-                                        >Collaboration</Text>
-                                    </LinkOverlay>
-                                </LinkBox>
-                            </Section>
-                        </Box>
-
-                        <Box>
-                            <Section delay={0.7}>
-                                <LinkBox cursor='pointer'>
-                                    <Image
-                                        fit="cover"
-                                        src="/images/works/DarkMeowFi.png"
-                                        alt="DarkMeowFI Project"	
-                                        className="projectThumbnail"
-                                        placeholder="blur"
-                                        loading="lazy"
-                                    />
-                                    <LinkOverlay href={`works/DarkMeowFi`}>
-                                        <Text 
-                                            style={{
-                                                color: "var(--text-color)",
-                                                textDecoration: "inherit",
-                                                textAlign: "center",
-                                                marginTop: "10px"
-                                            }}
-                                            fontSize={20}
-                                        >DarkMeowFI</Text>
-                                    </LinkOverlay>
-                                </LinkBox>
-                            </Section>
-                        </Box>
+                            <Box>
+                                <Section delay={0.7}>
+                                    <LinkBox cursor='pointer'>
+                                        <Image
+                                            fit="cover"
+                                            src="/images/works/DarkMeowFi.png"
+                                            alt="DarkMeowFI Project"
+                                            className="projectThumbnail"
+                                            placeholder="blur"
+                                            loading="lazy"
+                                        />
+                                        <LinkOverlay href={`works/DarkMeowFi`}>
+                                            <Text
+                                                style={{
+                                                    color: "var(--text-color)",
+                                                    textDecoration: "inherit",
+                                                    textAlign: "center",
+                                                    marginTop: "10px"
+                                                }}
+                                                fontSize={20}
+                                            >DarkMeowFI</Text>
+                                        </LinkOverlay>
+                                    </LinkBox>
+                                </Section>
+                            </Box>
 
 
-                        <Box>
-                            <Section delay={0.8}>
-                                <LinkBox cursor='pointer'>
-                                    <Image
-                                        fit="cover"
-                                        src="/images/works/zenitsuThumb.png"
-                                        alt="E-Commerce Project"	
-                                        className="projectThumbnail"
-                                        placeholder="blur"
-                                        loading="lazy"
-                                    />
-                                    <LinkOverlay href={`works/ECommerce`}>
-                                        <Text 
-                                            style={{
-                                                color: "var(--text-color)",
-                                                textDecoration: "inherit",
-                                                textAlign: "center",
-                                                marginTop: "10px"
-                                            }}
-                                            fontSize={18}
-                                        >E-Commerce Project</Text>
-                                    </LinkOverlay>
-                                </LinkBox>
-                            </Section>
-                        </Box>
+                            <Box>
+                                <Section delay={0.8}>
+                                    <LinkBox cursor='pointer'>
+                                        <Image
+                                            fit="cover"
+                                            src="/images/works/zenitsuThumb.png"
+                                            alt="E-Commerce Project"
+                                            className="projectThumbnail"
+                                            placeholder="blur"
+                                            loading="lazy"
+                                        />
+                                        <LinkOverlay href={`works/ECommerce`}>
+                                            <Text
+                                                style={{
+                                                    color: "var(--text-color)",
+                                                    textDecoration: "inherit",
+                                                    textAlign: "center",
+                                                    marginTop: "10px"
+                                                }}
+                                                fontSize={18}
+                                            >E-Commerce Project</Text>
+                                        </LinkOverlay>
+                                    </LinkBox>
+                                </Section>
+                            </Box>
 
 
-                        <Box>
-                            <Section delay={0.9}>
-                                <LinkBox cursor='pointer'>
-                                    <Image
-                                        fit="cover"
-                                        src="/images/works/apmusic.png"
-                                        alt="Aidan Paul Project"	
-                                        className="projectThumbnail"
-                                        placeholder="blur"
-                                        loading="lazy"
-                                    />
-                                    <LinkOverlay href={`works/APMusic`}>
-                                        <Text 
-                                            style={{
-                                                color: "var(--text-color)",
-                                                textDecoration: "inherit",
-                                                textAlign: "center",
-                                                marginTop: "10px"
-                                            }}
-                                            fontSize={18}
-                                        >Aidan Paul Project</Text>
-                                    </LinkOverlay>
-                                </LinkBox>
-                            </Section>
-                        </Box>
+                            <Box>
+                                <Section delay={0.9}>
+                                    <LinkBox cursor='pointer'>
+                                        <Image
+                                            fit="cover"
+                                            src="/images/works/apmusic.png"
+                                            alt="Aidan Paul Project"
+                                            className="projectThumbnail"
+                                            placeholder="blur"
+                                            loading="lazy"
+                                        />
+                                        <LinkOverlay href={`works/APMusic`}>
+                                            <Text
+                                                style={{
+                                                    color: "var(--text-color)",
+                                                    textDecoration: "inherit",
+                                                    textAlign: "center",
+                                                    marginTop: "10px"
+                                                }}
+                                                fontSize={18}
+                                            >Aidan Paul Project</Text>
+                                        </LinkOverlay>
+                                    </LinkBox>
+                                </Section>
+                            </Box>
 
 
 
-                        <Box>
-                            <Section delay={1.0}>
-                                <LinkBox cursor='pointer'>
-                                    <Image
-                                        fit="cover"
-                                        src="/images/works/ThreeJSPortfolio.png"
-                                        alt="ThreeJS Portfolio Project"	
-                                        className="projectThumbnail"
-                                        placeholder="blur"
-                                        loading="lazy"
-                                    />
-                                    <LinkOverlay href={`works/ThreejsPortfolio`}>
-                                        <Text 
-                                            style={{
-                                                color: "var(--text-color)",
-                                                textDecoration: "inherit",
-                                                textAlign: "center",
-                                                marginTop: "10px"
-                                            }}
-                                            fontSize={20}
-                                        >ThreeJS Portfolio</Text>
-                                    </LinkOverlay>
-                                </LinkBox>
-                            </Section>
-                        </Box>
+                            <Box>
+                                <Section delay={1.0}>
+                                    <LinkBox cursor='pointer'>
+                                        <Image
+                                            fit="cover"
+                                            src="/images/works/ThreeJSPortfolio.png"
+                                            alt="ThreeJS Portfolio Project"
+                                            className="projectThumbnail"
+                                            placeholder="blur"
+                                            loading="lazy"
+                                        />
+                                        <LinkOverlay href={`works/ThreejsPortfolio`}>
+                                            <Text
+                                                style={{
+                                                    color: "var(--text-color)",
+                                                    textDecoration: "inherit",
+                                                    textAlign: "center",
+                                                    marginTop: "10px"
+                                                }}
+                                                fontSize={20}
+                                            >ThreeJS Portfolio</Text>
+                                        </LinkOverlay>
+                                    </LinkBox>
+                                </Section>
+                            </Box>
 
-                        <Box>
-                            <Section delay={1.1}>
-                                <LinkBox cursor='pointer'>
-                                    <Image
-                                        fit="cover"
-                                        src="/images/works/4.png"
-                                        alt="Matias Sanes Project"	
-                                        className="projectThumbnail"
-                                        placeholder="blur"
-                                        loading="lazy"
-                                    />
-                                    <LinkOverlay href={`works/MatiasSanes`}>
-                                        <Text 
-                                            style={{
-                                                color: "var(--text-color)",
-                                                textDecoration: "inherit",
-                                                textAlign: "center",
-                                                marginLeft: "10px",
-                                                marginTop: "10px"                                                    
-                                            ,}}
-                                            fontSize={20}
-                                        >Matias Sanes Project</Text>
-                                    </LinkOverlay>
-                                </LinkBox>
-                            </Section>
-                        </Box>
+                            <Box>
+                                <Section delay={1.1}>
+                                    <LinkBox cursor='pointer'>
+                                        <Image
+                                            fit="cover"
+                                            src="/images/works/4.png"
+                                            alt="Matias Sanes Project"
+                                            className="projectThumbnail"
+                                            placeholder="blur"
+                                            loading="lazy"
+                                        />
+                                        <LinkOverlay href={`works/MatiasSanes`}>
+                                            <Text
+                                                style={{
+                                                    color: "var(--text-color)",
+                                                    textDecoration: "inherit",
+                                                    textAlign: "center",
+                                                    marginLeft: "10px",
+                                                    marginTop: "10px"
+                                                    ,
+                                                }}
+                                                fontSize={20}
+                                            >Matias Sanes Project</Text>
+                                        </LinkOverlay>
+                                    </LinkBox>
+                                </Section>
+                            </Box>
                         </Grid2Container>
                         <FooterContainer>
                             <Footer />
                         </FooterContainer>
-                </Container>
-            </Layout> 
-          </GridContainer>
+                    </Container>
+                </Layout>
+            </GridContainer>
         </>
     )
 }

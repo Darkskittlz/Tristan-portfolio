@@ -13,10 +13,15 @@ const GridContainer = styled.div`
 
 function TotoroModel({ ...props }) {
   const group = useRef()
-  const { nodes, materials } = useGLTF('/totoro.glb')
+  const { nodes, materials } = useGLTF('/glb/totoro.glb')
 
   return (
-    <group ref={group} {...props} dispose={null}>
+    <group 
+      ref={group} 
+      {...props} 
+      dispose={null}
+      position={[0,-12,0]}
+    >
       <mesh geometry={nodes.Body.geometry} material={materials.skin} position={[0, 12.5, 0]} scale={7.42}>
         <mesh geometry={nodes.Arms.geometry} material={materials.skin} position={[0.89, -0.2, -0.12]} rotation={[0, 0, 0.19]} scale={0.34}>
           <mesh geometry={nodes.Claws_arms.geometry} material={materials.claws} position={[-0.04, -2.46, -0.48]} rotation={[0.05, 0.25, 0.06]} scale={0.28} />
@@ -43,7 +48,7 @@ function TotoroModel({ ...props }) {
     </group>
   )
 }
-useGLTF.preload('/totoro.gltf')
+useGLTF.preload('/gltf/totoro.gltf')
 
 
 
@@ -59,9 +64,16 @@ export default function Totoro() {
           height: "38vh",
           width: "50vh",
           zIndex: "1"
-        }}>
+        }}
+        camera={{
+          fov: 75, 
+          near: 3, 
+          position: [15,4,20]
+          // far: 3
+        }}
+        >
 
-      <OrthographicCamera
+      {/* <OrthographicCamera
         makeDefault
         zoom={8}
         top={195}
@@ -70,7 +82,7 @@ export default function Totoro() {
         near={1}
         far={2000}
         position={[50, 50, 200]}
-      />
+      /> */}
 
         <ambientLight intensity={1} />
         <spotLight intensity={0.5} angle={0.1} penumbra={1} position={[10, 15, 10]} castShadow />
