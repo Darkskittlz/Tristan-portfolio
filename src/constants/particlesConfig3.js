@@ -1,10 +1,10 @@
 const particlesConfig3 = {
     "background": {
       "color": "var(--background-color)",
-      "image": "url('https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/BlackMarble_2016_rotating_globe_at_night_transparent.gif/640px-BlackMarble_2016_rotating_globe_at_night_transparent.gif')",
+      "image": "url('https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Colors_of_the_Innermost_Planet.gif/640px-Colors_of_the_Innermost_Planet.gif')",
       "position": "10% 50%",
       "repeat": "no-repeat",
-      "size": "30%"
+      "size": "20%"
     },
     "fullScreen": {
       "zIndex": 0
