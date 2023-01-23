@@ -72,7 +72,7 @@ export const PortfolioContainer = styled.div`
 	border-radius: 10px;
 	color: var(--text-color);
 	box-shadow: 0 0 10px #09EE9A;
-	backdrop-filter: blur(100px);
+	backdrop-filter: blur(40px);
 	background: rgb(15,207,188);
 	background: linear-gradient(28deg, rgba(15,207,188,1) 0%, rgba(233,89,207,1) 100%);
 
