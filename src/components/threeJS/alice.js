@@ -20,7 +20,7 @@ const GridContainer = styled.div`
 `
 
 const CenterContainer = styled.div`
-    width: 50%;
+    width: 90%;
     justify-content: center;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -84,8 +84,6 @@ function Scene() {
       ref.current.rotation.y += 0.01
     })
 
-
-
     return (
     <>
       <mesh 
@@ -123,7 +121,7 @@ function Portrait () {
   return (    
     <GridContainer>
         <CenterContainer>
-            <Canvas camera={{ position: [0, 8, 40], fov: 35, near: 1, far: 20000 }} style={{zIndex: 999}}>
+            <Canvas camera={{ position: [0, 6, 30], fov: 35, near: 1, far: 20000 }} style={{zIndex: 999, borderRadius: 20}}>
             <pointLight position={[100, 100, 100]} />
             <pointLight position={[-100, -100, -100]} />
                 <React.Suspense fallback={<></>}>

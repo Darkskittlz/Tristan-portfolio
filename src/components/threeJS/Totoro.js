@@ -1,6 +1,7 @@
 import React, { Suspense, useRef } from 'react'
 import { useGLTF, OrbitControls, OrthographicCamera } from '@react-three/drei'
 import { Canvas, useFrame } from "react-three-fiber"
+import * as THREE from 'three'
 import styled from "styled-components"
 
 const GridContainer = styled.div`
@@ -50,10 +51,18 @@ function TotoroModel({ ...props }) {
 }
 useGLTF.preload('/gltf/totoro.gltf')
 
-
+const canvas = document.querySelector('Totoro')
 
 export default function Totoro() {
-
+  window.addEventListener('dblclick', () => {
+    if(!document.fullscreenElement) {
+        canvas.requestFullscreen()
+        console.log('Go Full Screen')
+    } else {
+        document.exitFullscreen()
+        console.log('Leave Full Screen')
+    }
+})
   return (
     <GridContainer>
       <Canvas style={{
@@ -68,7 +77,7 @@ export default function Totoro() {
         camera={{
           fov: 75, 
           near: 3, 
-          position: [15,4,20]
+          position: [0,4,35],
           // far: 3
         }}
         >

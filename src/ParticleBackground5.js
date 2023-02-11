@@ -3,9 +3,9 @@ import React from "react";
 import { useCallback } from "react";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
-import particlesConfig3 from "./constants/particlesConfig3";
+import particlesConfig4 from "./constants/particlesConfig4";
 
-export default function StarBackground () {
+export default function StarBackground2 () {
   const particlesInit = useCallback(async engine => {
     console.log(engine);
     // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
@@ -20,13 +20,11 @@ const particlesLoaded = useCallback(async container => {
   return (
     <Particles 
       id="tsparticles" 
-      params={particlesConfig3}
+      params={particlesConfig4}
       init={particlesInit} 
       loaded={particlesLoaded}  
     />
   )
 }
-
-
 
 

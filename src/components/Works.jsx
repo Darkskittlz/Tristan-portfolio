@@ -24,6 +24,7 @@ import Totoro from './threeJS/Totoro'
 import CyberPunkModel from './threeJS/CyberpunkDesk'
 import OldDesk from './threeJS/OldDesk'
 import Portrait from './threeJS/alice'
+import StarBackground2 from '../ParticleBackground5'
 
 
 const GridContainer = styled.div`
@@ -75,8 +76,8 @@ const Grid2Container = styled.div`
 const Works = props => {
     return (
         <>
+		    <StarBackground2 />
             <GridContainer>
-                <ParticleComponent />
                 <Layout>
                     <Suspense fallback={null}>
                         <Portrait />

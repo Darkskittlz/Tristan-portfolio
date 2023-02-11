@@ -70,7 +70,8 @@ const BlogImage = styled.img`
 `
 
 const BlogImage2 = styled.img`
-    width: 440px;
+    width: 350px;
+    height: 500px;
     border-radius: 10px;
 
     @media screen and (max-width: 960px) {
