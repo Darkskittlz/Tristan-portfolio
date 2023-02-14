@@ -1,7 +1,8 @@
+
 const particlesConfig3 = {
     "background": {
       "color": "var(--background-color)",
-      "image": "url('https://o.remove.bg/downloads/ca58fb2a-e538-4373-96ba-bda67fcc7197/peakpx-removebg-preview.png')",
+      "image": "url()",
       "position": "-42% 20%",
       "repeat": "no-repeat",
       "size": "55%"
