@@ -1,11 +1,10 @@
-
 const particlesConfig3 = {
     "background": {
       "color": "var(--background-color)",
-      "image": "url()",
-      "position": "-42% 20%",
+      "image": "url('https://github.com/Darkskittlz/darkmeow-portfolio/blob/master/src/assets/images/earthBackground.png?raw=true')",
+      "position": "0% 20%",
       "repeat": "no-repeat",
-      "size": "55%"
+      "size": "32%"
     },
     "fullScreen": {
       "zIndex": 0
