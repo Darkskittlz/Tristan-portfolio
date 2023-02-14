@@ -9,11 +9,12 @@ import CatGIF from "../../assets/images/catPizza.gif"
 
 const GridContainer = styled.div`
     width: 50%;
-    height: 45vw;
+    height: 65vw;
     margin-left: 25%;
 
     @media (max-width: 960px) {
         width: 100%;
+        height: 120vh;
         margin-left:0%;
         justify-items: center;
     }
@@ -49,8 +50,8 @@ const FooterContainer = styled.div`
     margin-top: 30px;
 
     @media (max-width: 960px) {
-        margin-top: 190px;
-        margin-left: 60px;
+        margin-top: 20px;
+        margin-left: 10px;
     }
 `
 

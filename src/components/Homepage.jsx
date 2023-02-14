@@ -15,7 +15,7 @@ import {
 	Container,
 } from '@chakra-ui/react'
 import Technologies from './Technologies';
-import { SectionDivider } from '../Styles/GlobalStyles';
+import { FooterContainer, SectionDivider } from '../Styles/GlobalStyles';
 import Totoro from './threeJS/Totoro';
 import ChakraModal from './Modal';
 import StarBackground from '../ParticleBackground4';
@@ -35,11 +35,8 @@ const GridContainer = styled.div`
 `
 
 
-const FooterContainer = styled.div`
-    display: flex;
-    width: 100%;
 
-`
+
 
 const Animation = keyframes`
   0% { box-shadow: 0 0 10px #09EE9A; } 

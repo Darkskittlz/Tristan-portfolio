@@ -19,7 +19,7 @@ import {
 import Wednesday from "../assets/images/works/Wednesday.png"
 import SPA from "../assets/images/works/SPA.png"
 import Breezeline from "../assets/images/works/breezeline.png"
-import { SectionDivider } from '../Styles/GlobalStyles'
+import { FooterContainer, SectionDivider } from '../Styles/GlobalStyles'
 import Totoro from './threeJS/Totoro'
 import CyberPunkModel from './threeJS/CyberpunkDesk'
 import OldDesk from './threeJS/OldDesk'
@@ -44,16 +44,13 @@ const GridContainer = styled.div`
     }
 `
 
-export const FooterContainer = styled.div`
-    display: flex;
-    width: 100%; 
-    margin-top: 120px;
-    height: 100px;
+const FooterContainer2 = styled.div`
+	width: 100%;
+	display: flex;
 
-    @media (max-width: 960px) {
-        margin-left: 50px;
-        padding-bottom: 120px;
-    }
+	@media (max-width: 960px) {
+		margin-left: 18px;
+	}
 `
 
 const Grid2Container = styled.div`
@@ -76,7 +73,7 @@ const Grid2Container = styled.div`
 const Works = props => {
     return (
         <>
-		    <StarBackground2 />
+            <StarBackground2 />
             <GridContainer>
                 <Layout>
                     <Suspense fallback={null}>
@@ -357,9 +354,9 @@ const Works = props => {
                                 </Section>
                             </Box>
                         </Grid2Container>
-                        <FooterContainer>
+                        <FooterContainer2>
                             <Footer />
-                        </FooterContainer>
+                        </FooterContainer2>
                     </Container>
                 </Layout>
             </GridContainer>

@@ -2,18 +2,19 @@ import { Container, Badge, Link, List, ListItem, SimpleGrid, Image } from '@chak
 import Layout from '../layouts/article'
 import styled, { keyframes } from 'styled-components'
 import Footer from '../footer'
-import ParticleComponent from '../../ParticleBackground3'
+import ParticleComponent from '../../ParticleBackground'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
 import "../../Styles/App.css"
 
 
 const GridContainer = styled.div`
     width: 50%;
-    height: 45vw;
+    height: 65vw;
     margin-left: 25%;
 
     @media (max-width: 960px) {
         width: 100%;
+        height: 120vh;
         margin-left:0%;
         justify-items: center;
     }
@@ -48,8 +49,7 @@ const FooterContainer = styled.div`
     width: 100%;
 
     @media (max-width: 960px) {
-        margin-top: 190px;
-        margin-left: 60px;
+
     }
 `
 
@@ -102,6 +102,7 @@ const MatiasSanes = props => {
     return (
         <>
             <GridContainer>
+            <ParticleComponent />
               <Layout>
                 <Container maxW='2x1'>
                         <SimpleGrid 
@@ -115,7 +116,6 @@ const MatiasSanes = props => {
                                 borderRadius: "10px"
                             }} 
                         >
-                                      <ParticleComponent />
 
                             <TitleContainer>
                             <ImageContainer>

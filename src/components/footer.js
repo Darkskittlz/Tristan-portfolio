@@ -16,6 +16,7 @@ export const FooterWrapper = styled.section`
 
   @media only screen and (max-width: 960px) {
 	width: 20%;
+	margin-left: 36%;	
   }
 `
 

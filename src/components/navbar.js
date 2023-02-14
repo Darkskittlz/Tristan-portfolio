@@ -57,11 +57,15 @@ const GridContainer = styled.div`
     justify-content: flex-start;
     z-index: 999;
     position: relative;
+    border: 1px solid none;
+    border-radius: 10px;
+    width: 50%;
     backdrop-filter: blur(20px);
 
 	@media (max-width: 960px) {
 		flex-direction: column;
         width: 100%;
+        backdrop-filter: none;
         margin-left: 50%;
         justify-content: center;
 	}

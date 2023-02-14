@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import ParticlesBg from 'particles-bg'
+import styled from 'styled-components';
+
 
 let config = {
     num: [4, 7],
