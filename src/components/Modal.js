@@ -20,6 +20,8 @@ import date from 'date-and-time';
 import Clock from 'react-live-clock';
 import { emotions } from '../constants/constants'
 import Totoro from './threeJS/Totoro'
+import CyberPunkDesk from './threeJS/CyberpunkDesk'
+import OldDesk from './threeJS/OldDesk'
 
 
 
@@ -208,7 +210,7 @@ export default function ChakraModal() {
                 <form ref={form} id="myForm" onSubmit={(event) => handleSubmit(event)}>
                   
                 <IMGContainer>
-					        <img src="https://i.gifer.com/2qQQ.gif" alt="animeGif"/>
+					        <OldDesk />
 				        </IMGContainer>
 
                   <ModalBody 
