@@ -74,6 +74,7 @@ const GridContainer = styled.div`
 
 const Grid1 = styled.div`
     display: flex;
+    width: 100%;
 `
 
 const Grid2 = styled.div`
