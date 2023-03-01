@@ -159,3 +159,19 @@ nav a {
 div.chakra-select__icon-wrapper.css-162mkon {
   display: none;
 }
+
+div.chakra-linkbox.css-16kwgao {
+  margin-bottom: 30px;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  padding-bottom: 15px;
+}
+
+div.chakra-linkbox.css-16kwgao:hover {
+  box-shadow: 0 0 30px rgba(199, 239, 255, 0.74);
+  transform: scale(1.06);
+  -webkit-transition: transform .55s ease-in-out;
+
+}

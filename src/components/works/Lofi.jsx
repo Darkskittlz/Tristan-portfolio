@@ -2,7 +2,7 @@ import { Container, Badge, Link, List, ListItem, SimpleGrid, Image } from '@chak
 import Layout from '../layouts/article'
 import styled, { keyframes } from 'styled-components'
 import Footer from '../footer'
-import ParticleComponent from '../../ParticleBackground3'
+import ParticleComponent from '../../ParticleBackground2'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
 import "../../Styles/App.css"
 import CatGIF from "../../assets/images/catPizza.gif"
@@ -12,7 +12,7 @@ import Lofi3 from "../../assets/images/lofiThumb2.png"
 
 const GridContainer = styled.div`
     width: 50%;
-    height: 65vw;
+    height: 160vh;
     margin-left: 25%;
 
     @media (max-width: 960px) {
@@ -164,23 +164,12 @@ const Lofi = props => {
                                     </ListItem>
                                 </List>
                             </BodyContainer>
+                            <br />
+                            <br />
                             <img src={Lofi2} />
                             <img src={Lofi1} />
                             <img src={Lofi3} />
                         </SimpleGrid>
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
                     </GridContainer>
                 </Container>
             </Layout>
@@ -188,6 +177,18 @@ const Lofi = props => {
             <br />
             <br />
             <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <FooterContainer>
+                <Footer />
+            </FooterContainer>
         </>
     )
 }

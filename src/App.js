@@ -19,7 +19,6 @@ import DarkMeowShop from './components/works/DarkMeowShop';
 import ECommerce from './components/works/ECommerce';
 import Lofi from './components/works/Lofi';
 import MatiasSanes from './components/works/MatiasSanes';
-import Nhost from './components/works/Nhost'; 
 import SPAPortfolio from './components/works/SPAPortfolio'; 
 import ThreejsPortfolio from './components/works/ThreejsPortfolio'; 
 import Tutorials from './components/Tutorials';
@@ -60,7 +59,6 @@ const App = ({ Component, pageProps, router }) => {
                             <Route path='/Works/ECommerce' element={<ECommerce />} />                            
                             <Route path='/Works/Lofi' element={<Lofi />} />                            
                             <Route path='/Works/MatiasSanes' element={<MatiasSanes />} />                            
-                            <Route path='/Works/Nhost' element={<Nhost />} />                            
                             <Route path='/Works/SPAPortfolio' element={<SPAPortfolio />} />                            
                             <Route path='/Works/ThreejsPortfolio' element={<ThreejsPortfolio />} />                            
                             <Route path='/Works/UkraineMap' element={<UkraineMap />} />                            

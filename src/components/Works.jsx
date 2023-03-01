@@ -2,7 +2,7 @@ import { Suspense } from 'react'
 import Section from './section'
 import Layout from './layouts/article'
 import styled from 'styled-components'
-import ParticleComponent from '../ParticleBackground3'
+import ParticleComponent from '../ParticleBackground4'
 import Footer from './footer'
 import '../Styles/App.css';
 import {
@@ -129,7 +129,7 @@ const Works = props => {
                                                 loading="lazy"
                                             />
                                         </Container>
-                                        <LinkOverlay href={`works/UkraineMap`}>
+                                        <LinkOverlay href={`works/Lofi`}>
                                             <Text
                                                 style={{
                                                     color: "var(--text-color)",
