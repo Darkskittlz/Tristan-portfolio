@@ -17,14 +17,15 @@ import Collab from './components/works/Collab';
 import DarkMeowFi from './components/works/DarkMeowFi';
 import DarkMeowShop from './components/works/DarkMeowShop';
 import ECommerce from './components/works/ECommerce';
+import Lofi from './components/works/Lofi';
 import MatiasSanes from './components/works/MatiasSanes';
-import ThreejsPortfolio from './components/works/ThreejsPortfolio'; 
 import Nhost from './components/works/Nhost'; 
 import SPAPortfolio from './components/works/SPAPortfolio'; 
+import ThreejsPortfolio from './components/works/ThreejsPortfolio'; 
 import Tutorials from './components/Tutorials';
-import ReactNhost from './components/tutorials/Youtube';
 import Youtube from './components/tutorials/Youtube';
 import Wednesday from './components/works/Wednesday';
+import UkraineMap from './components/works/UkraineMap';
 
 
 const NavContainer = styled.div`
@@ -57,10 +58,12 @@ const App = ({ Component, pageProps, router }) => {
                             <Route path='/Works/DarkMeowFi' element={<DarkMeowFi />} />                            
                             <Route path='/Works/DarkMeowShop' element={<DarkMeowShop />} />                            
                             <Route path='/Works/ECommerce' element={<ECommerce />} />                            
+                            <Route path='/Works/Lofi' element={<Lofi />} />                            
                             <Route path='/Works/MatiasSanes' element={<MatiasSanes />} />                            
-                            <Route path='/Works/ThreejsPortfolio' element={<ThreejsPortfolio />} />                            
                             <Route path='/Works/Nhost' element={<Nhost />} />                            
                             <Route path='/Works/SPAPortfolio' element={<SPAPortfolio />} />                            
+                            <Route path='/Works/ThreejsPortfolio' element={<ThreejsPortfolio />} />                            
+                            <Route path='/Works/UkraineMap' element={<UkraineMap />} />                            
                             <Route path='/Works/Wednesday' element={<Wednesday />} />                            
                             <Route path='/Posts' element={<Posts />} />                            
                             <Route path='/Posts/Blog1' element={<BlogPost />} />                            

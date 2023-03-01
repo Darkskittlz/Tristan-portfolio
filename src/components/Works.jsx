@@ -18,6 +18,8 @@ import {
 
 import Wednesday from "../assets/images/works/Wednesday.png"
 import SPA from "../assets/images/works/SPA.png"
+import UkraineMap from "../assets/images/works/ukraineMap.png"
+import Lofi from "../assets/images/lofi.png"
 import Breezeline from "../assets/images/works/breezeline.png"
 import { FooterContainer, SectionDivider } from '../Styles/GlobalStyles'
 import Totoro from './threeJS/Totoro'
@@ -92,6 +94,62 @@ const Works = props => {
                                         <Container className="projectContainer">
                                             <Image
                                                 fit="cover"
+                                                src={UkraineMap}
+                                                alt="Ukraine Map"
+                                                className="projectThumbnail"
+                                                placeholder="blur"
+                                                loading="lazy"
+                                            />
+                                        </Container>
+                                        <LinkOverlay href={`works/UkraineMap`}>
+                                            <Text
+                                                style={{
+                                                    color: "var(--text-color)",
+                                                    textDecoration: "inherit",
+                                                    textAlign: "center",
+                                                    marginTop: "10px"
+                                                }}
+                                                fontSize={20}
+                                            >Ukraine Leaflet</Text>
+                                        </LinkOverlay>
+                                    </LinkBox>
+                                </Section>
+                            </Box>
+
+                            <Box>
+                                <Section delay={0.3}>
+                                    <LinkBox cursor='pointer'>
+                                        <Container className="projectContainer">
+                                            <Image
+                                                fit="cover"
+                                                src={Lofi}
+                                                alt="Lofi Site"
+                                                className="projectThumbnail"
+                                                placeholder="blur"
+                                                loading="lazy"
+                                            />
+                                        </Container>
+                                        <LinkOverlay href={`works/UkraineMap`}>
+                                            <Text
+                                                style={{
+                                                    color: "var(--text-color)",
+                                                    textDecoration: "inherit",
+                                                    textAlign: "center",
+                                                    marginTop: "10px"
+                                                }}
+                                                fontSize={20}
+                                            >Lofi Station</Text>
+                                        </LinkOverlay>
+                                    </LinkBox>
+                                </Section>
+                            </Box>
+
+                            <Box>
+                                <Section delay={0.4}>
+                                    <LinkBox cursor='pointer'>
+                                        <Container className="projectContainer">
+                                            <Image
+                                                fit="cover"
                                                 src={Wednesday}
                                                 alt="AliceMeowz Project"
                                                 className="projectThumbnail"
@@ -115,7 +173,7 @@ const Works = props => {
                             </Box>
 
                             <Box>
-                                <Section delay={0.3}>
+                                <Section delay={0.5}>
                                     <LinkBox cursor='pointer'>
                                         <Image
                                             fit="cover"
@@ -141,7 +199,7 @@ const Works = props => {
                             </Box>
 
                             <Box>
-                                <Section delay={0.4}>
+                                <Section delay={0.6}>
                                     <LinkBox cursor='pointer'>
                                         <Image
                                             fit="cover"
@@ -167,7 +225,7 @@ const Works = props => {
                             </Box>
 
                             <Box>
-                                <Section delay={0.5}>
+                                <Section delay={0.7}>
                                     <LinkBox cursor='pointer'>
                                         <Image
                                             fit="cover"
@@ -193,7 +251,7 @@ const Works = props => {
                             </Box>
 
                             <Box>
-                                <Section delay={0.6}>
+                                <Section delay={0.8}>
                                     <LinkBox cursor='pointer'>
                                         <Image
                                             fit="cover"
@@ -219,7 +277,7 @@ const Works = props => {
                             </Box>
 
                             <Box>
-                                <Section delay={0.7}>
+                                <Section delay={0.9}>
                                     <LinkBox cursor='pointer'>
                                         <Image
                                             fit="cover"
@@ -246,7 +304,7 @@ const Works = props => {
 
 
                             <Box>
-                                <Section delay={0.8}>
+                                <Section delay={1}>
                                     <LinkBox cursor='pointer'>
                                         <Image
                                             fit="cover"
@@ -273,7 +331,7 @@ const Works = props => {
 
 
                             <Box>
-                                <Section delay={0.9}>
+                                <Section delay={1.1}>
                                     <LinkBox cursor='pointer'>
                                         <Image
                                             fit="cover"
@@ -301,7 +359,7 @@ const Works = props => {
 
 
                             <Box>
-                                <Section delay={1.0}>
+                                <Section delay={1.2}>
                                     <LinkBox cursor='pointer'>
                                         <Image
                                             fit="cover"
@@ -327,7 +385,7 @@ const Works = props => {
                             </Box>
 
                             <Box>
-                                <Section delay={1.1}>
+                                <Section delay={1.3}>
                                     <LinkBox cursor='pointer'>
                                         <Image
                                             fit="cover"
