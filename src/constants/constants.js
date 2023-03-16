@@ -11,7 +11,9 @@ export const TimeLineData = [
     { year: 'October 2022', text: 'Learned about GraphQL and how it integrates with react applications to render data', },
     { year: 'November 2022', text: 'Discovered Keycloak, an identity and access management system for managing applications', },
     { year: 'December 2022', text: 'Dug into debugging and how to test an application thoroughly before launch', },
-    { year: 'January 2023', text: 'Began formulating plans for starting a code camp of my own', }
+    { year: 'January 2023', text: 'Began formulating plans for starting a code camp of my own', },
+    { year: 'February 2023', text: 'Continuing working on 3D models in blender and finishing Bruno Simons ThreeJS course', },
+    { year: 'March 2023', text: 'Learning a lot more about React, specificially the hooks useState, useMemo, & useRef', }
   ];
 
   export const skills = [

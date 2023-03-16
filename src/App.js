@@ -30,11 +30,13 @@ import UkraineMap from './components/works/UkraineMap';
 const NavContainer = styled.div`
     width: 100%;
     justify-content: center;
-
+    z-index: 2;
+    
     @media (max-width: 960px){
         width: 50%;
         margin-left: 12%;
-
+        z-index: 2;
+        position: relative;
     }
 `
 

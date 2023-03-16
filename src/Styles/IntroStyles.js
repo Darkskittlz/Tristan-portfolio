@@ -20,7 +20,7 @@ export const Container1 = styled.div`
 
 export const Container2 = styled.div`
     height: 15vh;
-    width: 250px;
+    width: 350px;
     padding: 20px;
     align-items: center;
     display: flex;

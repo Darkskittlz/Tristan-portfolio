@@ -3,10 +3,16 @@ import Layout from '../layouts/article'
 import styled from 'styled-components'
 import Footer from '../footer'
 import ParticleComponent from '../../ParticleBackground3'
+import ParticleBackground6 from '../../ParticleBackground6'
 
 const GridContainer = styled.div`
     width: 50%;
     margin-left: 25%;
+`
+
+const GridOverlay = styled.div`
+    z-index: 2;
+    position: relative;
 `
 
 const TitleContainer = styled.div`
@@ -55,7 +61,8 @@ export const FooterContainer = styled.div`
 const BlogPost2 = props => {
     return (
         <>
-          <ParticleComponent />
+          <ParticleBackground6 />
+          <GridOverlay>
             <Layout>
                 <Container maxW='2x1'>
                     <GridContainer>
@@ -90,6 +97,7 @@ const BlogPost2 = props => {
                     </GridContainer>
                 </Container>
             </Layout>
+          </GridOverlay>
         </>
     )
 }
