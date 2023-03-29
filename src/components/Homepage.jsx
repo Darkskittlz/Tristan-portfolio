@@ -16,9 +16,11 @@ import {
 } from '@chakra-ui/react'
 import Technologies from './Technologies';
 import { FooterContainer, SectionDivider } from '../Styles/GlobalStyles';
-import Totoro from './threeJS/Totoro';
+import Planet from './threeJS/Earth';
 import ChakraModal from './Modal';
 import StarBackground from '../ParticleBackground4';
+import OldDesk from './threeJS/OldDesk';
+import Totoro from './threeJS/Totoro';
 
 
 
@@ -93,18 +95,19 @@ const Homepage = () => {
 			<StarBackground />
 			<Layout >
 
-				{/* <Suspense fallback={null}>
-					<Totoro />
-				</Suspense> */}
-
-
+				<Suspense fallback={null}>
+					<Planet />
+				</Suspense>
 				<Section delay={0.1}>
 					<Intro />
 				</Section>
 
+
+
 				<Container className="homePageContainer" >
 					<Section delay={0.2}>
 						<HeadingContainer>
+							<h1>Bio</h1>
 							<SectionDivider />
 						</HeadingContainer>
 						<h1>
@@ -152,7 +155,7 @@ const Homepage = () => {
 						</h1>
 						<br />
 						<Heading as="h2" variant="section-title">
-							3D Model Totoro
+							Totoro Model
 						</Heading>
 						<h1>{' '}
 							<Link
@@ -162,6 +165,19 @@ const Homepage = () => {
 									color: "#ff00d5"
 								}}>Jesse Ragos</Link>
 						</h1>
+						<br />
+						<Heading as="h2" variant="section-title">
+							Planet Model
+						</Heading>
+						<h1>{' '}
+							<Link
+								href="https://sketchfab.com/ThomasKole"
+								style={{
+									textDecoration: "none",
+									color: "#FF3E33"
+								}}>Thomas Kole</Link>
+						</h1>
+
 					</Section>
 
 					<Section delay={0.5}>

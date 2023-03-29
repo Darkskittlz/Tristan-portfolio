@@ -93,7 +93,7 @@ nav a {
 .homePageContainer {
   display: flex;
   padding: 5px;
-  backdrop-filter: blur(2px);
+  backdrop-filter: blur(10px);
   justify-content: center;
   border-radius: 10px;
   flex-direction: column;
@@ -104,6 +104,10 @@ nav a {
   @media screen (max-width: 960px) {
     width: 95%;
   }
+}
+
+.homePageContainer h1 {
+  font-size: 20px;
 }
 
 
