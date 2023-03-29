@@ -24,13 +24,13 @@ function EarthModel({ ...props }) {
   const group = useRef()
   const { nodes, materials } = useGLTF('/gltf/earth.gltf')
   useFrame(() => {
-    group.current.rotation.y += 0.01
+    group.current.rotation.y += 0.003
   })
 
   return (
     <group ref={group} {...props} dispose={null}>
       <group 
-        rotation={[-Math.PI / 2, 0, 2]}
+        rotation={[-Math.PI / 2, 0, 5]}
       >
         <mesh 
           geometry={nodes.Sphere_1.geometry} 
