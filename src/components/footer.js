@@ -73,6 +73,12 @@ export const CompanyContainer = styled.div`
 	h1 {
 		text-align: center;
 	}
+
+	@media (max-width: 960px) {
+		h1 {
+			font-size: 16px;
+		}
+	}
 `
 
 

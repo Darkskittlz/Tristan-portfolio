@@ -25,6 +25,7 @@ import Tutorials from './components/Tutorials';
 import Youtube from './components/tutorials/Youtube';
 import Wednesday from './components/works/Wednesday';
 import UkraineMap from './components/works/UkraineMap';
+import WeatherApp from './components/works/WeatherApp';
 
 
 const NavContainer = styled.div`
@@ -65,6 +66,7 @@ const App = ({ Component, pageProps, router }) => {
                             <Route path='/Works/ThreejsPortfolio' element={<ThreejsPortfolio />} />                            
                             <Route path='/Works/UkraineMap' element={<UkraineMap />} />                            
                             <Route path='/Works/Wednesday' element={<Wednesday />} />                            
+                            <Route path='/Works/WeatherApp' element={<WeatherApp />} />                            
                             <Route path='/Posts' element={<Posts />} />                            
                             <Route path='/Posts/Blog1' element={<BlogPost />} />                            
                             <Route path='/Posts/Blog2' element={<BlogPost2 />} />    

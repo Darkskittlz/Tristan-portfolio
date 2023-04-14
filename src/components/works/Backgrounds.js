@@ -2,7 +2,7 @@ import { Container, Badge, Link, List, ListItem, SimpleGrid, Image } from '@chak
 import Layout from '../layouts/article'
 import styled, { keyframes } from 'styled-components'
 import Footer from '../footer'
-import ParticleComponent from '../../ParticleBackground2'
+import ParticleComponent from '../../ParticleBackground3'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
 import "../../Styles/App.css"
 
@@ -15,7 +15,7 @@ const GridContainer = styled.div`
     @media (max-width: 960px) {
         width: 100%;
         height: 120vh;
-        margin-left:0%;
+        margin-left: 2%;
         justify-items: center;
     }
 `
@@ -39,18 +39,27 @@ const BodyContainer = styled.div`
     justify-items: center;
     h1 {
         font-size: 23px;
-        text-indent: 30px;
         text-align: left;
     }
+
+    
+    @media (max-width: 960px) {
+        h1 {
+            margin-top: 10px;
+            font-size: 17px;
+        }
 `
 
 const FooterContainer = styled.div`
     display: flex;
     width: 100%;
-    margin-top: 90px;
+    position: relative;
+    margin-top: 50%;
+
 
     @media (max-width: 960px) {
-        margin-top: 20px;
+        margin-top: 10%;
+        margin-left: 5%;
     }
 `
 
@@ -63,7 +72,7 @@ const Animation = keyframes`
 `
 
 const Badge2 = styled.div`
-  backdrop-filter: blur(40px);
+  backdrop-filter: blur(80px);
   padding: 8px;
   width: 15%;
   display: flex;

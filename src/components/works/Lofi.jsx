@@ -2,7 +2,7 @@ import { Container, Badge, Link, List, ListItem, SimpleGrid, Image } from '@chak
 import Layout from '../layouts/article'
 import styled, { keyframes } from 'styled-components'
 import Footer from '../footer'
-import ParticleComponent from '../../ParticleBackground2'
+import ParticleComponent from '../../ParticleBackground3'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
 import "../../Styles/App.css"
 import CatGIF from "../../assets/images/catPizza.gif"
@@ -142,7 +142,7 @@ const Lofi = props => {
                                             href="https://og-lofi.netlify.app/"
                                             target="_blank"
                                             style={{
-                                                color: "#b900ff"
+                                                color: "blue"
                                             }}
                                         >
                                             https://og-lofi.netlify.app/
@@ -155,7 +155,7 @@ const Lofi = props => {
                                             href="https://github.com/Darkskittlz/Lofi-Music-Site"
                                             target="_blank"
                                             style={{
-                                                color: "#b900ff"
+                                                color: "blue"
                                             }}
                                         >
                                             https://github.com/Darkskittlz/Lofi-Music-Site

@@ -16,8 +16,9 @@ const GridContainer = styled.div`
 
     @media (max-width: 960px) {
         width: 100%;
-        margin-left:0%;
-        justify-items: center;
+        height: 200vw;
+        margin-left: 4%;
+        padding-right: 10px;
     }
 `
 
@@ -48,10 +49,13 @@ const BodyContainer = styled.div`
 const FooterContainer = styled.div`
     display: flex;
     width: 100%;
+    position: relative;
+    margin-top: 10%;
+
 
     @media (max-width: 960px) {
-        margin-top: 190px;
-        margin-left: 60px;
+        margin-top: 90px;
+        margin-left: 5%;
     }
 `
 

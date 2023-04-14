@@ -49,12 +49,13 @@ const BodyContainer = styled.div`
 const FooterContainer = styled.div`
     display: flex;
     width: 100%;
-    margin-top: 40px;
+    position: relative;
+    margin-top: 0%;
 
 
     @media (max-width: 960px) {
-        margin-top: 20px;
-        margin-left: 15px;
+        margin-top: -260px;
+        margin-left: 5%;
     }
 `
 
@@ -104,6 +105,22 @@ const ImageContainer = styled.div`
 
     h1 {
         margin-left: 20px;
+    }
+`
+
+const IMGContainer = styled.div`
+    display: flex;
+    grid-gap: 10px;
+    justify-content: center;
+    width: 100%;
+    img {
+        height: 50%;
+    }
+
+    @media (max-width: 960px) {
+        img {
+            margin-top: 50px;
+        }
     }
 `
 
@@ -169,7 +186,7 @@ const UkraineMap = props => {
                                     </ListItem>
                                 </List>
                             </BodyContainer>
-                                <img src={UkraineMapIMG} />
+                                <IMGContainer><img src={UkraineMapIMG} /></IMGContainer>
                         </SimpleGrid>
                     </GridContainer>
                     <br />

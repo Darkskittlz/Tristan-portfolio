@@ -20,11 +20,8 @@ import Wednesday from "../assets/images/works/Wednesday.png"
 import SPA from "../assets/images/works/SPA.png"
 import UkraineMap from "../assets/images/works/ukraineMap.png"
 import Lofi from "../assets/images/lofi.png"
-import Breezeline from "../assets/images/works/breezeline.png"
 import { FooterContainer, SectionDivider } from '../Styles/GlobalStyles'
-import Totoro from './threeJS/Totoro'
-import CyberPunkModel from './threeJS/CyberpunkDesk'
-import OldDesk from './threeJS/OldDesk'
+import WeatherIMG from "../assets/images/works/Weather2.png"
 import Portrait from './threeJS/alice'
 import StarBackground2 from '../ParticleBackground5'
 
@@ -40,8 +37,8 @@ const GridContainer = styled.div`
     grid-template-columns: repeat(2, 1fr);
 
     @media (max-width: 960px) {
-        width: 90%;
-        margin-left: 5%;
+        width: 80%;
+        margin-left: 10%;
         display: flex;
     }
 `
@@ -65,9 +62,8 @@ const Grid2Container = styled.div`
     box-shadow: 0 0 20px rgba(80, 78, 78, 0.9);
 
     @media and (max-width: 960px) {
-        grid-gap: 22px;
-        padding: 0px;
         grid-gap: 0px;
+        padding: 0px;
     }
 `
 
@@ -88,6 +84,33 @@ const Works = props => {
                         </Heading>
 
                         <Grid2Container>
+                            <Box>
+                                <Section delay={0.2}>
+                                    <LinkBox cursor='pointer'>
+                                        <Container className="projectContainer">
+                                            <Image
+                                                fit="cover"
+                                                src={WeatherIMG}
+                                                alt="Ukraine Map"
+                                                className="projectThumbnail"
+                                                placeholder="blur"
+                                                loading="lazy"
+                                            />
+                                        </Container>
+                                        <LinkOverlay href={`works/WeatherApp`}>
+                                            <Text
+                                                style={{
+                                                    color: "var(--text-color)",
+                                                    textDecoration: "inherit",
+                                                    textAlign: "center",
+                                                    marginTop: "10px"
+                                                }}
+                                                fontSize={20}
+                                            >Weather</Text>
+                                        </LinkOverlay>
+                                    </LinkBox>
+                                </Section>
+                            </Box>
                             <Box>
                                 <Section delay={0.2}>
                                     <LinkBox cursor='pointer'>
