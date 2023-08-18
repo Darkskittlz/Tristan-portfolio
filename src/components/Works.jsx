@@ -16,6 +16,7 @@ import {
     Box
 } from '@chakra-ui/react'
 import Vue from "../assets/images/works/Vue.png"
+import DarkMeowShop from "../assets/images/works/DarkMeowThumb.png"
 import Wednesday from "../assets/images/works/Wednesday.png"
 import SPA from "../assets/images/works/SPA.png"
 import UkraineMap from "../assets/images/works/ukraineMap.png"
@@ -85,89 +86,34 @@ const Works = props => {
 
                         <Grid2Container>
                             <Box>
+                                <Section delay={0.1}>
+                                    <LinkBox cursor='pointer'>
+                                        <Container className="projectContainer">
+                                            <Image
+                                                fit="cover"
+                                                src={DarkMeowShop}
+                                                alt="DarkMeow Shop"
+                                                className="projectThumbnail"
+                                                placeholder="blur"
+                                                loading="lazy"
+                                            />
+                                        </Container>
+                                        <LinkOverlay href={`works/DarkMeowShop`}>
+                                            <Text
+                                                style={{
+                                                    color: "var(--text-color)",
+                                                    textDecoration: "inherit",
+                                                    textAlign: "center",
+                                                    marginTop: "10px"
+                                                }}
+                                                fontSize={20}
+                                            >DarkMeow Shop</Text>
+                                        </LinkOverlay>
+                                    </LinkBox>
+                                </Section>
+                            </Box>
+                            <Box>
                                 <Section delay={0.2}>
-                                    <LinkBox cursor='pointer'>
-                                        <Container className="projectContainer">
-                                            <Image
-                                                fit="cover"
-                                                src={Vue}
-                                                alt="Ukraine Map"
-                                                className="projectThumbnail"
-                                                placeholder="blur"
-                                                loading="lazy"
-                                            />
-                                        </Container>
-                                        <LinkOverlay href={`works/Vue`}>
-                                            <Text
-                                                style={{
-                                                    color: "var(--text-color)",
-                                                    textDecoration: "inherit",
-                                                    textAlign: "center",
-                                                    marginTop: "10px"
-                                                }}
-                                                fontSize={20}
-                                            >VueX Product Page</Text>
-                                        </LinkOverlay>
-                                    </LinkBox>
-                                </Section>
-                            </Box>
-                            <Box>
-                                <Section delay={0.3}>
-                                    <LinkBox cursor='pointer'>
-                                        <Container className="projectContainer">
-                                            <Image
-                                                fit="cover"
-                                                src={WeatherIMG}
-                                                alt="Ukraine Map"
-                                                className="projectThumbnail"
-                                                placeholder="blur"
-                                                loading="lazy"
-                                            />
-                                        </Container>
-                                        <LinkOverlay href={`works/WeatherApp`}>
-                                            <Text
-                                                style={{
-                                                    color: "var(--text-color)",
-                                                    textDecoration: "inherit",
-                                                    textAlign: "center",
-                                                    marginTop: "10px"
-                                                }}
-                                                fontSize={20}
-                                            >Weather</Text>
-                                        </LinkOverlay>
-                                    </LinkBox>
-                                </Section>
-                            </Box>
-                            <Box>
-                                <Section delay={0.4}>
-                                    <LinkBox cursor='pointer'>
-                                        <Container className="projectContainer">
-                                            <Image
-                                                fit="cover"
-                                                src={UkraineMap}
-                                                alt="Ukraine Map"
-                                                className="projectThumbnail"
-                                                placeholder="blur"
-                                                loading="lazy"
-                                            />
-                                        </Container>
-                                        <LinkOverlay href={`works/UkraineMap`}>
-                                            <Text
-                                                style={{
-                                                    color: "var(--text-color)",
-                                                    textDecoration: "inherit",
-                                                    textAlign: "center",
-                                                    marginTop: "10px"
-                                                }}
-                                                fontSize={20}
-                                            >Ukraine Leaflet</Text>
-                                        </LinkOverlay>
-                                    </LinkBox>
-                                </Section>
-                            </Box>
-
-                            <Box>
-                                <Section delay={0.5}>
                                     <LinkBox cursor='pointer'>
                                         <Container className="projectContainer">
                                             <Image
@@ -193,9 +139,8 @@ const Works = props => {
                                     </LinkBox>
                                 </Section>
                             </Box>
-
                             <Box>
-                                <Section delay={0.6}>
+                                <Section delay={0.3}>
                                     <LinkBox cursor='pointer'>
                                         <Container className="projectContainer">
                                             <Image
@@ -223,7 +168,7 @@ const Works = props => {
                             </Box>
 
                             <Box>
-                                <Section delay={0.7}>
+                                <Section delay={0.4}>
                                     <LinkBox cursor='pointer'>
                                         <Image
                                             fit="cover"
@@ -249,7 +194,7 @@ const Works = props => {
                             </Box>
 
                             <Box>
-                                <Section delay={0.8}>
+                                <Section delay={0.5}>
                                     <LinkBox cursor='pointer'>
                                         <Image
                                             fit="cover"
@@ -275,7 +220,7 @@ const Works = props => {
                             </Box>
 
                             <Box>
-                                <Section delay={0.9}>
+                                <Section delay={0.6}>
                                     <LinkBox cursor='pointer'>
                                         <Image
                                             fit="cover"
@@ -301,7 +246,7 @@ const Works = props => {
                             </Box>
 
                             <Box>
-                                <Section delay={1}>
+                                <Section delay={0.7}>
                                     <LinkBox cursor='pointer'>
                                         <Image
                                             fit="cover"
@@ -327,7 +272,7 @@ const Works = props => {
                             </Box>
 
                             <Box>
-                                <Section delay={1.1}>
+                                <Section delay={0.8}>
                                     <LinkBox cursor='pointer'>
                                         <Image
                                             fit="cover"
@@ -354,7 +299,7 @@ const Works = props => {
 
 
                             <Box>
-                                <Section delay={1.2}>
+                                <Section delay={0.9}>
                                     <LinkBox cursor='pointer'>
                                         <Image
                                             fit="cover"
@@ -381,7 +326,7 @@ const Works = props => {
 
 
                             <Box>
-                                <Section delay={1.3}>
+                                <Section delay={1.1}>
                                     <LinkBox cursor='pointer'>
                                         <Image
                                             fit="cover"
@@ -406,10 +351,89 @@ const Works = props => {
                                 </Section>
                             </Box>
 
-
-
+                            <Box>
+                                <Section delay={1.2}>
+                                    <LinkBox cursor='pointer'>
+                                        <Container className="projectContainer">
+                                            <Image
+                                                fit="cover"
+                                                src={Vue}
+                                                alt="Ukraine Map"
+                                                className="projectThumbnail"
+                                                placeholder="blur"
+                                                loading="lazy"
+                                            />
+                                        </Container>
+                                        <LinkOverlay href={`works/Vue`}>
+                                            <Text
+                                                style={{
+                                                    color: "var(--text-color)",
+                                                    textDecoration: "inherit",
+                                                    textAlign: "center",
+                                                    marginTop: "10px"
+                                                }}
+                                                fontSize={20}
+                                            >VueX Product Page</Text>
+                                        </LinkOverlay>
+                                    </LinkBox>
+                                </Section>
+                            </Box>
+                            <Box>
+                                <Section delay={1.3}>
+                                    <LinkBox cursor='pointer'>
+                                        <Container className="projectContainer">
+                                            <Image
+                                                fit="cover"
+                                                src={WeatherIMG}
+                                                alt="Ukraine Map"
+                                                className="projectThumbnail"
+                                                placeholder="blur"
+                                                loading="lazy"
+                                            />
+                                        </Container>
+                                        <LinkOverlay href={`works/WeatherApp`}>
+                                            <Text
+                                                style={{
+                                                    color: "var(--text-color)",
+                                                    textDecoration: "inherit",
+                                                    textAlign: "center",
+                                                    marginTop: "10px"
+                                                }}
+                                                fontSize={20}
+                                            >Weather</Text>
+                                        </LinkOverlay>
+                                    </LinkBox>
+                                </Section>
+                            </Box>
                             <Box>
                                 <Section delay={1.4}>
+                                    <LinkBox cursor='pointer'>
+                                        <Container className="projectContainer">
+                                            <Image
+                                                fit="cover"
+                                                src={UkraineMap}
+                                                alt="Ukraine Map"
+                                                className="projectThumbnail"
+                                                placeholder="blur"
+                                                loading="lazy"
+                                            />
+                                        </Container>
+                                        <LinkOverlay href={`works/UkraineMap`}>
+                                            <Text
+                                                style={{
+                                                    color: "var(--text-color)",
+                                                    textDecoration: "inherit",
+                                                    textAlign: "center",
+                                                    marginTop: "10px"
+                                                }}
+                                                fontSize={20}
+                                            >Ukraine Leaflet</Text>
+                                        </LinkOverlay>
+                                    </LinkBox>
+                                </Section>
+                            </Box>
+                            <Box>
+                                <Section delay={1.5}>
                                     <LinkBox cursor='pointer'>
                                         <Image
                                             fit="cover"
@@ -435,7 +459,7 @@ const Works = props => {
                             </Box>
 
                             <Box>
-                                <Section delay={1.5}>
+                                <Section delay={1.6}>
                                     <LinkBox cursor='pointer'>
                                         <Image
                                             fit="cover"
