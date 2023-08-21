@@ -187,24 +187,11 @@ const UkraineMap = props => {
                                 </List>
                             </BodyContainer>
                                 <IMGContainer><img src={UkraineMapIMG} /></IMGContainer>
+                        <FooterContainer>
+                            <Footer />
+                        </FooterContainer>
                         </SimpleGrid>
                     </GridContainer>
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                <FooterContainer>
-                    <Footer />
-                </FooterContainer>
                 </Container>
             </Layout>
         </>

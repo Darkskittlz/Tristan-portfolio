@@ -169,26 +169,13 @@ const Lofi = props => {
                             <img src={Lofi2} />
                             <img src={Lofi1} />
                             <img src={Lofi3} />
+                            <FooterContainer>
+                                <Footer />
+                            </FooterContainer>
                         </SimpleGrid>
                     </GridContainer>
                 </Container>
             </Layout>
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <FooterContainer>
-                <Footer />
-            </FooterContainer>
         </>
     )
 }

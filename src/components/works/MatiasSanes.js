@@ -160,37 +160,10 @@ const MatiasSanes = props => {
                                     </ListItem>
                                 </List>
                             </BodyContainer>
-                        </SimpleGrid>
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
                         <FooterContainer>
                             <Footer />
                         </FooterContainer>
+                        </SimpleGrid>
                 </Container>
               </Layout>
             </GridContainer>

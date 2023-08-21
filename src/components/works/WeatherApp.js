@@ -196,9 +196,13 @@ const WeatherApp = props => {
                                 <img src={Weather2} />
                             </IMGContainer>
                         </SimpleGrid>
-                        <FooterContainer>
-                            <Footer />
-                        </FooterContainer>
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                            <FooterContainer>
+                                <Footer />
+                            </FooterContainer>
                     </GridContainer>
                 </Container>
             </Layout>

@@ -15,16 +15,17 @@ import {
     Image,
     Box
 } from '@chakra-ui/react'
-import Vue from "../assets/images/works/Vue.png"
-import DarkMeowShop from "../assets/images/works/DarkMeowThumb.png"
-import Wednesday from "../assets/images/works/Wednesday.png"
-import SPA from "../assets/images/works/SPA.png"
-import UkraineMap from "../assets/images/works/ukraineMap.png"
-import Lofi from "../assets/images/lofi.png"
 import { FooterContainer, SectionDivider } from '../Styles/GlobalStyles'
-import WeatherIMG from "../assets/images/works/Weather2.png"
+import DarkMeowShop from "../assets/images/works/DarkMeowThumb.png"
+import Lofi from "../assets/images/lofi.png"
+import Model from "../assets/images/model.png"
 import Portrait from './threeJS/alice'
+import SPA from "../assets/images/works/SPA.png"
 import StarBackground2 from '../ParticleBackground5'
+import UkraineMap from "../assets/images/works/ukraineMap.png"
+import Vue from "../assets/images/works/Vue.png"
+import Wednesday from "../assets/images/works/Wednesday.png"
+import WeatherIMG from "../assets/images/works/Weather2.png"
 
 
 const GridContainer = styled.div`
@@ -85,6 +86,33 @@ const Works = props => {
                         </Heading>
 
                         <Grid2Container>
+                            <Box>
+                                <Section delay={0.1}>
+                                    <LinkBox cursor='pointer'>
+                                        <Container className="projectContainer">
+                                            <Image
+                                                fit="cover"
+                                                src={Model}
+                                                alt="DarkMeow Shop"
+                                                className="projectThumbnail"
+                                                placeholder="blur"
+                                                loading="lazy"
+                                            />
+                                        </Container>
+                                        <LinkOverlay href={`works/ModelPortfolio`}>
+                                            <Text
+                                                style={{
+                                                    color: "var(--text-color)",
+                                                    textDecoration: "inherit",
+                                                    textAlign: "center",
+                                                    marginTop: "10px"
+                                                }}
+                                                fontSize={20}
+                                            >Model Portfolio</Text>
+                                        </LinkOverlay>
+                                    </LinkBox>
+                                </Section>
+                            </Box>
                             <Box>
                                 <Section delay={0.1}>
                                     <LinkBox cursor='pointer'>

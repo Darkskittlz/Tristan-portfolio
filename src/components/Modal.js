@@ -65,6 +65,7 @@ const TimeContainer = styled.div`
     align-items: flex-end;
 
     h1 {
+        margin-bottom: 2px;
         font-size: 25px;
         color: var(--text-color);
         font-weight: 600;
@@ -82,6 +83,7 @@ const DateContainer = styled.div`
 
     h1 {
         font-size: 23px;
+        margin-bottom: 2px;
         font-weight: 600;
         color: var(--text-color);
     }
