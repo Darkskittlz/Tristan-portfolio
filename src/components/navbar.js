@@ -24,7 +24,7 @@ import {
 import ResumeIcon from '../assets/images/document.png'
 import GithubIcon from '../assets/images/github.svg'
 import MenuIcon from "../assets/images/menuIcon.svg"
-import Resume from "../assets/resume/TristanResume.pdf"
+import Resume from "../assets/resume/TristanResumeNew.pdf"
 import {Modal} from "./Modal";
 
 
