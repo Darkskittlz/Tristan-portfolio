@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { init } from 'ityped';
-import { Container1, Container2, ButtonContainer, Animation } from '../Styles/IntroStyles';
+import { Container1, Container2, Container3, ButtonContainer, Animation } from '../Styles/IntroStyles';
 import { motion } from 'framer-motion';
 import styled from 'styled-components';
 import { Center, Flex } from '@chakra-ui/react';

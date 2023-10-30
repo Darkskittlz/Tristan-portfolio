@@ -19,8 +19,8 @@ export const Container1 = styled.div`
 `
 
 export const Container2 = styled.div`
-    height: 15vh;
-    width: 350px;
+    height: 25vh;
+    width: 450px;
     padding: 20px;
     align-items: center;
     display: flex;
@@ -64,4 +64,21 @@ export const Container2 = styled.div`
       width: 100%;
       height: 22vh;
     }
+`
+export const Container3 = styled.div`
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  h1 {
+    font-size: 25px;
+  }
+
+  img {
+    object-fit: cover;
+    width: 120px;
+    height: 120px;
+  }
 `

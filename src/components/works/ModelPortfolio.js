@@ -16,7 +16,7 @@ const GridContainer = styled.div`
 
     @media (max-width: 960px) {
         width: 100%;
-        height: 120vh;
+        height: 100%;
         margin-left:0%;
         justify-items: center;
     }
@@ -52,7 +52,7 @@ const FooterContainer = styled.div`
     margin-top: 30px;
 
     @media (max-width: 960px) {
-        margin-top: 20px;
+        margin-top: 220px;
         margin-left: 10px;
     }
 `
@@ -92,7 +92,6 @@ const ImageContainer = styled.div`
         width: 140px;
         border-radius: 50px;
         margin-right: 20px;
-        
     }
 `
 
@@ -109,8 +108,14 @@ const IMGContainer = styled.div`
     }
 
     @media (max-width: 960px) {
-        flex-direction: column;
+      flex-direction: column;
+      width: 100%;
+      justify-content: center;
 
+      img {
+        width: 100%;
+        height: 80%;
+      }
     }
 `
 

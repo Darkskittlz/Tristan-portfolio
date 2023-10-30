@@ -21,7 +21,7 @@ import ChakraModal from './Modal';
 import StarBackground from '../ParticleBackground4';
 import OldDesk from './threeJS/OldDesk';
 import Totoro from './threeJS/Totoro';
-
+import EmberIMG from "../assets/images/NewEmberProject.png";
 
 
 const GridContainer = styled.div`
@@ -36,8 +36,18 @@ const GridContainer = styled.div`
 	}
 `
 
+const GridContainer2 = styled.div`
+  width: 100%;
+  justify-content: center
+	z-index:0;
+  margin-top: 20px;
+  margin-bottom: 20px;
 
-
+	@media (max-width: 960px) {
+		width: 100%;		
+    justify-content: center;
+	}
+`
 
 
 const Animation = keyframes`
@@ -86,6 +96,72 @@ export const PortfolioContainer = styled.div`
 `
 
 
+const Container2 = styled.div`
+  height: 15vh;
+  padding: 20px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  justify-content: center;
+  color: white;
+  border-radius: 20px;
+  backdrop-filter: blur(50px);
+  animation-name: ${Animation};
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+
+  #spanText {
+    color: white;
+    @media (max-width: 960px) {
+      display: flex;
+      justify-items: flex-start;
+      padding-right: 0px;
+      padding-left: 0px;
+      height: 0vh;
+      width: 185px;
+      font-size: 20px;
+      text-align: center;
+    }
+  }
+
+  h2 {
+    text-align: center;
+    padding-top: 10px;
+    @media (max-width: 960px) {
+      text-align: center;
+      font-size: 35px;
+      padding-top: 0px;
+    }
+  }
+
+
+  h1 {
+    font-size: 25px;
+  }
+
+  img {
+    object-fit: cover;
+    width: 120px;
+    height: 120px;
+  }
+
+
+  @media (max-width: 960px) {
+    height: 75%;
+    width: 55%;
+    margin-left: 24%;
+    justify-content: center;
+
+    img {
+      width: 420px;
+      margin-top: 10px;
+      border-radius: 10px;
+      height: 200px;
+      object-fit: cover;
+    }
+  }
+`
 
 
 const Homepage = () => {
@@ -177,14 +253,35 @@ const Homepage = () => {
 									color: "#FF3E33"
 								}}>Thomas Kole</Link>
 						</h1>
-
+						<br />
 					</Section>
 
 					<Section delay={0.5}>
 						<Technologies />
 					</Section>
 
-					<Section delay={0.6}>
+          <Section delay={0.6}>
+            <GridContainer2>
+              <Container2>
+              <Heading as="h2" variant="section-title" style={{textAlign: "center"}}>
+              New Project!
+              </Heading>
+              <h1>{' '}
+              <Link
+              href="https://ember-project-demo.netlify.app"
+              style={{
+                textDecoration: "none",
+                  color: "#bb800c",
+                  textAlign: "center"
+              }}>
+              <img src={EmberIMG} alt="Ember Project IMG" />
+              </Link>
+              </h1>
+              </Container2>
+            </GridContainer2>
+          </Section>
+
+					<Section delay={0.7}>
 						<Box align="center" my={4}>
 							<Link href="/works" style={{ textDecoration: "none" }}>
 								<PortfolioContainer>
@@ -194,11 +291,11 @@ const Homepage = () => {
 						</Box>
 					</Section>
 
-					<Section delay={0.7}>
+					<Section delay={0.8}>
 						<Timeline />
 					</Section>
 
-					<Section delay={0.8}>
+					<Section delay={0.9}>
 						<ChakraModal />
 					</Section>
 

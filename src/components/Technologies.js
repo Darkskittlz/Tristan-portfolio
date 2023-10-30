@@ -5,6 +5,7 @@ import HTML from "../assets/SkillBadges/html.svg";
 import CSS from "../assets/SkillBadges/css.svg";
 import Javascript from "../assets/SkillBadges/js.svg";
 import React from "../assets/SkillBadges/react.svg";
+import Ember from "../assets/SkillBadges/ember.svg";
 import Redux from "../assets/SkillBadges/redux.svg";
 import Nodejs from "../assets/SkillBadges/nodejs.svg";
 import MongoDB from "../assets/SkillBadges/mongodb.svg";
@@ -82,6 +83,7 @@ const Technologies = () => {
             <SkillBadge src={ThreeJS} />
             <SkillBadge src={Solidity} />
             <SkillBadge src={Web3JS} />
+            <SkillBadge src={Ember} />
         </TechContainer>
     </GridContainer>
   )
