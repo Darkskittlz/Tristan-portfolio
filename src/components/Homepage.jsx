@@ -22,7 +22,8 @@ import StarBackground from '../ParticleBackground4';
 import OldDesk from './threeJS/OldDesk';
 import Totoro from './threeJS/Totoro';
 import EmberIMG from "../assets/images/NewEmberProject.png";
-
+import GithubIcon from "../assets/images/logos/github.png";
+import EmberIcon from "../assets/SkillBadges/ember.svg";
 
 const GridContainer = styled.div`
     height: 100%;
@@ -163,6 +164,13 @@ const Container2 = styled.div`
   }
 `
 
+const IMGContainer = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  grid-gap: 100px;
+`
+
 
 const Homepage = () => {
 
@@ -263,20 +271,48 @@ const Homepage = () => {
           <Section delay={0.6}>
             <GridContainer2>
               <Container2>
-              <Heading as="h2" variant="section-title" style={{textAlign: "center"}}>
-              New Project!
-              </Heading>
-              <h1>{' '}
-              <Link
-              href="https://ember-project-demo.netlify.app"
-              style={{
-                textDecoration: "none",
-                  color: "#bb800c",
-                  textAlign: "center"
-              }}>
-              <img src={EmberIMG} alt="Ember Project IMG" />
-              </Link>
-              </h1>
+                <Heading as="h2" variant="section-title" style={{textAlign: "center"}}>
+                  New Project!
+                </Heading>
+                <img src={EmberIMG} alt="Ember Project IMG" />
+                <IMGContainer>
+                  <h1>{' '}
+                    <Link
+                      href="https://github.com/Darkskittlz/ember-project"
+                      style={{
+                        textDecoration: "none",
+                          color: "#bb800c",
+                          textAlign: "center"
+                    }}>
+                      <img 
+                        src={GithubIcon} 
+                        style={{ 
+                          marginTop: "17px", 
+                          height: "50px", 
+                          width: "50px"
+                        }}
+                        alt="github"
+                      />
+                    </Link>
+                  </h1>
+                  <h1>{' '}
+                    <Link
+                      href="https://ember-project-demo.netlify.app"
+                      style={{
+                        textDecoration: "none",
+                          color: "#bb800c",
+                          textAlign: "center",
+                          height: "50px",
+                          width: "200px"
+                    }}>
+                      <img 
+                        src={EmberIcon} 
+                        style={{ height: "70px", width: "50px"}}
+                        alt="github"
+                      />
+                    </Link>
+                  </h1>
+                </IMGContainer>
               </Container2>
             </GridContainer2>
           </Section>
