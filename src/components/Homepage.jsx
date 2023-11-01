@@ -23,7 +23,7 @@ import OldDesk from './threeJS/OldDesk';
 import Totoro from './threeJS/Totoro';
 import EmberIMG from "../assets/images/NewEmberProject.png";
 import GithubIcon from "../assets/images/logos/github.png";
-import EmberIcon from "../assets/SkillBadges/ember.svg";
+import WebIcon from "../assets/images/logos/website.jpg";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
 
 const GridContainer = styled.div`
@@ -294,6 +294,7 @@ const Homepage = () => {
                   <h1>{' '}
                     <Link
                       href="https://github.com/Darkskittlz/ember-project"
+                      target="blank"
                       style={{
                         textDecoration: "none",
                           color: "#bb800c",
@@ -313,17 +314,19 @@ const Homepage = () => {
                   <h1>{' '}
                     <Link
                       href="https://ember-project-demo.netlify.app"
-                      target="_blank"
+                      target="blank"
                       style={{
                         textDecoration: "none",
                           textAlign: "center",
                       }}>
-                      <ExternalLinkIcon 
+                      <img 
+                        src={WebIcon}
+                        alt="Website Icon"
                         style={{
+                          height: "50px",
+                          width: "50px",
                           marginTop: "20px",
-                          height: "45px",
-                          color: "blueviolet",
-                          width: "50px"
+                          borderRadius: "50px"
                         }}
                       />
                     </Link>
