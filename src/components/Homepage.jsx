@@ -106,7 +106,7 @@ const Container2 = styled.div`
   flex-direction: column;
   width: 50%;
   justify-content: center;
-  color: white;
+	color: var(--text-color);
   border-radius: 20px;
   backdrop-filter: blur(50px);
   animation-name: ${Animation};
@@ -114,7 +114,7 @@ const Container2 = styled.div`
   animation-iteration-count: infinite;
 
   #spanText {
-    color: white;
+	color: var(--text-color);
     @media (max-width: 960px) {
       display: flex;
       justify-items: flex-start;
