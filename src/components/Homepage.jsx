@@ -32,7 +32,7 @@ const GridContainer = styled.div`
 	z-index:0;
 
 	@media (max-width: 960px) {
-		margin-left: 34px;
+		margin-left: 27px;
 		width: 90%;		
 	}
 `
@@ -159,6 +159,20 @@ const Container2 = styled.div`
       margin-top: 10px;
       border-radius: 10px;
       height: 200px;
+      object-fit: cover;
+    }
+  }
+    @media (max-width: 930px) {
+    height: 75%;
+    width: 100%;
+    margin-left: 1%;
+    justify-content: center;
+
+    img {
+      width: 300px;
+      height: 100px;
+      margin-top: 10px;
+      border-radius: 10px;
       object-fit: cover;
     }
   }
