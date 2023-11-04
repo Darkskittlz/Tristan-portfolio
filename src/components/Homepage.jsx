@@ -27,10 +27,10 @@ import WebIcon from "../assets/images/logos/website.jpg";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
 
 const GridContainer = styled.div`
-    height: 100%;
-    width: 50%;
-    margin-left: 26%;
-	z-index:0;
+  height: 100%;
+  width: 50%;
+  margin-left: 26%;
+  z-index:0;
 
 	@media (max-width: 960px) {
 		margin-left: 27px;
@@ -99,12 +99,12 @@ export const PortfolioContainer = styled.div`
 
 
 const Container2 = styled.div`
-  height: 15vh;
+  height: 35vh;
   padding: 20px;
   align-items: center;
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 100%;
   justify-content: center;
 	color: var(--text-color);
   border-radius: 20px;
@@ -144,8 +144,8 @@ const Container2 = styled.div`
 
   img {
     object-fit: cover;
-    width: 120px;
-    height: 120px;
+    width: 350px;
+    height: 320px;
   }
 
 
@@ -283,58 +283,58 @@ const Homepage = () => {
 						<Technologies />
 					</Section>
 
-          <Section delay={0.6}>
-            <GridContainer2>
-              <Container2>
-                <Heading as="h2" variant="section-title" style={{textAlign: "center"}}>
-                  New Project!
-                </Heading>
-                <img src={EmberIMG} alt="Ember Project IMG" />
-                <IMGContainer>
-                  <h1>{' '}
-                    <Link
-                      href="https://github.com/Darkskittlz/ember-project"
-                      target="blank"
-                      style={{
-                        textDecoration: "none",
-                          color: "#bb800c",
-                          textAlign: "center"
-                    }}>
-                      <img 
-                        src={GithubIcon} 
-                        style={{ 
-                          marginTop: "17px", 
-                          height: "50px", 
-                          width: "50px"
-                        }}
-                        alt="github"
-                      />
-                    </Link>
-                  </h1>
-                  <h1>{' '}
-                    <Link
-                      href="https://ember-project-demo.netlify.app"
-                      target="blank"
-                      style={{
-                        textDecoration: "none",
-                          textAlign: "center",
-                      }}>
-                      <img 
-                        src={WebIcon}
-                        alt="Website Icon"
-                        style={{
-                          height: "50px",
-                          width: "50px",
-                          marginTop: "20px",
-                          borderRadius: "50px"
-                        }}
-                      />
-                    </Link>
-                  </h1>
-                </IMGContainer>
-              </Container2>
-            </GridContainer2>
-          </Section>
+					<Section delay={0.6}>
+						<GridContainer2>
+							<Container2>
+								<Heading as="h2" variant="section-title" style={{ textAlign: "center" }}>
+									New Project!
+								</Heading>
+								<img src={EmberIMG} alt="Ember Project IMG" />
+								<IMGContainer>
+									<h1>{' '}
+										<Link
+											href="https://github.com/Darkskittlz/ember-project"
+											target="blank"
+											style={{
+												textDecoration: "none",
+												color: "#bb800c",
+												textAlign: "center"
+											}}>
+											<img
+												src={GithubIcon}
+												style={{
+													marginTop: "17px",
+													height: "50px",
+													width: "50px"
+												}}
+												alt="github"
+											/>
+										</Link>
+									</h1>
+									<h1>{' '}
+										<Link
+											href="https://ember-project-demo.netlify.app"
+											target="blank"
+											style={{
+												textDecoration: "none",
+												textAlign: "center",
+											}}>
+											<img
+												src={WebIcon}
+												alt="Website Icon"
+												style={{
+													height: "50px",
+													width: "50px",
+													marginTop: "20px",
+													borderRadius: "50px"
+												}}
+											/>
+										</Link>
+									</h1>
+								</IMGContainer>
+							</Container2>
+						</GridContainer2>
+					</Section>
 
 					<Section delay={0.7}>
 						<Box align="center" my={4}>

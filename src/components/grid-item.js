@@ -8,7 +8,6 @@ export const GridItem = ({ children, id, href, title, thumbnail }) => (
     <Box w="100%" align="center">
         <Route path={`/posts/${id}`} element={<Homepage />}>
             <LinkBox cursor='pointer'>
-
                 <Route href={`posts/${id}`} target="_blank">
                     <Text mt={3}>{title}</Text>
                 </Route>

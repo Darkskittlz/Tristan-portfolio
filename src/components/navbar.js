@@ -34,7 +34,7 @@ filter: grayscale(100%);
 border: none;
 border-radius: 50%;
 transition: background-color 0.3s ease-in-out, filter 0.3s ease-in-out;
-
+ 
     img {
         background-color: gray;
         padding: 5px;
