@@ -172,7 +172,7 @@ const Container2 = styled.div`
 
     img {
       width: 300px;
-      height: 100px;
+      height: 200px;
       margin-top: 10px;
       border-radius: 10px;
       object-fit: cover;
