@@ -21,10 +21,11 @@ import ChakraModal from './Modal';
 import StarBackground from '../ParticleBackground4';
 import OldDesk from './threeJS/OldDesk';
 import Totoro from './threeJS/Totoro';
-import EmberIMG from "../assets/images/NewEmberProject.png";
+import GalaxyIMG from "../assets/images/Galaxy.png";
 import GithubIcon from "../assets/images/logos/github.png";
 import WebIcon from "../assets/images/logos/website.jpg";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
+import GalaxyComponent from "./Galaxy.js"
 
 const GridContainer = styled.div`
   height: 100%;
@@ -99,7 +100,7 @@ export const PortfolioContainer = styled.div`
 
 
 const Container2 = styled.div`
-  height: 35vh;
+  height: 43vh;
   padding: 20px;
   align-items: center;
   display: flex;
@@ -144,8 +145,7 @@ const Container2 = styled.div`
 
   img {
     object-fit: cover;
-    width: 350px;
-    height: 320px;
+    width: 420px;
   }
 
 
@@ -287,13 +287,13 @@ const Homepage = () => {
 						<GridContainer2>
 							<Container2>
 								<Heading as="h2" variant="section-title" style={{ textAlign: "center" }}>
-									New Project!
+									Galaxy Generator
 								</Heading>
-								<img src={EmberIMG} alt="Ember Project IMG" />
+								<img src={GalaxyIMG} alt="Galaxy IMG" />
 								<IMGContainer>
 									<h1>{' '}
 										<Link
-											href="https://github.com/Darkskittlz/ember-project"
+											href="https://github.com/Darkskittlz/Galaxy-Generator"
 											target="blank"
 											style={{
 												textDecoration: "none",
@@ -313,7 +313,7 @@ const Homepage = () => {
 									</h1>
 									<h1>{' '}
 										<Link
-											href="https://ember-project-demo.netlify.app"
+											href="https://dark-galaxy-generator.netlify.app/"
 											target="blank"
 											style={{
 												textDecoration: "none",

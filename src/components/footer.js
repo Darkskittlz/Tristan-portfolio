@@ -72,6 +72,7 @@ export const CompanyContainer = styled.div`
 
 	h1 {
 		text-align: center;
+    font-size: 25px;
 	}
 
 	@media (max-width: 960px) {
@@ -141,18 +142,14 @@ function Footer() {
             	<h1>Eat Sleep Code Repeat</h1>
             </CompanyContainer>
             <SocialContainer>
-            <SocialIcons href="https://discord.gg/kNhV2WPCUP">
-                <Icon img src="/images/discord.png" />
-            </SocialIcons>
             <SocialIcons href="https://github.com/Darkskittlz">
                 <AiFillGithub size="3rem" />
             </SocialIcons>
-            <SocialIcons href="https://www.linkedin.com/in/darkskittles/">
-            
-                <AiFillLinkedin size="3rem" />
+            <SocialIcons href="https://discord.gg/kNhV2WPCUP">
+              <Icon img src="/images/discord.png" />
             </SocialIcons>
-            <SocialIcons href="https://twitter.com/Darkskiiittlz">
-                <AiFillTwitterCircle size="3rem" />
+            <SocialIcons href="https://www.linkedin.com/in/tristannealdev/">
+              <AiFillLinkedin size="3rem" />
             </SocialIcons>
             </SocialContainer>
         </SocialIconsContainer>

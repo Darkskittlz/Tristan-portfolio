@@ -4,7 +4,7 @@ import { Canvas, extend, useThree, useFrame, useLoader  } from "@react-three/fib
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 import * as THREE from "three";
 import { TextureLoader } from 'three/src/loaders/TextureLoader';
-import img from '../../assets/wednesday.png';
+import img from '../../assets/aboutMe2.jpg';
 import moonTexture from '../../assets/moonTextureSmall.png';
 import styled from "styled-components"
 import { Water } from 'three-stdlib';
@@ -34,7 +34,6 @@ const CameraController = () => {
   useEffect(
     () => {
       const controls = new OrbitControls(camera, gl.domElement);
-
       controls.minDistance = 3;
       controls.maxDistance = 20;
       return () => {
@@ -88,25 +87,22 @@ function Scene() {
     <>
       <mesh 
       rotation={[-Math.PI / 2, 0, 0]}
-      scale={1}
-      position={[0,2,0]}
+      scale={2.0}
+      position={[0,4.2,0]}
       >
         <CameraController />
         <ambientLight />
-        <spotLight intensity={0.3} position={[5, 10, 50]} />
         <boxGeometry attach="geometry" args={[4, 4, 4]} />
         <meshStandardMaterial map={texture} />
       </mesh>
-
+      
       <mesh 
         ref={ref}
         rotation={[-Math.PI / 2, 0, 0]}
         scale={1}
-        position={[4.4, 4.5, 0]}
+        position={[5.9, 8, 5]}
       >
         <CameraController />
-        <ambientLight />
-        <spotLight intensity={0.1} position={[5, 10, 50]} />
         <sphereGeometry attach="geometry"  args={[1, 62, 55]} />
         <meshStandardMaterial attach="material" map={colorMap} />
       </mesh>
@@ -121,9 +117,7 @@ function Portrait () {
   return (    
     <GridContainer>
         <CenterContainer>
-            <Canvas camera={{ position: [0, 6, 30], fov: 35, near: 1, far: 20000 }} style={{zIndex: 999, borderRadius: 20}}>
-            <pointLight position={[100, 100, 100]} />
-            <pointLight position={[-100, -100, -100]} />
+            <Canvas camera={{ position: [0, 8, 30], fov: 35, near: 1, far: 20000 }} style={{zIndex: 999, borderRadius: 20}}>
                 <React.Suspense fallback={<></>}>
                 <Scene />
                 </React.Suspense>

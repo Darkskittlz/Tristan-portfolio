@@ -243,3 +243,15 @@ div.chakra-linkbox.css-16kwgao:hover {
     margin-top: 0px;
   }
 }
+
+canvas.webgl {
+  z-index: 999;
+  height: 100px;
+  width: 100px;
+}
+
+.webgl {
+  height: 10px;
+}
+
+

@@ -17,6 +17,7 @@ import Collab from './components/works/Collab';
 import DarkMeowFi from './components/works/DarkMeowFi';
 import DarkMeowShop from './components/works/DarkMeowShop';
 import ECommerce from './components/works/ECommerce';
+import EmberJS from './components/works/Ember';
 import Lofi from './components/works/Lofi';
 import MatiasSanes from './components/works/MatiasSanes';
 import SPAPortfolio from './components/works/SPAPortfolio'; 
@@ -53,30 +54,31 @@ const App = ({ Component, pageProps, router }) => {
                 </NavContainer>
                   <div className='routes'>
                       <Routes>
-                            <Route path='/' element={<Homepage />} />                            
-                            <Route path='/Works' element={<Works />} />                            
-                            <Route path='/Works/APMusic' element={<APMusic />} />                            
-                            <Route path='/Works/Backgrounds' element={<Backgrounds />} />                            
-                            <Route path='/Works/Bandingo' element={<Bandingo />} />                            
-                            <Route path='/Works/Collab' element={<Collab />} />                            
-                            <Route path='/Works/DarkMeowFi' element={<DarkMeowFi />} />                            
-                            <Route path='/Works/DarkMeowShop' element={<DarkMeowShop />} />                            
-                            <Route path='/Works/ECommerce' element={<ECommerce />} />                            
-                            <Route path='/Works/Lofi' element={<Lofi />} />                            
-                            <Route path='/Works/MatiasSanes' element={<MatiasSanes />} />                            
-                            <Route path='/Works/ModelPortfolio' element={<ModelPortfolio />} />                            
-                            <Route path='/Works/SPAPortfolio' element={<SPAPortfolio />} />                            
-                            <Route path='/Works/ThreejsPortfolio' element={<ThreejsPortfolio />} />                            
-                            <Route path='/Works/UkraineMap' element={<UkraineMap />} />                            
-                            <Route path='/Works/Vue' element={<Vue />} />                            
-                            <Route path='/Works/Wednesday' element={<Wednesday />} />                            
-                            <Route path='/Works/WeatherApp' element={<WeatherApp />} />                            
-                            <Route path='/Posts' element={<Posts />} />                            
-                            <Route path='/Posts/Blog1' element={<BlogPost />} />                            
-                            <Route path='/Posts/Blog2' element={<BlogPost2 />} />    
-                            <Route path='/Posts/Blog3' element={<BlogPost3 />} />    
-                            <Route path='/Tutorials' element={<Tutorials />} />                       
-                            <Route path='/Tutorials/Youtube' element={<Youtube />} />                        
+                        <Route path='/' element={<Homepage />} />                            
+                        <Route path='/Works' element={<Works />} />                            
+                        <Route path='/Works/APMusic' element={<APMusic />} />                            
+                        <Route path='/Works/Backgrounds' element={<Backgrounds />} />                            
+                        <Route path='/Works/Bandingo' element={<Bandingo />} />                            
+                        <Route path='/Works/Collab' element={<Collab />} />                            
+                        <Route path='/Works/DarkMeowFi' element={<DarkMeowFi />} />                            
+                        <Route path='/Works/DarkMeowShop' element={<DarkMeowShop />} />                            
+                        <Route path='/Works/ECommerce' element={<ECommerce />} />                            
+                        <Route path='/Works/Ember' element={<EmberJS />} />                            
+                        <Route path='/Works/Lofi' element={<Lofi />} />                            
+                        <Route path='/Works/MatiasSanes' element={<MatiasSanes />} />                            
+                        <Route path='/Works/ModelPortfolio' element={<ModelPortfolio />} />                            
+                        <Route path='/Works/SPAPortfolio' element={<SPAPortfolio />} />                            
+                        <Route path='/Works/ThreejsPortfolio' element={<ThreejsPortfolio />} />                            
+                        <Route path='/Works/UkraineMap' element={<UkraineMap />} />                            
+                        <Route path='/Works/Vue' element={<Vue />} />                            
+                        <Route path='/Works/Wednesday' element={<Wednesday />} />                            
+                        <Route path='/Works/WeatherApp' element={<WeatherApp />} />                            
+                        <Route path='/Posts' element={<Posts />} />                            
+                        <Route path='/Posts/Blog1' element={<BlogPost />} />                            
+                        <Route path='/Posts/Blog2' element={<BlogPost2 />} />    
+                        <Route path='/Posts/Blog3' element={<BlogPost3 />} />    
+                        <Route path='/Tutorials' element={<Tutorials />} />                       
+                        <Route path='/Tutorials/Youtube' element={<Youtube />} />                        
                       </Routes>                       
                   </div>
               </Layout>

@@ -26,6 +26,7 @@ import UkraineMap from "../assets/images/works/ukraineMap.png"
 import Vue from "../assets/images/works/Vue.png"
 import Wednesday from "../assets/images/works/Wednesday.png"
 import WeatherIMG from "../assets/images/works/Weather2.png"
+import EmberJS from "../assets/images/EmberThumb.png";
 
 
 const GridContainer = styled.div`
@@ -114,7 +115,7 @@ const Works = props => {
                                 </Section>
                             </Box>
                             <Box>
-                                <Section delay={0.1}>
+                                <Section delay={0.2}>
                                     <LinkBox cursor='pointer'>
                                         <Container className="projectContainer">
                                             <Image
@@ -141,7 +142,7 @@ const Works = props => {
                                 </Section>
                             </Box>
                             <Box>
-                                <Section delay={0.2}>
+                                <Section delay={0.3}>
                                     <LinkBox cursor='pointer'>
                                         <Container className="projectContainer">
                                             <Image
@@ -168,35 +169,63 @@ const Works = props => {
                                 </Section>
                             </Box>
                             <Box>
-                                <Section delay={0.3}>
-                                    <LinkBox cursor='pointer'>
-                                        <Container className="projectContainer">
-                                            <Image
-                                                fit="cover"
-                                                src={Wednesday}
-                                                alt="AliceMeowz Project"
-                                                className="projectThumbnail"
-                                                placeholder="blur"
-                                                loading="lazy"
-                                            />
-                                        </Container>
-                                        <LinkOverlay href={`works/Wednesday`}>
-                                            <Text
-                                                style={{
-                                                    color: "var(--text-color)",
-                                                    textDecoration: "inherit",
-                                                    textAlign: "center",
-                                                    marginTop: "10px"
-                                                }}
-                                                fontSize={20}
-                                            >Wednesday</Text>
-                                        </LinkOverlay>
-                                    </LinkBox>
-                                </Section>
+                              <Section delay={0.4}>
+                                  <LinkBox cursor='pointer'>
+                                      <Container className="projectContainer">
+                                          <Image
+                                              fit="cover"
+                                              src={EmberJS}
+                                              alt="EmberJS IMG"
+                                              className="projectThumbnail"
+                                              placeholder="blur"
+                                              loading="lazy"
+                                              style={{ objectFit: "cover"}}
+                                          />
+                                      </Container>
+                                      <LinkOverlay href={`works/Ember`}>
+                                          <Text
+                                              style={{
+                                                  color: "var(--text-color)",
+                                                  textDecoration: "inherit",
+                                                  textAlign: "center",
+                                                  marginTop: "10px"
+                                              }}
+                                              fontSize={20}
+                                          >EmberJS </Text>
+                                      </LinkOverlay>
+                                  </LinkBox>
+                              </Section>
+                            </Box>
+                            <Box>
+                              <Section delay={0.5}>
+                                  <LinkBox cursor='pointer'>
+                                      <Container className="projectContainer">
+                                          <Image
+                                              fit="cover"
+                                              src={Wednesday}
+                                              alt="AliceMeowz Project"
+                                              className="projectThumbnail"
+                                              placeholder="blur"
+                                              loading="lazy"
+                                          />
+                                      </Container>
+                                      <LinkOverlay href={`works/Wednesday`}>
+                                          <Text
+                                              style={{
+                                                  color: "var(--text-color)",
+                                                  textDecoration: "inherit",
+                                                  textAlign: "center",
+                                                  marginTop: "10px"
+                                              }}
+                                              fontSize={20}
+                                          >Wednesday</Text>
+                                      </LinkOverlay>
+                                  </LinkBox>
+                              </Section>
                             </Box>
 
                             <Box>
-                                <Section delay={0.4}>
+                                <Section delay={0.6}>
                                     <LinkBox cursor='pointer'>
                                         <Image
                                             fit="cover"
@@ -222,7 +251,7 @@ const Works = props => {
                             </Box>
 
                             <Box>
-                                <Section delay={0.5}>
+                                <Section delay={0.7}>
                                     <LinkBox cursor='pointer'>
                                         <Image
                                             fit="cover"
@@ -248,7 +277,7 @@ const Works = props => {
                             </Box>
 
                             <Box>
-                                <Section delay={0.6}>
+                                <Section delay={0.8}>
                                     <LinkBox cursor='pointer'>
                                         <Image
                                             fit="cover"
@@ -274,7 +303,7 @@ const Works = props => {
                             </Box>
 
                             <Box>
-                                <Section delay={0.7}>
+                                <Section delay={0.9}>
                                     <LinkBox cursor='pointer'>
                                         <Image
                                             fit="cover"
@@ -300,7 +329,7 @@ const Works = props => {
                             </Box>
 
                             <Box>
-                                <Section delay={0.8}>
+                                <Section delay={1}>
                                     <LinkBox cursor='pointer'>
                                         <Image
                                             fit="cover"
@@ -327,7 +356,7 @@ const Works = props => {
 
 
                             <Box>
-                                <Section delay={0.9}>
+                                <Section delay={1.1}>
                                     <LinkBox cursor='pointer'>
                                         <Image
                                             fit="cover"
@@ -354,7 +383,7 @@ const Works = props => {
 
 
                             <Box>
-                                <Section delay={1.1}>
+                                <Section delay={1.2}>
                                     <LinkBox cursor='pointer'>
                                         <Image
                                             fit="cover"
@@ -380,7 +409,7 @@ const Works = props => {
                             </Box>
 
                             <Box>
-                                <Section delay={1.2}>
+                                <Section delay={1.3}>
                                     <LinkBox cursor='pointer'>
                                         <Container className="projectContainer">
                                             <Image
@@ -407,7 +436,7 @@ const Works = props => {
                                 </Section>
                             </Box>
                             <Box>
-                                <Section delay={1.3}>
+                                <Section delay={1.4}>
                                     <LinkBox cursor='pointer'>
                                         <Container className="projectContainer">
                                             <Image
@@ -434,7 +463,7 @@ const Works = props => {
                                 </Section>
                             </Box>
                             <Box>
-                                <Section delay={1.4}>
+                                <Section delay={1.5}>
                                     <LinkBox cursor='pointer'>
                                         <Container className="projectContainer">
                                             <Image
@@ -461,7 +490,7 @@ const Works = props => {
                                 </Section>
                             </Box>
                             <Box>
-                                <Section delay={1.5}>
+                                <Section delay={1.6}>
                                     <LinkBox cursor='pointer'>
                                         <Image
                                             fit="cover"
@@ -487,7 +516,7 @@ const Works = props => {
                             </Box>
 
                             <Box>
-                                <Section delay={1.6}>
+                                <Section delay={1.7}>
                                     <LinkBox cursor='pointer'>
                                         <Image
                                             fit="cover"
