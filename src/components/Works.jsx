@@ -36,6 +36,7 @@ const GridContainer = styled.div`
     flex-wrap: wrap;
     justify-items: center;
     margin-left: 25%;
+    margin-top: 3%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 

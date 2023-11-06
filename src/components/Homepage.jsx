@@ -212,7 +212,6 @@ const Homepage = () => {
 						</HeadingContainer>
 						<h1>
 							Tristan is a react developer who specializes in the MERN/PERN stack. He enjoys developing frontend user interfaces that prioritize sleek design, integrate background animations, and consume APIs to display interactive information.
-							As a blockchain engineer, he enjoys connecting frontend web applications with the blockchain via Web3js.
 						</h1>
 					</Section>
 
