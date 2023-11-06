@@ -146,6 +146,7 @@ const Container2 = styled.div`
   img {
     object-fit: cover;
     width: 420px;
+    border-radius: 10px;
   }
 
 
