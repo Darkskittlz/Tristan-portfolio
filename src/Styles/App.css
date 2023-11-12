@@ -100,6 +100,7 @@ nav a {
   width: 100%;
   z-index: 1;
   position: relative;
+  margin-top: 60px;
 
   @media screen (max-width: 960px) {
     width: 95%;
@@ -239,8 +240,12 @@ div.chakra-linkbox.css-16kwgao:hover {
   border-radius: 10px;
 
   @media screen and (max-width: 960px) {
-    height: 20px;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
     margin-top: 0px;
+    margin-left: -10px;
   }
 }
 

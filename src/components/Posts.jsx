@@ -111,96 +111,109 @@ const customStyles = {
 
 
 const ModalContainer = styled.div`
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    @media screen and (max-width: 960px) {
-        margin-bottom: 30px;
-    }
+  @media screen and (max-width: 960px) {
+    margin-bottom: 30px;
+  }
 `
 
 
 const ModalOverlay = styled.div`
-    height: 100%;
-    backdrop-filter: blur(10px);
-    display: flex;
+  height: 100%;
+  backdrop-filter: blur(10px);
+  display: flex;
+  height: 100%;
+  
+  @media screen and (max-width: 960px) {
+    height: 141%;
+    margin-top: -141px;
+  }
 `
 
 const ModalContent = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 10px 100px 40px 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px 100px 40px 100px;
 
-    h1 {
-        text-align: center;
-    }
+  h1 {
+    text-align: center;
+  }
 
-    h2 {
-        margin-top: 10px;
-        border-radius: 10px;
-        text-align: center;
-        padding-top: 10px;
-        padding-bottom: 0px;
-        font-size: 25px;
-        font-family: 'Noto Sans JP', sans-serif;        
-    }
+  h2 {
+    margin-top: 10px;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    font-size: 25px;
+    font-family: 'Noto Sans JP', sans-serif;        
+  }
 
-    h3 {
-        margin-top: 20px;
-        font-size: 25px;
-        text-align: center;
-    }
+  h3 {
+    margin-top: 20px;
+    font-size: 25px;
+    text-align: center;
+  }
 
-    img {
-        border-radius: 10px;
-        height: 450px;
-        object-fit: cover;
-        @media screen and (max-width: 960px) {
-            height: 50%;
-            z-index: 999;
-        }
-    }
-    
+  img {
+    border-radius: 10px;
+    height: 450px;
+    object-fit: cover;
+
     @media screen and (max-width: 960px) {
-        padding: 0px;
-        padding-top: 0px;
-        z-index: 999;
-        margin-left: 54px;
+      height: 50%;
+      z-index: 999;
     }
+  }
+  
+  @media screen and (max-width: 960px) {
+    padding: 0px;
+    justify-content: center;
+    z-index: 999;
+  }
+`
 
+const ModalTextContainer = styled.div`
+  flex-direction: column;
+  margin-left: -4%;
+  display: flex;
+  width: 100%;
 `
 
 const CloseContainer = styled.div`
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 `
 
 
 
 
 const Posts = props => {
-    const [modal, setModal] = useState(false)
-    let subtitle;
+  const [modal, setModal] = useState(false)
+  let subtitle;
 
-    function openModal() {
-        console.log("Button clicked")
-        setModal(true);
-    }
+  function openModal() {
+    console.log("Button clicked")
+    setModal(true);
+  }
 
-    function afterOpenModal() {
-        // references are now sync'd and can be accessed.
-        subtitle.style.color = '#f00';
-    }
+  function afterOpenModal() {
+    // references are now sync'd and can be accessed.
+    subtitle.style.color = '#f00';
+  }
 
-    function closeModal() {
-        setModal(false);
-    }
+  function closeModal() {
+    setModal(false);
+  }
 
 
-    return (
+  return (
         <>
             <GridContainer>
                 <ParticleBackground6 />
@@ -227,12 +240,14 @@ const Posts = props => {
                                     <div class="modal-content">
                                         <ModalContent>
                                             <img src={zenStone} />
-                                            <h2>閑けさや<br />岩にしみいる<br />蝉の声</h2>
-                                            <h3>Oh, tranquility! <br /> Penetrating the very rock, <br /> A cicada’s voice.</h3>
-                                            <h3>- Matsuo Basho</h3>
-                                            <CloseContainer>
-                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                            </CloseContainer>
+                                            <ModalTextContainer>
+                                              <h2>閑けさや<br />岩にしみいる<br />蝉の声</h2>
+                                              <h3>Oh, tranquility! <br /> Penetrating the very rock, <br /> A cicada’s voice.</h3>
+                                              <h3>- Matsuo Basho</h3>
+                                              <CloseContainer>
+                                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                              </CloseContainer>
+                                            </ModalTextContainer>
                                         </ModalContent>
                                     </div>
                                 </div>
