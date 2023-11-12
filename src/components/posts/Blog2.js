@@ -50,11 +50,6 @@ const BodyContainer = styled.div`
 export const FooterContainer = styled.div`
     display: flex;
     width: 100%; 
-
-    @media (max-width: 960px) {
-        justify-content: center;
-        margin-left: 29%;
-    }
 `
 
 
@@ -70,11 +65,14 @@ const BlogPost2 = props => {
                             columns={[1, 1, 1]} 
                             gap={10}
                             style={{
-                                marginTop: "10px", 
+                                marginTop: "60px", 
                                 justifyItems: "center",
                                 backdropFilter: "blur(25px)",
                                 padding: "20px",
-                                borderRadius: "10px"
+                                borderRadius: "10px",
+                                width: "350px",
+                                zIndex: "50px",
+                                marginLeft: "-75px"
                             }} 
                         >
                             <TitleContainer>

@@ -57,15 +57,18 @@ const BlogPost = props => {
                     <Container maxW='2x1'>
                         <GridContainer>
                             <SimpleGrid 
-                                columns={[1, 1, 1]} 
-                                gap={10}
-                                style={{
-                                    marginTop: "10px", 
-                                    justifyItems: "center",
-                                    backdropFilter: "blur(25px)",
-                                    padding: "20px",
-                                    borderRadius: "10px"
-                                }} 
+                              columns={[1, 1, 1]} 
+                              gap={10}
+                              style={{
+                                marginTop: "60px", 
+                                justifyItems: "center",
+                                backdropFilter: "blur(25px)",
+                                padding: "20px",
+                                borderRadius: "10px",
+                                width: "350px",
+                                zIndex: "50px",
+                                marginLeft: "-75px"
+                              }} 
                             >
                                 <TitleContainer>
                                     <h1> 🌟  From E-Boy To Engineer <Badge colorScheme="blue"> 2022</Badge></h1> 
