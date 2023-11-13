@@ -26,7 +26,7 @@ import UkraineMap from "../assets/images/works/ukraineMap.png"
 import Vue from "../assets/images/works/Vue.png"
 import Wednesday from "../assets/images/works/Wednesday.png"
 import WeatherIMG from "../assets/images/works/Weather2.png"
-import EmberJS from "../assets/images/EmberThumb.png";
+import EmberIMG from "../assets/images/EmberThumb.png";
 
 
 const GridContainer = styled.div`
@@ -170,33 +170,32 @@ const Works = props => {
                 </Section>
               </Box>
               <Box>
-                <Section delay={0.4}>
+                <Section delay={0.3}>
                   <LinkBox cursor='pointer'>
-                    <container classname="projectcontainer">
-                      <image
+                    <Container className="projectContainer">
+                      <Image
                         fit="cover"
-                        src={EmberJS}
-                        alt="emberjs img"
-                        classname="projectthumbnail"
+                        src={EmberIMG}
+                        alt="Lofi Site"
+                        className="projectThumbnail"
                         placeholder="blur"
                         loading="lazy"
-                        style={{ objectfit: "cover"}}
                       />
-                    </container>
-                    <linkoverlay href={`works/ember`}>
-                      <text
+                    </Container>
+                    <LinkOverlay href={`works/Ember`}>
+                      <Text
                         style={{
                           color: "var(--text-color)",
-                          textdecoration: "inherit",
-                          textalign: "center",
-                          margintop: "10px"
+                          textDecoration: "inherit",
+                          textAlign: "center",
+                          marginTop: "10px"
                         }}
-                        fontsize={20}
-                      >emberjs </text>
-                    </linkoverlay>
+                        fontSize={20}
+                      >EmberJS</Text>
+                    </LinkOverlay>
                   </LinkBox>
                 </Section>
-              </Box>
+              </Box>            
               <Box>
                 <Section delay={0.5}>
                   <LinkBox cursor='pointer'>

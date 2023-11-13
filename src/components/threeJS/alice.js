@@ -17,6 +17,7 @@ const GridContainer = styled.div`
   width: 100%;
   justify-content: center;
   height: 600px;
+  margin-top: 15px;
 `
 
 const CenterContainer = styled.div`
@@ -35,7 +36,7 @@ const CameraController = () => {
     () => {
       const controls = new OrbitControls(camera, gl.domElement);
       controls.minDistance = 3;
-      controls.maxDistance = 20;
+      controls.maxDistance = 50;
       return () => {
         controls.dispose();
       };
@@ -75,9 +76,9 @@ export function Ocean() {
 
 
 function Scene() {
-    const texture = useLoader(THREE.TextureLoader, img)
-    const colorMap = useLoader(TextureLoader, moonTexture)
-    const ref = useRef();
+  const texture = useLoader(THREE.TextureLoader, img)
+  const colorMap = useLoader(TextureLoader, moonTexture)
+  const ref = useRef();
   
     useFrame(() => {
       ref.current.rotation.y += 0.01

@@ -181,7 +181,7 @@ const ModalContent = styled.div`
 
 const ModalTextContainer = styled.div`
   flex-direction: column;
-  margin-left: -4%;
+  margin-left: 0%;
   display: flex;
   width: 100%;
 `
