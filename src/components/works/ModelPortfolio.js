@@ -33,6 +33,12 @@ const TitleContainer = styled.div`
         font-weight: 700;
         color: #A501EB;
     }
+
+    @media (max-width: 960px){
+      h1 {
+        font-size: 23px;
+      }
+    }
 `
 
 const BodyContainer = styled.div`
@@ -102,10 +108,7 @@ const IMGContainer = styled.div`
     justify-content: center;
     flex-direction: column;
     width: 100%;
-    height: 130%;
-    img {
-        height: 40%;
-    }
+    height: 100%;
 
     @media (max-width: 960px) {
       flex-direction: column;
@@ -120,83 +123,83 @@ const IMGContainer = styled.div`
 `
 
 const ModelPortfolio = props => {
-    return (
-        <>
-          <ParticleComponent />
-            <Layout>
-                <Container maxW='2x1'>
-                    <GridContainer>
-                        <SimpleGrid 
-                            columns={[1, 1, 1]} 
-                            gap={10}
-                            style={{
-                                marginTop: "10px", 
-                                height: "56vh",
-                                justifyItems: "flex-start",
-                                backdropFilter: "blur(25px)",
-                                padding: "20px",
-                                borderRadius: "10px"
-                            }} 
-                        >
-                            <TitleContainer>
-                            <ImageContainer>
-                                <img src={MaleRunway} />
-                            </ImageContainer>
-                                <h1><Badge colorScheme="blue">Modeling Portfolio</Badge></h1> 
-                            </TitleContainer>
-                            <BodyContainer>
-                                <h1>
-                                    
-                               </h1>
-                                <List ml={4} my={4} style={{display: "flex", flexDirection: "column"}}>
-                                    <ListItem>
-                                        <Badge2>Platform</Badge2>
-                                        <span>React, React-Particles, MUI </span>
-                                    </ListItem>
-                                    <ListItem>
-                                        <Badge2>Website</Badge2>
-                                        <Link 
-                                            href="https://tristanneal.com/"
-                                            target="_blank"
-                                            style={{
-                                                color: "#b900ff"
-                                            }}
-                                        >
-                                        https://tristanneal.com/
-                                            <ExternalLinkIcon mx="2px" />
-                                        </Link>
-                                    </ListItem>
-                                    <ListItem>
-                                        <Badge2>Source</Badge2>
-                                        <Link 
-                                            href="https://github.com/Darkskittlz/ModelPortfolio"
-                                            target="_blank"
-                                            style={{
-                                                color: "#b900ff"
-                                            }}
-                                        >
-                                        https://github.com/Darkskittlz/ModelPortfolio
-                                            <ExternalLinkIcon mx="2px" />
-                                        </Link>
-                                    </ListItem>
-                                </List>
-                            </BodyContainer>
-                            <IMGContainer>
-                                <img src={Model1} />
-                                <img src={Model2} />
-                            </IMGContainer>
-                            <br />
-                            <br />
-                            <br />
-                        <FooterContainer>
-                            <Footer />
-                        </FooterContainer>
-                        </SimpleGrid>
-                    </GridContainer>
-                </Container>
-            </Layout>
-        </>
-    )
+  return (
+    <>
+      <ParticleComponent />
+      <Layout>
+        <Container maxW='2x1'>
+          <GridContainer>
+            <SimpleGrid
+              columns={[1, 1, 1]}
+              gap={10}
+              style={{
+                marginTop: "10px",
+                height: "56vh",
+                justifyItems: "flex-start",
+                backdropFilter: "blur(5px)",
+                padding: "20px",
+                borderRadius: "10px"
+              }}
+            >
+              <TitleContainer>
+                <ImageContainer>
+                  <img src={MaleRunway} alt="maleRunwayPhotos" />
+                </ImageContainer>
+                <h1><Badge colorScheme="blue">Modeling Portfolio</Badge></h1>
+              </TitleContainer>
+              <BodyContainer>
+                <h1>
+
+                </h1>
+                <List ml={4} my={4} style={{ display: "flex", flexDirection: "column" }}>
+                  <ListItem>
+                    <Badge2>Platform</Badge2>
+                    <span>React, React-Particles, MUI </span>
+                  </ListItem>
+                  <ListItem>
+                    <Badge2>Website</Badge2>
+                    <Link
+                      href="https://tristanneal.com/"
+                      target="_blank"
+                      style={{
+                        color: "#b900ff"
+                      }}
+                    >
+                      https://tristanneal.com/
+                      <ExternalLinkIcon mx="2px" />
+                    </Link>
+                  </ListItem>
+                  <ListItem>
+                    <Badge2>Source</Badge2>
+                    <Link
+                      href="https://github.com/Darkskittlz/ModelPortfolio"
+                      target="_blank"
+                      style={{
+                        color: "#b900ff"
+                      }}
+                    >
+                      https://github.com/Darkskittlz/ModelPortfolio
+                      <ExternalLinkIcon mx="2px" />
+                    </Link>
+                  </ListItem>
+                </List>
+              </BodyContainer>
+              <IMGContainer>
+                <img src={Model1} />
+                <img src={Model2} />
+              </IMGContainer>
+              <br />
+              <br />
+              <br />
+              <FooterContainer>
+                <Footer />
+              </FooterContainer>
+            </SimpleGrid>
+          </GridContainer>
+        </Container>
+      </Layout>
+    </>
+  )
 }
 
 export default ModelPortfolio;
