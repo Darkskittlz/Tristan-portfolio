@@ -7,25 +7,25 @@ import { Container, Container2, Div1, Div2, Div3, NavLink, SocialIcons, Span } f
 import { GlobalStyle } from '../Styles/GlobalStyles';
 import styled from 'styled-components';
 import {
-    Box,
-    Stack,
-    Heading, 
-    Flex,
-    Menu, 
-    MenuItem, 
-    MenuList,
-    MenuButton,
-    IconButton,
-    Link,
-    useColorModeValue,    
-    Image
+  Box,
+  Stack,
+  Heading,
+  Flex,
+  Menu,
+  MenuItem,
+  MenuList,
+  MenuButton,
+  IconButton,
+  Link,
+  useColorModeValue,
+  Image
 } from '@chakra-ui/react'
 
 import ResumeIcon from '../assets/images/document.png'
 import GithubIcon from '../assets/images/github.svg'
 import MenuIcon from "../assets/images/menuIcon.svg"
-import Resume from "../assets/resume/TristanResumeNew.pdf"
-import {Modal} from "./Modal";
+import Resume from "../assets/resume/updatedResume.pdf"
+import { Modal } from "./Modal";
 
 
 const IconContainer = styled.div`
@@ -86,11 +86,11 @@ const Grid2 = styled.div`
 const Navbar = props => {
   const [showModal, setShowModal] = useState(false);
   const { path } = props
-  
+
   const openModal = () => {
     setShowModal((prev) => !prev);
   };
-  
+
   return (
     <Container>
       <GridContainer>
@@ -116,7 +116,7 @@ const Navbar = props => {
             </Box>
           </Container2>
         </Grid1>
-        
+
         <Grid2>
           <Div3>
             <SocialIcons href="https://github.com/Darkskittlz" target='_blank'>
@@ -124,11 +124,11 @@ const Navbar = props => {
                 <img src={GithubIcon} />
               </IconContainer>
             </SocialIcons>
-            
+
             <SocialIcons>
               <IconContainer>
                 <Link href={Resume} target='blank'>
-                  <img src={ResumeIcon}/>
+                  <img src={ResumeIcon} />
                   <GlobalStyle />
                 </Link>
               </IconContainer>
@@ -136,19 +136,19 @@ const Navbar = props => {
             <DarkMode />
             <Box>
               <Menu>
-                <MenuButton 
+                <MenuButton
                   height="42px"
                   width="42px"
                   aria-label="Options"
                   cursor="pointer"
                   style={{
-                      borderRadius: "10px",
-                      backgroundColor: "var(--text-color)"
+                    borderRadius: "10px",
+                    backgroundColor: "var(--text-color)"
                   }}
                 >
                   <MenuIMG src={MenuIcon} />
                 </MenuButton>
-                <MenuList style={{zIndex: "999"}}>
+                <MenuList style={{ zIndex: "999" }}>
                   <Link color="var(--text-color)" href='/'>
                     <MenuItem as={Link}>Home</MenuItem>
                   </Link>

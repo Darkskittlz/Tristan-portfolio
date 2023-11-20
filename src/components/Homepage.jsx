@@ -8,11 +8,11 @@ import Intro from './Intro';
 import Timeline from './TimeLine';
 import { Suspense } from 'react';
 import {
-	Link,
-	Box,
-	Heading,
-	Image,
-	Container,
+  Link,
+  Box,
+  Heading,
+  Image,
+  Container,
 } from '@chakra-ui/react'
 import Technologies from './Technologies';
 import { FooterContainer, SectionDivider } from '../Styles/GlobalStyles';
@@ -190,177 +190,177 @@ const IMGContainer = styled.div`
 
 const Homepage = () => {
 
-	return (
-		<GridContainer>
-			<StarBackground />
-			<Layout >
+  return (
+    <GridContainer>
+      <StarBackground />
+      <Layout >
 
-				<Suspense fallback={null}>
-					<Planet />
-				</Suspense>
-				<Section delay={0.1}>
-					<Intro />
-				</Section>
-
-
-
-				<Container className="homePageContainer" >
-					<Section delay={0.2}>
-						<HeadingContainer>
-							<h1>Bio</h1>
-							<SectionDivider />
-						</HeadingContainer>
-						<h1>
-							Tristan is a react developer who specializes in the MERN/PERN stack. He enjoys developing frontend user interfaces that prioritize sleek design, integrate background animations, and consume APIs to display interactive information.
-						</h1>
-					</Section>
+        <Suspense fallback={null}>
+          <Planet />
+        </Suspense>
+        <Section delay={0.1}>
+          <Intro />
+        </Section>
 
 
-					<Section delay={0.3}>
-						<Heading as="h3" variant="section-title">
-							I ❤
-						</Heading>
-						<h1>Programming,
-							<Link
-								style={{ color: "#00ccff", textDecoration: "none" }}
-								href="https://www.youtube.com/watch?v=J_eNHNsUKPA"
-							> Youtube, </Link>
-							3D Rendering, Drums, Guitar {' '}
-							<Link
-								style={{ color: "#42fad0", textDecoration: "none" }}
-								href="https://darkmeowfi.netlify.app/"
-							>Lofi, </Link> Rock Climbing, Parkour,
-							<Link
-								style={{ color: "crimson", textDecoration: "none" }}
-								href="https://beacons.ai/darkskittlz"
-							> Cosplay, </Link>
-							Skateboarding,
-						</h1>
-					</Section>
 
-					<br />
+        <Container className="homePageContainer" >
+          <Section delay={0.2}>
+            <HeadingContainer>
+              <h1>Bio</h1>
+              <SectionDivider />
+            </HeadingContainer>
+            <h1>
+              Tristan is a react developer who specializes in the MERN/PERN stack. He enjoys developing frontend user interfaces that prioritize sleek design, integrate background animations, and consume APIs to display interactive information.
+            </h1>
+          </Section>
 
-					<Section delay={0.4}>
-						<Heading as="h2" variant="section-title">
-							Portofolio Inspiration
-						</Heading>
-						<h1>{' '}
-							<Link
-								href="https://www.craftz.dog/"
-								style={{
-									textDecoration: "none",
-									color: "green"
-								}}>Takuyama Matsuyama </Link>
-						</h1>
-						<br />
-						<Heading as="h2" variant="section-title">
-							Totoro Model
-						</Heading>
-						<h1>{' '}
-							<Link
-								href="https://www.cgtrader.com/jkielr"
-								style={{
-									textDecoration: "none",
-									color: "#ff00d5"
-								}}>Jesse Ragos</Link>
-						</h1>
-						<br />
-						<Heading as="h2" variant="section-title">
-							Planet Model
-						</Heading>
-						<h1>{' '}
-							<Link
-								href="https://sketchfab.com/ThomasKole"
-								style={{
-									textDecoration: "none",
-									color: "#FF3E33"
-								}}>Thomas Kole</Link>
-						</h1>
-						<br />
-					</Section>
 
-					<Section delay={0.5}>
-						<Technologies />
-					</Section>
+          <Section delay={0.3}>
+            <Heading as="h3" variant="section-title">
+              I ❤
+            </Heading>
+            <h1>Programming,
+              <Link
+                style={{ color: "#00ccff", textDecoration: "none" }}
+                href="https://www.youtube.com/watch?v=J_eNHNsUKPA"
+              > Youtube, </Link>
+              3D Rendering, Drums, Guitar {' '}
+              <Link
+                style={{ color: "#42fad0", textDecoration: "none" }}
+                href="https://darkmeowfi.netlify.app/"
+              >Lofi, </Link> Rock Climbing, Parkour,
+              <Link
+                style={{ color: "crimson", textDecoration: "none" }}
+                href="https://beacons.ai/darkskittlz"
+              > Cosplay, </Link>
+              Skateboarding,
+            </h1>
+          </Section>
 
-					<Section delay={0.6}>
-						<GridContainer2>
-							<Container2>
-								<Heading as="h2" variant="section-title" style={{ textAlign: "center" }}>
-									Galaxy Generator
-								</Heading>
-								<img src={GalaxyIMG} alt="Galaxy IMG" />
-								<IMGContainer>
-									<h1>{' '}
-										<Link
-											href="https://github.com/Darkskittlz/Galaxy-Generator"
-											target="blank"
-											style={{
-												textDecoration: "none",
-												color: "#bb800c",
-												textAlign: "center"
-											}}>
-											<img
-												src={GithubIcon}
-												style={{
-													marginTop: "17px",
-													height: "50px",
-													width: "50px"
-												}}
-												alt="github"
-											/>
-										</Link>
-									</h1>
-									<h1>{' '}
-										<Link
-											href="https://dark-galaxy-generator.netlify.app/"
-											target="blank"
-											style={{
-												textDecoration: "none",
-												textAlign: "center",
-											}}>
-											<img
-												src={WebIcon}
-												alt="Website Icon"
-												style={{
-													height: "50px",
-													width: "50px",
-													marginTop: "20px",
-													borderRadius: "50px"
-												}}
-											/>
-										</Link>
-									</h1>
-								</IMGContainer>
-							</Container2>
-						</GridContainer2>
-					</Section>
+          <br />
 
-					<Section delay={0.7}>
-						<Box align="center" my={4}>
-							<Link href="/works" style={{ textDecoration: "none" }}>
-								<PortfolioContainer>
-									<h1>My Portfolio</h1>
-								</PortfolioContainer>
-							</Link>
-						</Box>
-					</Section>
+          <Section delay={0.4}>
+            <Heading as="h2" variant="section-title">
+              Portofolio Inspiration
+            </Heading>
+            <h1>{' '}
+              <Link
+                href="https://www.craftz.dog/"
+                style={{
+                  textDecoration: "none",
+                  color: "green"
+                }}>Takuyama Matsuyama </Link>
+            </h1>
+            <br />
+            <Heading as="h2" variant="section-title">
+              Totoro Model
+            </Heading>
+            <h1>{' '}
+              <Link
+                href="https://www.cgtrader.com/jkielr"
+                style={{
+                  textDecoration: "none",
+                  color: "#ff00d5"
+                }}>Jesse Ragos</Link>
+            </h1>
+            <br />
+            <Heading as="h2" variant="section-title">
+              Planet Model
+            </Heading>
+            <h1>{' '}
+              <Link
+                href="https://sketchfab.com/ThomasKole"
+                style={{
+                  textDecoration: "none",
+                  color: "#FF3E33"
+                }}>Thomas Kole</Link>
+            </h1>
+            <br />
+          </Section>
 
-					<Section delay={0.8}>
-						<Timeline />
-					</Section>
+          <Section delay={0.5}>
+            <Technologies />
+          </Section>
 
-					<Section delay={0.9}>
-						<ChakraModal />
-					</Section>
+          <Section delay={0.6}>
+            <GridContainer2>
+              <Container2>
+                <Heading as="h2" variant="section-title" style={{ textAlign: "center" }}>
+                  Galaxy Generator
+                </Heading>
+                <img src={GalaxyIMG} alt="Galaxy IMG" />
+                <IMGContainer>
+                  <h1>{' '}
+                    <Link
+                      href="https://github.com/Darkskittlz/Galaxy-Generator"
+                      target="blank"
+                      style={{
+                        textDecoration: "none",
+                        color: "#bb800c",
+                        textAlign: "center"
+                      }}>
+                      <img
+                        src={GithubIcon}
+                        style={{
+                          marginTop: "17px",
+                          height: "50px",
+                          width: "50px"
+                        }}
+                        alt="github"
+                      />
+                    </Link>
+                  </h1>
+                  <h1>{' '}
+                    <Link
+                      href="https://dark-galaxy-generator.netlify.app/"
+                      target="blank"
+                      style={{
+                        textDecoration: "none",
+                        textAlign: "center",
+                      }}>
+                      <img
+                        src={WebIcon}
+                        alt="Website Icon"
+                        style={{
+                          height: "50px",
+                          width: "50px",
+                          marginTop: "20px",
+                          borderRadius: "50px"
+                        }}
+                      />
+                    </Link>
+                  </h1>
+                </IMGContainer>
+              </Container2>
+            </GridContainer2>
+          </Section>
 
-				</Container>
-			</Layout>
-			<FooterContainer>
-				<Footer />
-			</FooterContainer>
-		</GridContainer>
-	);
+          <Section delay={0.7}>
+            <Box align="center" my={4}>
+              <Link href="/works" style={{ textDecoration: "none" }}>
+                <PortfolioContainer>
+                  <h1>My Portfolio</h1>
+                </PortfolioContainer>
+              </Link>
+            </Box>
+          </Section>
+
+          <Section delay={0.8}>
+            <Timeline />
+          </Section>
+
+          <Section delay={0.9}>
+            <ChakraModal />
+          </Section>
+
+        </Container>
+      </Layout>
+      <FooterContainer>
+        <Footer />
+      </FooterContainer>
+    </GridContainer>
+  );
 };
 
 export default Homepage;

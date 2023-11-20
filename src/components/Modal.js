@@ -20,7 +20,7 @@ import date from 'date-and-time';
 import Clock from 'react-live-clock';
 import { emotions } from '../constants/constants'
 import Totoro from './threeJS/Totoro'
-
+import logo from "../assets/images/tristanLogo.png"
 
 
 
@@ -175,12 +175,12 @@ export default function ChakraModal() {
   return (
     <>
       <GridContainer>
-        <Button 
+        <Button
           onClick={onOpen}
           css={{
             borderRadius: "10px",
             border: "none",
-            padding:"20px",
+            padding: "20px",
             cursor: "pointer",
             boxShadow: "0 0 40px rgb(1,74,250)",
             background: "rgb(1,74,250)",
@@ -189,10 +189,10 @@ export default function ChakraModal() {
         >Contact Me</Button>
       </GridContainer>
 
-    <Grid2Container>
-        <Modal 
-          closeOnOverlayClick={true} 
-          isOpen={isOpen} 
+      <Grid2Container>
+        <Modal
+          closeOnOverlayClick={true}
+          isOpen={isOpen}
           onClose={onClose}
           isCentered
           allowPinchZoom="true"
@@ -200,10 +200,10 @@ export default function ChakraModal() {
         >
           <ModalContainer>
             <ModalOverlay>
-              <ModalContent 
+              <ModalContent
                 css={{
                   display: "flex",
-                  justifyContent: "center",  
+                  justifyContent: "center",
                   marginTop: "-200px",
                   alignContent: "center",
                   backdropFilter: "blur(50px)",
@@ -211,75 +211,75 @@ export default function ChakraModal() {
                 }}
               >
                 <form ref={form} id="myForm" onSubmit={(event) => handleSubmit(event)}>
-                  
-                <IMGContainer>
-					        <img src="https://github.com/Darkskittlz/darkmeow-portfolio/blob/master/src/assets/rainTrain.gif?raw=true" alt="animeGif"/>
-				        </IMGContainer>
 
-                  <ModalBody 
+                  <IMGContainer>
+                    <img src={logo} alt="businessLogo" />
+                  </IMGContainer>
+
+                  <ModalBody
                     css={{
-                      display: "flex", 
+                      display: "flex",
                       justifyContent: "center",
                       gridGap: "50px",
                       marginBottom: "5px",
                       zIndex: 999
                     }}>
-                      <TimeContainer>
-                          <h1>Time: </h1><Clock format={'h:mm a'} ticking={true} id="time"/>
-                      </TimeContainer>
+                    <TimeContainer>
+                      <h1>Time: </h1><Clock format={'h:mm a'} ticking={true} id="time" />
+                    </TimeContainer>
                   </ModalBody>
-                  <ModalBody 
+                  <ModalBody
                     css={{
-                      display: "flex", 
+                      display: "flex",
                       justifyContent: "center",
                       gridGap: "50px",
                       marginBottom: "30px"
                     }}>
-                      <DateContainer>
-                          <h1>Date: </h1> {date.format(now, 'ddd, MMM DD YYYY')}
-                      </DateContainer>
+                    <DateContainer>
+                      <h1>Date: </h1> {date.format(now, 'ddd, MMM DD YYYY')}
+                    </DateContainer>
                   </ModalBody>
 
 
 
-                  
-                  <ModalBody 
+
+                  <ModalBody
                     css={{
-                      display: "Flex", 
+                      display: "Flex",
                       justifyContent: "center",
                       zIndex: 999
                     }}
                     pb={6}
                   >
                     <FormControl>
-                    <FormLabel 
-                      css={{
-                        fontSize: "25px",
-                        textAlign: "center",
-                        marginBottom: "10px"
-                      }}
+                      <FormLabel
+                        css={{
+                          fontSize: "25px",
+                          textAlign: "center",
+                          marginBottom: "10px"
+                        }}
                       >Contact Form</FormLabel>
                       <InputContainer>
                         <DropdownContainer>
                           <Select
                             placeholder="Select Mood"
-                            css={{width: "100%", padding: "10px"}}
+                            css={{ width: "100%", padding: "10px" }}
                             onChangeCapture={(event) => setMood(event.target.value)}
-                          > 
+                          >
                             {emotions.map(({ id, title }) => {
-                            return <option
+                              return <option
                                 key={id}
                                 id="mood"
                                 value={title}
                                 name="user_mood"
                                 type="text"
                               >
-                                {title} 
+                                {title}
                               </option>
                             })}
                           </Select>
                         </DropdownContainer>
-                        <input 
+                        <input
                           id="name"
                           type="name"
                           name="user_name"
@@ -288,7 +288,7 @@ export default function ChakraModal() {
                             setName(event.target.value)
                           }}
                         />
-                        <input 
+                        <input
                           id="email"
                           type='email'
                           name="user_email"
@@ -307,13 +307,13 @@ export default function ChakraModal() {
                           />
                         </MessageContainer>
                       </InputContainer>
-                        
+
                     </FormControl>
                   </ModalBody>
                   <ModalFooter
-                    css={{display: "flex", justifyContent: "center", }}
-                    >
-                    <Button 
+                    css={{ display: "flex", justifyContent: "center", }}
+                  >
+                    <Button
                       className="modalButton"
                       id="btn"
                       value="send"
@@ -321,7 +321,7 @@ export default function ChakraModal() {
                       onClick={() => {
                         alert("Message Sent. Please Check your inbox")
                       }}
-                      > Send </Button>
+                    > Send </Button>
                     <Button className="modalButton" onClick={onClose}>
                       Close
                     </Button>
