@@ -4,7 +4,7 @@ import { Canvas, extend, useThree, useFrame, useLoader } from "@react-three/fibe
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 import * as THREE from "three";
 import { TextureLoader } from 'three/src/loaders/TextureLoader';
-import img from '../../assets/images/postThumb.jpg';
+import img from '../../assets/images/wave.jpeg';
 import moonTexture from '../../assets/moonTextureSmall.png';
 import styled from "styled-components"
 import { Water } from 'three-stdlib';
@@ -79,21 +79,25 @@ function Scene() {
   const texture = useLoader(THREE.TextureLoader, img)
   const colorMap = useLoader(TextureLoader, moonTexture)
   const ref = useRef();
+  const ref2 = useRef();
 
   useFrame(() => {
     ref.current.rotation.y += 0.01
+    ref2.current.rotation.y += 0.01
+    ref2.current.rotation.x += 0.01
   })
 
   return (
     <>
       <mesh
-        rotation={[-Math.PI / 2, 0, 0]}
+        rotation={[+Math.PI / 2, 0, 0]}
+        ref={ref2}
         scale={2.0}
-        position={[0, 4.2, 0]}
+        position={[0, 5, 0]}
       >
         <CameraController />
         <ambientLight />
-        <boxGeometry attach="geometry" args={[4, 4, 4]} />
+        <boxGeometry attach="geometry" args={[3, 3, 3]} />
         <meshStandardMaterial map={texture} />
       </mesh>
 
@@ -101,7 +105,7 @@ function Scene() {
         ref={ref}
         rotation={[-Math.PI / 2, 0, 0]}
         scale={1}
-        position={[5.9, 8, 5]}
+        position={[4.9, 8, 5]}
       >
         <CameraController />
         <sphereGeometry attach="geometry" args={[1, 62, 55]} />
