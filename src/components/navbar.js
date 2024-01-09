@@ -39,17 +39,16 @@ const IconContainer = styled.div`
   img {
     background-color: gray;
     padding: 5px;
-    margin-left: -5px;
-    margin-right: -5px;
     border-radius: 10px;
-    height: 40px;
-    width: 35px;
+    height: 50px;
+    width: 80px;
   }
 `
 
 const MenuIMG = styled.img`
   width: 25px;
   margin-top:2px;
+  
 `
 
 const GridContainer = styled.div`
@@ -128,7 +127,7 @@ const Navbar = props => {
             <SocialIcons>
               <IconContainer>
                 <Link href={Resume} target='blank'>
-                  <img src={ResumeIcon} />
+                  <img  src={ResumeIcon} />
                   <GlobalStyle />
                 </Link>
               </IconContainer>
@@ -137,12 +136,13 @@ const Navbar = props => {
             <Box>
               <Menu>
                 <MenuButton
-                  height="42px"
+                  height="52px"
                   width="42px"
                   aria-label="Options"
                   cursor="pointer"
                   style={{
                     borderRadius: "10px",
+                    paddingLeft: "8px",
                     backgroundColor: "var(--text-color)"
                   }}
                 >

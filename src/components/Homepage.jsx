@@ -13,6 +13,7 @@ import {
   Heading,
   Image,
   Container,
+  LinkOverlay,
 } from '@chakra-ui/react'
 import Technologies from './Technologies';
 import { FooterContainer, SectionDivider } from '../Styles/GlobalStyles';
@@ -21,11 +22,10 @@ import ChakraModal from './Modal';
 import StarBackground from '../ParticleBackground4';
 import OldDesk from './threeJS/OldDesk';
 import Totoro from './threeJS/Totoro';
-import GalaxyIMG from "../assets/images/Galaxy.png";
+import StarboardIMG from "../assets/images/Starboard.jpg"
 import GithubIcon from "../assets/images/logos/github.png";
 import WebIcon from "../assets/images/logos/website.jpg";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
-import GalaxyComponent from "./Galaxy.js"
 
 const GridContainer = styled.div`
   height: 100%;
@@ -43,8 +43,8 @@ const GridContainer2 = styled.div`
   width: 100%;
   justify-content: center
 	z-index:0;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 50px;
+  margin-bottom: 20px; 
 
 	@media (max-width: 960px) {
 		width: 100%;		
@@ -100,7 +100,7 @@ export const PortfolioContainer = styled.div`
 
 
 const Container2 = styled.div`
-  height: 43vh;
+  width: 50%;
   padding: 20px;
   align-items: center;
   display: flex;
@@ -157,7 +157,7 @@ const Container2 = styled.div`
     justify-content: center;
 
     img {
-      width: 420px;
+      width: 320px;
       margin-top: 10px;
       border-radius: 10px;
       height: 200px;
@@ -286,19 +286,25 @@ const Homepage = () => {
           <Section delay={0.6}>
             <GridContainer2>
               <Container2>
-                <Heading as="h2" variant="section-title" style={{ textAlign: "center" }}>
-                  Galaxy Generator
+                <Heading as="h1" variant="section-title" style={{ textAlign: "center", marginBottom: "5px", fontSize: "35px", textDecoration: "underline" }}>
+                  Featured Project:
                 </Heading>
-                <img src={GalaxyIMG} alt="Galaxy IMG" />
+                <Heading as="h2" variant="section-title" style={{ textAlign: "center", marginBottom: "20px", fontSize: "30px" }}>
+                  Starboard SPA
+                </Heading>
+                <LinkOverlay href={`works/Starboard`}>
+                  <img src={StarboardIMG} alt="Starboard Cruise IMG" />
+                </LinkOverlay>
                 <IMGContainer>
                   <h1>{' '}
                     <Link
-                      href="https://github.com/Darkskittlz/Galaxy-Generator"
+                      href="https://github.com/Darkskittlz/Tailwind_Vite"
                       target="blank"
                       style={{
                         textDecoration: "none",
                         color: "#bb800c",
-                        textAlign: "center"
+                        textAlign: "center",
+                        cusor: "pointer"
                       }}>
                       <img
                         src={GithubIcon}
@@ -313,11 +319,12 @@ const Homepage = () => {
                   </h1>
                   <h1>{' '}
                     <Link
-                      href="https://dark-galaxy-generator.netlify.app/"
+                      href="https://starboard-cruises.netlify.app/"
                       target="blank"
                       style={{
                         textDecoration: "none",
                         textAlign: "center",
+                        cusor: "pointer"
                       }}>
                       <img
                         src={WebIcon}
@@ -332,6 +339,7 @@ const Homepage = () => {
                     </Link>
                   </h1>
                 </IMGContainer>
+
               </Container2>
             </GridContainer2>
           </Section>

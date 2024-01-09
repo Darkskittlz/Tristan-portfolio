@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
   --black: rgb(0, 0, 0);
@@ -128,7 +131,7 @@ nav a {
   justify-content: center;
   object-fit: cover;
   height: 169px;
-  width: 210px;
+  /* width: 210px; */
   flex-wrap: wrap;
 }
 
@@ -258,5 +261,3 @@ canvas.webgl {
 .webgl {
   height: 10px;
 }
-
-

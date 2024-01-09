@@ -29,6 +29,8 @@ import UkraineMap from './components/works/UkraineMap';
 import WeatherApp from './components/works/WeatherApp';
 import Vue from './components/works/Vue';
 import ModelPortfolio from './components/works/ModelPortfolio';
+import Galaxy from './components/works/Galaxy';
+import Starboard from './components/works/Starboard';
 
 
 const NavContainer = styled.div`
@@ -64,10 +66,12 @@ const App = ({ Component, pageProps, router }) => {
                         <Route path='/Works/DarkMeowShop' element={<DarkMeowShop />} />                            
                         <Route path='/Works/ECommerce' element={<ECommerce />} />                            
                         <Route path='/Works/Ember' element={<EmberJS />} />                            
+                        <Route path='/Works/Galaxy' element={<Galaxy />} />                            
                         <Route path='/Works/Lofi' element={<Lofi />} />                            
                         <Route path='/Works/MatiasSanes' element={<MatiasSanes />} />                            
                         <Route path='/Works/ModelPortfolio' element={<ModelPortfolio />} />                            
                         <Route path='/Works/SPAPortfolio' element={<SPAPortfolio />} />                            
+                        <Route path='/Works/Starboard' element={<Starboard />} />                            
                         <Route path='/Works/ThreejsPortfolio' element={<ThreejsPortfolio />} />                            
                         <Route path='/Works/UkraineMap' element={<UkraineMap />} />                            
                         <Route path='/Works/Vue' element={<Vue />} />                            
