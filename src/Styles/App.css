@@ -133,6 +133,11 @@ nav a {
   height: 169px;
   /* width: 210px; */
   flex-wrap: wrap;
+
+  @media only screen and (min-width: 270px) and (max-width: 1160px) {
+    height: 190px;
+    width: 250px;
+  }
 }
 
 
