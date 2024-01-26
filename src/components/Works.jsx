@@ -70,7 +70,8 @@ const Grid2Container = styled.div`
   padding: 10px;
   box-shadow: 0 0 20px rgba(80, 78, 78, 0.9);
 
-  @media and (max-width: 1620px) {
+@media only screen and (min-width: 270px) and (max-width: 1160px) {
+    grid-template-columns: 1fr;
     grid-gap: 0px;
     display: flex;
     padding: 0px;
@@ -94,7 +95,7 @@ const Works = props => {
             </Heading>
 
             <Grid2Container>
-              <Box>
+              <Box style={{marginTop: "20px"}}>
                 <Section>
                   <LinkBox cursor='pointer'>
                     <Container className="projectContainer">

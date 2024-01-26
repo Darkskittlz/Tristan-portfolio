@@ -64,12 +64,6 @@ const Grid2Container = styled.div`
     flex-wrap: wrap;
     gap: 10px;
     justify-content: center;
-
-
-    @media screen and (max-width: 960px) {
-        width: 5%;
-        margin-left: 47%;
-    }
 `
 
 const BlogImage = styled.img`
@@ -77,9 +71,8 @@ const BlogImage = styled.img`
     height: 500px;
     border-radius: 10px;
 
-    @media screen and (max-width: 960px) {
-        width: 350px;
-        // margin-left: 5%;
+    @media only screen and (min-width: 270px) and (max-width: 1160px) {
+        width: 400px;
     }
 `
 
@@ -90,7 +83,6 @@ const BlogImage2 = styled.img`
 
     @media screen and (max-width: 960px) {
         width: 290px;
-        // margin-left: 5%;
     }
 `
 
