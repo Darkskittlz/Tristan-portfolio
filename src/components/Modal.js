@@ -114,6 +114,7 @@ const DropdownContainer = styled.div`
 `
 
 const InputContainer = styled.div`
+  color: black;
   input {
     font-size: 25px;
     width: 100%;
