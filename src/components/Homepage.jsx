@@ -211,7 +211,9 @@ const Homepage = () => {
               <SectionDivider />
             </HeadingContainer>
             <h1>
-              Tristan is a react developer who specializes in the MERN/PERN stack. He enjoys developing frontend user interfaces that prioritize sleek design, integrate background animations, and consume APIs to display interactive information.
+              Hi,
+              <br />
+              I'm a react developer who specializes in the MERN/PERN stack. I enjoy developing frontend user interfaces that prioritize sleek design, integrating background animations in my work, and consuming APIs to display dynamic information in my UIs.
             </h1>
           </Section>
 
@@ -225,7 +227,7 @@ const Homepage = () => {
                 style={{ color: "#00ccff", textDecoration: "none" }}
                 href="https://www.youtube.com/watch?v=J_eNHNsUKPA"
               > Youtube, </Link>
-              3D Rendering, Drums, Guitar {' '}
+              3D Rendering, Drums, Guitar, Hiking, {' '}
               <Link
                 style={{ color: "#42fad0", textDecoration: "none" }}
                 href="https://darkmeowfi.netlify.app/"
@@ -234,7 +236,7 @@ const Homepage = () => {
                 style={{ color: "crimson", textDecoration: "none" }}
                 href="https://beacons.ai/darkskittlz"
               > Cosplay, </Link>
-              Skateboarding,
+              and Skateboarding.
             </h1>
           </Section>
 

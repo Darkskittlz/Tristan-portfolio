@@ -23,13 +23,12 @@ import Portrait from './threeJS/alice'
 import SPA from "../assets/images/works/SPA.png"
 import StarBackground2 from '../ParticleBackground5'
 import UkraineMap from "../assets/images/works/ukraineMap.png"
+import GoogleAuth from '../assets/images/works/googleOauth.png'
 import Vue from "../assets/images/works/Vue.png"
 import Wednesday from "../assets/images/works/Wednesday.png"
 import WeatherIMG from "../assets/images/works/Weather2.png"
 import EmberIMG from "../assets/images/EmberThumb.png";
-import GalaxyIMG from "../assets/images/Galaxy.png";
 import StarboardIMG from "../assets/images/Starboard.jpg"
-import GalaxyComponent from "./Galaxy.js"
 
 
 const GridContainer = styled.div`
@@ -90,13 +89,40 @@ const Works = props => {
           </Suspense>
           <Container className="homePageContainer">
             <Heading as="h2" size="lg" fontSize="80px" mb={14}>
-              Works
+              Portfolio
               <SectionDivider />
             </Heading>
 
             <Grid2Container>
-              <Box style={{marginTop: "20px"}}>
+              <Box style={{ marginTop: "20px" }}>
                 <Section>
+                  <LinkBox cursor='pointer'>
+                    <Container className="projectContainer">
+                      <Image
+                        fit="cover"
+                        src={GoogleAuth}
+                        alt="GoogleAuth"
+                        className="projectThumbnail"
+                        placeholder="blur"
+                        loading="lazy"
+                      />
+                    </Container>
+                    <LinkOverlay href={`works/GoogleAuth`}>
+                      <Text
+                        style={{
+                          color: "var(--text-color)",
+                          textDecoration: "inherit",
+                          textAlign: "center",
+                          marginTop: "10px"
+                        }}
+                        fontSize={20}
+                      >Google OAuth</Text>
+                    </LinkOverlay>
+                  </LinkBox>
+                </Section>
+              </Box>
+              <Box style={{ marginTop: "20px" }}>
+                <Section delay={0.1}>
                   <LinkBox cursor='pointer'>
                     <Container className="projectContainer">
                       <Image
@@ -118,33 +144,6 @@ const Works = props => {
                         }}
                         fontSize={20}
                       >Starboard SPA</Text>
-                    </LinkOverlay>
-                  </LinkBox>
-                </Section>
-              </Box>
-              <Box>
-                <Section delay={0.1}>
-                  <LinkBox cursor='pointer'>
-                    <Container className="projectContainer">
-                      <Image
-                        fit="cover"
-                        src={GalaxyIMG}
-                        alt="Galaxy IMG"
-                        className="projectThumbnail"
-                        placeholder="blur"
-                        loading="lazy"
-                      />
-                    </Container>
-                    <LinkOverlay href={`works/Galaxy`}>
-                      <Text
-                        style={{
-                          color: "var(--text-color)",
-                          textDecoration: "inherit",
-                          textAlign: "center",
-                          marginTop: "10px"
-                        }}
-                        fontSize={20}
-                      >Galaxy Generator</Text>
                     </LinkOverlay>
                   </LinkBox>
                 </Section>
@@ -550,32 +549,6 @@ const Works = props => {
                   </LinkBox>
                 </Section>
               </Box>
-              <Box>
-                <Section delay={1.7}>
-                  <LinkBox cursor='pointer'>
-                    <Image
-                      fit="cover"
-                      src="/images/works/ThreeJSPortfolio.png"
-                      alt="ThreeJS Portfolio Project"
-                      className="projectThumbnail"
-                      placeholder="blur"
-                      loading="lazy"
-                    />
-                    <LinkOverlay href={`works/ThreejsPortfolio`}>
-                      <Text
-                        style={{
-                          color: "var(--text-color)",
-                          textDecoration: "inherit",
-                          textAlign: "center",
-                          marginTop: "10px"
-                        }}
-                        fontSize={20}
-                      >ThreeJS Portfolio</Text>
-                    </LinkOverlay>
-                  </LinkBox>
-                </Section>
-              </Box>
-              <br />
               <Box>
                 <Section delay={1.8}>
                   <LinkBox cursor='pointer'>

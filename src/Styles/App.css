@@ -135,11 +135,25 @@ nav a {
   flex-wrap: wrap;
 
   @media only screen and (min-width: 270px) and (max-width: 1160px) {
-    height: 190px;
+    height: 250px;
     width: 250px;
   }
 }
 
+.projectThumbnail2 {
+  display: flex;
+  border-radius: 10px;
+  justify-content: center;
+  object-fit: cover;
+  height: 130px;
+  /* width: 210px; */
+  flex-wrap: wrap;
+
+  @media only screen and (min-width: 270px) and (max-width: 1160px) {
+    height: 190px;
+    /* width: 250px; */
+  }
+}
 
 
 .PostsContainer {

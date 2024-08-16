@@ -83,8 +83,8 @@ function Scene() {
 
   useFrame(() => {
     ref.current.rotation.y += 0.01
-    ref2.current.rotation.y += 0.01
-    ref2.current.rotation.x += 0.01
+    ref2.current.rotation.y += 0.001
+    ref2.current.rotation.x += 0.001
   })
 
   return (

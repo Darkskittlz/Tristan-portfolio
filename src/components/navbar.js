@@ -127,7 +127,7 @@ const Navbar = props => {
             <SocialIcons>
               <IconContainer>
                 <Link href={Resume} target='blank'>
-                  <img  src={ResumeIcon} />
+                  <img src={ResumeIcon} />
                   <GlobalStyle />
                 </Link>
               </IconContainer>
@@ -153,7 +153,10 @@ const Navbar = props => {
                     <MenuItem as={Link}>Home</MenuItem>
                   </Link>
                   <Link color="var(--text-color)" href='/works'>
-                    <MenuItem as={Link}>Works</MenuItem>
+                    <MenuItem as={Link}>Portfolio</MenuItem>
+                  </Link>
+                  <Link color="var(--text-color)" href='/ThreeJS'>
+                    <MenuItem as={Link}>ThreeJS</MenuItem>
                   </Link>
                   <Link color="var(--text-color)" href='/posts'>
                     <MenuItem as={Link}>Blog</MenuItem>
