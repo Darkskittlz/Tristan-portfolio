@@ -24,6 +24,7 @@ import MatiasSanes from './components/works/MatiasSanes';
 import SPAPortfolio from './components/works/SPAPortfolio';
 import ThreejsPortfolio from './components/works/ThreejsPortfolio';
 import ScrollAnimation from './components/threeJS/ScrollAnimation';
+import CatGirlComponent from './components/threeJS/WaifuModel';
 import Tutorials from './components/Tutorials';
 import Youtube from './components/tutorials/Youtube';
 import Wednesday from './components/works/Wednesday';
@@ -34,6 +35,7 @@ import ModelPortfolio from './components/works/ModelPortfolio';
 import Galaxy from './components/works/Galaxy';
 import Starboard from './components/works/Starboard';
 import ThreeJS from './components/ThreeJS';
+import Waifu from './components/works/Waifu';
 
 
 const NavContainer = styled.div`
@@ -79,10 +81,12 @@ const App = ({ Component, pageProps, router }) => {
               <Route path='/Works/ThreejsPortfolio' element={<ThreejsPortfolio />} />
               <Route path='/Works/UkraineMap' element={<UkraineMap />} />
               <Route path='/Works/Vue' element={<Vue />} />
+              <Route path='/Works/Waifu' element={<Waifu />} />
               <Route path='/Works/Wednesday' element={<Wednesday />} />
               <Route path='/Works/WeatherApp' element={<WeatherApp />} />
               <Route path='/ThreeJS' element={<ThreeJS />} />
               <Route path='/ThreeJS/ScrollAnimation' element={<ScrollAnimation />} />
+              <Route path='/ThreeJS/CatGirlComponent' element={<CatGirlComponent />} />
               <Route path='/Posts' element={<Posts />} />
               <Route path='/Posts/Blog1' element={<BlogPost />} />
               <Route path='/Posts/Blog2' element={<BlogPost2 />} />

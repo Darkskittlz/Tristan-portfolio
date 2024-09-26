@@ -106,91 +106,91 @@ const ImageContainer = styled.div`
 `
 
 const Galaxy = props => {
-    return (
-        <>
-          <ParticleComponent />
-            <Layout>
-                <Container maxW='2x1'>
-                    <GridContainer>
-                        <SimpleGrid 
-                            columns={[1, 1, 1]} 
-                            gap={10}
-                            style={{
-                                marginTop: "10px", 
-                                height: "56vh",
-                                justifyItems: "center",
-                                backdropFilter: "blur(25px)",
-                                padding: "20px",
-                                borderRadius: "10px"
-                            }} 
-                        >
-                            <TitleContainer>
-                            <ImageContainer>
-                                <Image
-                                    fit="cover"
-                                    mr={20}
-                                    src="/images/works/galaxy1.png"
-                                    style={{  
-                                        boxShadow: "0 0 40px rgb(255,0,0)", 
-                                        borderRadius: "50px", 
-                                        padding: "0px",
-                                        width: "125px",
-                                        objectFit: "cover"
-                                    }}
-                                />
-                            </ImageContainer>
-                                <h1><Badge colorScheme="blue"> Galaxy Generator</Badge></h1> 
-                            </TitleContainer>
-                            <BodyContainer>
-                                <h1>
-                                    A Galaxy Generator I created as part of Bruno Simons ThreeJS Journey. Its been a blast learning about threejs and how to integrate the language into react components with React Three Fiber. 
-                                </h1>
-                                <List ml={4} my={4} style={{display: "flex", flexDirection: "column"}}>
-                                    <ListItem>
-                                        <Badge2>Platform</Badge2>
-                                        <span>ThreeJS, React Three Fiber </span>
-                                    </ListItem>
-                                    <ListItem>
-                                        <Badge2>Website</Badge2>
-                                        <Link 
-                                            href="https://dark-galaxy-generator.netlify.app/"
-                                            target="_blank"
-                                            style={{
-                                                color: "#b900ff"
-                                            }}
-                                        >
-                                        https://dark-galaxy-generator.netlify.app/
-                                            <ExternalLinkIcon mx="2px" />
-                                        </Link>
-                                    </ListItem>
-                                    <ListItem>
-                                        <Badge2>Source</Badge2>
-                                        <Link 
-                                            href="https://github.com/Darkskittlz/Galaxy-Generator"
-                                            target="_blank"
-                                            style={{
-                                                color: "#b900ff"
-                                            }}
-                                        >
-                                        https://github.com/Darkskittlz/Galaxy-Generator
-                                            <ExternalLinkIcon mx="2px" />
-                                        </Link>
-                                    </ListItem>
-                                </List>
-                            </BodyContainer>
-                              <br />
-                            <img src={Background2} />
-                            <img src={Background3} />
-                            <img src={Background1} />
-                            <FooterContainer>
-                                <Footer />
-                            </FooterContainer>
-                        </SimpleGrid>
-                    </GridContainer>
-                </Container>
-            </Layout>
-        </>
-    )
+  return (
+    <>
+      <ParticleComponent />
+      <Layout>
+        <Container maxW='2x1'>
+          <GridContainer>
+            <SimpleGrid
+              columns={[1, 1, 1]}
+              gap={10}
+              style={{
+                marginTop: "10px",
+                height: "56vh",
+                justifyItems: "center",
+                backdropFilter: "blur(25px)",
+                padding: "20px",
+                borderRadius: "10px"
+              }}
+            >
+              <TitleContainer>
+                <ImageContainer>
+                  <Image
+                    fit="cover"
+                    mr={20}
+                    src="/images/works/Galaxy1.png"
+                    style={{
+                      boxShadow: "0 0 40px rgb(255,0,0)",
+                      borderRadius: "50px",
+                      padding: "0px",
+                      width: "125px",
+                      objectFit: "cover"
+                    }}
+                  />
+                </ImageContainer>
+                <h1><Badge colorScheme="blue"> Galaxy Generator</Badge></h1>
+              </TitleContainer>
+              <BodyContainer>
+                <h1>
+                  A Galaxy Generator I created as part of Bruno Simons ThreeJS Journey. Its been a blast learning about threejs and how to integrate the language into react components with React Three Fiber.
+                </h1>
+                <List ml={4} my={4} style={{ display: "flex", flexDirection: "column" }}>
+                  <ListItem>
+                    <Badge2>Platform</Badge2>
+                    <span>ThreeJS, React Three Fiber </span>
+                  </ListItem>
+                  <ListItem>
+                    <Badge2>Website</Badge2>
+                    <Link
+                      href="https://dark-galaxy-generator.netlify.app/"
+                      target="_blank"
+                      style={{
+                        color: "#b900ff"
+                      }}
+                    >
+                      https://dark-galaxy-generator.netlify.app/
+                      <ExternalLinkIcon mx="2px" />
+                    </Link>
+                  </ListItem>
+                  <ListItem>
+                    <Badge2>Source</Badge2>
+                    <Link
+                      href="https://github.com/Darkskittlz/Galaxy-Generator"
+                      target="_blank"
+                      style={{
+                        color: "#b900ff"
+                      }}
+                    >
+                      https://github.com/Darkskittlz/Galaxy-Generator
+                      <ExternalLinkIcon mx="2px" />
+                    </Link>
+                  </ListItem>
+                </List>
+              </BodyContainer>
+              <br />
+              <img src={Background2} />
+              <img src={Background3} />
+              <img src={Background1} />
+              <FooterContainer>
+                <Footer />
+              </FooterContainer>
+            </SimpleGrid>
+          </GridContainer>
+        </Container>
+      </Layout>
+    </>
+  )
 }
 
 export default Galaxy;

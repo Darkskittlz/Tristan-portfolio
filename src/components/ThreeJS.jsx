@@ -19,6 +19,7 @@ import { FooterContainer, SectionDivider } from '../Styles/GlobalStyles'
 import StarBackground2 from '../ParticleBackground5'
 import CyberPunkModel from './threeJS/CyberpunkDesk'
 import ScrollAnimation from "../assets/images/ThreeJS/scrollAnimation.png"
+import Waifu from "../assets/images/ThreeJS/Waifu.png"
 import GalaxyIMG from "../assets/images/Galaxy.png";
 import ThreejsPortfolio from '../assets/images/ThreeJS/threeJSPortfolio.png'
 import GalaxyComponent from "./Galaxy.js"
@@ -95,7 +96,7 @@ const ThreeJS = props => {
                         fit="cover"
                         src={ScrollAnimation}
                         alt="ScrollAnimation"
-                        className="projectThumbnail2"
+                        className="mb-2 projectThumbnail2"
                         placeholder="blur"
                         loading="lazy"
                       />
@@ -121,7 +122,7 @@ const ThreeJS = props => {
                         fit="cover"
                         src={GalaxyIMG}
                         alt="Galaxy IMG"
-                        className="projectThumbnail2"
+                        className="mb-2 projectThumbnail2"
                         placeholder="blur"
                         loading="lazy"
                       />
@@ -161,6 +162,33 @@ const ThreeJS = props => {
                         }}
                         fontSize={20}
                       >ThreeJS Portfolio</Text>
+                    </LinkOverlay>
+                  </LinkBox>
+                </Section>
+              </Box>
+              <Box style={{ marginTop: "20px" }}>
+                <Section>
+                  <LinkBox cursor='pointer'>
+                    <Container className="projectContainer">
+                      <Image
+                        fit="cover"
+                        src={Waifu}
+                        alt="Waifu Model"
+                        className="ml-3.5 mb-2 mt-2 projectThumbnail2"
+                        placeholder="blur"
+                        loading="lazy"
+                      />
+                    </Container>
+                    <LinkOverlay href={`works/Waifu`}>
+                      <Text
+                        style={{
+                          color: "var(--text-color)",
+                          textDecoration: "inherit",
+                          textAlign: "center",
+                          padding: "9px"
+                        }}
+                        fontSize={20}
+                      >Waifu 3D Model</Text>
                     </LinkOverlay>
                   </LinkBox>
                 </Section>
