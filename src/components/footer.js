@@ -1,5 +1,9 @@
 import { AiFillGithub, AiFillLinkedin, AiFillTwitterCircle } from 'react-icons/ai';
 import styled from 'styled-components';
+import {
+  Box,
+  Image,
+} from '@chakra-ui/react'
 
 
 
@@ -136,24 +140,31 @@ export const Icon = styled.img`
 
 function Footer() {
   return (
-      <FooterWrapper>
-        <SocialIconsContainer>
-            <CompanyContainer>
-            	<h1>Eat Sleep Code Repeat</h1>
-            </CompanyContainer>
-            <SocialContainer>
-            <SocialIcons href="https://github.com/Darkskittlz">
-                <AiFillGithub size="3rem" />
-            </SocialIcons>
-            <SocialIcons href="https://discord.gg/kNhV2WPCUP">
-              <Icon img src="/images/discord.png" />
-            </SocialIcons>
-            <SocialIcons href="https://www.linkedin.com/in/tristannealdev/">
-              <AiFillLinkedin size="3rem" />
-            </SocialIcons>
-            </SocialContainer>
-        </SocialIconsContainer>
-      </FooterWrapper>
+    <FooterWrapper>
+      <SocialIconsContainer>
+        <CompanyContainer>
+          <h1>Eat Sleep Code Repeat</h1>
+        </CompanyContainer>
+        <SocialContainer>
+          <SocialIcons href="https://github.com/Darkskittlz">
+            <AiFillGithub size="3rem" />
+          </SocialIcons>
+          <SocialIcons href="https://discord.gg/kNhV2WPCUP">
+            <Box width="55px" height="55px">
+              <Image
+                src="/images/discord.png"
+                alt="Discord Icon"
+                width="100%"
+                height="100%"
+              />
+            </Box>
+          </SocialIcons>
+          <SocialIcons href="https://www.linkedin.com/in/tristannealdev/">
+            <AiFillLinkedin size="3rem" />
+          </SocialIcons>
+        </SocialContainer>
+      </SocialIconsContainer>
+    </FooterWrapper>
   );
 };
 

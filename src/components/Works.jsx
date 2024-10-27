@@ -6,7 +6,6 @@ import ParticleComponent from '../ParticleBackground4'
 import Footer from './footer'
 import '../Styles/App.css';
 import {
-  SimpleGrid,
   LinkOverlay,
   Container,
   Heading,
@@ -29,6 +28,7 @@ import Wednesday from "../assets/images/works/Wednesday.png"
 import WeatherIMG from "../assets/images/works/Weather2.png"
 import EmberIMG from "../assets/images/EmberThumb.png";
 import StarboardIMG from "../assets/images/Starboard.jpg"
+import StripeIMG from "../assets/images/works/stripeIMG.png"
 
 
 const GridContainer = styled.div`
@@ -94,6 +94,34 @@ const Works = props => {
             </Heading>
 
             <Grid2Container>
+              <Box style={{ marginTop: "20px" }}>
+                <Section>
+                  <LinkBox cursor='pointer'>
+                    <Container className="projectContainer">
+                      <Image
+                        fit="cover"
+                        objectFit="contain"
+                        src={StripeIMG}
+                        alt="Stripe Demo"
+                        className="projectThumbnail"
+                        placeholder="blur"
+                        loading="lazy"
+                      />
+                    </Container>
+                    <LinkOverlay href={`works/stripe`}>
+                      <Text
+                        style={{
+                          color: "var(--text-color)",
+                          textDecoration: "inherit",
+                          textAlign: "center",
+                          marginTop: "10px"
+                        }}
+                        fontSize={20}
+                      >Stripe Payment Demo</Text>
+                    </LinkOverlay>
+                  </LinkBox>
+                </Section>
+              </Box>
               <Box style={{ marginTop: "20px" }}>
                 <Section>
                   <LinkBox cursor='pointer'>

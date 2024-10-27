@@ -22,6 +22,7 @@ import EmberJS from './components/works/Ember';
 import Lofi from './components/works/Lofi';
 import MatiasSanes from './components/works/MatiasSanes';
 import SPAPortfolio from './components/works/SPAPortfolio';
+import Stripe from './components/works/Stripe';
 import ThreejsPortfolio from './components/works/ThreejsPortfolio';
 import ScrollAnimation from './components/threeJS/ScrollAnimation';
 import CatGirlComponent from './components/threeJS/WaifuModel';
@@ -77,6 +78,7 @@ const App = ({ Component, pageProps, router }) => {
               <Route path='/Works/MatiasSanes' element={<MatiasSanes />} />
               <Route path='/Works/ModelPortfolio' element={<ModelPortfolio />} />
               <Route path='/Works/SPAPortfolio' element={<SPAPortfolio />} />
+              <Route path='/Works/Stripe' element={<Stripe />} />
               <Route path='/Works/Starboard' element={<Starboard />} />
               <Route path='/Works/ThreejsPortfolio' element={<ThreejsPortfolio />} />
               <Route path='/Works/UkraineMap' element={<UkraineMap />} />

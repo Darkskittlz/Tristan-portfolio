@@ -20,12 +20,11 @@ import { FooterContainer, SectionDivider } from '../Styles/GlobalStyles';
 import Planet from './threeJS/Earth';
 import ChakraModal from './Modal';
 import StarBackground from '../ParticleBackground4';
-import OldDesk from './threeJS/OldDesk';
-import Totoro from './threeJS/Totoro';
 import StarboardIMG from "../assets/images/Starboard.jpg"
 import GithubIcon from "../assets/images/logos/github.png";
 import WebIcon from "../assets/images/logos/website.jpg";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
+import StripeIMG from "../assets/images/works/stripeIMG.png"
 
 const GridContainer = styled.div`
   height: 100%;
@@ -291,16 +290,25 @@ const Homepage = () => {
                 <Heading as="h1" variant="section-title" style={{ textAlign: "center", marginBottom: "5px", fontSize: "35px", textDecoration: "underline" }}>
                   Featured Project:
                 </Heading>
-                <Heading as="h2" variant="section-title" style={{ textAlign: "center", marginBottom: "20px", fontSize: "30px" }}>
-                  Starboard SPA
+                <Heading as="h2" variant="section-title" style={{ textAlign: "center", fontSize: "30px" }}>
+                  Stripe Payment Demo
                 </Heading>
-                <LinkOverlay href={`works/Starboard`}>
-                  <img src={StarboardIMG} alt="Starboard Cruise IMG" />
+                <LinkOverlay href={`works/Stripe`}>
+                  <Image
+                    src={StripeIMG}
+                    maxWidth="100%"
+                    padding="15px"
+                    alt="Stripe Demo"
+                    fit="contain"
+                    objectFit="contain"
+                    placeholder="blur"
+                    loading="lazy"
+                  />
                 </LinkOverlay>
                 <IMGContainer>
                   <h1>{' '}
                     <Link
-                      href="https://github.com/Darkskittlz/Tailwind_Vite"
+                      href="https://github.com/Darkskittlz/PaymentAnalytics"
                       target="blank"
                       style={{
                         textDecoration: "none",
@@ -321,7 +329,7 @@ const Homepage = () => {
                   </h1>
                   <h1>{' '}
                     <Link
-                      href="https://starboard-cruises.netlify.app/"
+                      href="https://stripepaymentdemo.netlify.app/"
                       target="blank"
                       style={{
                         textDecoration: "none",

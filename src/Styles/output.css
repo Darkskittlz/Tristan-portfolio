@@ -945,6 +945,37 @@ div.chakra-linkbox.css-16kwgao:hover {
   box-shadow: none;
 }
 
+.btn2-primary {
+  width: 400px;
+  height: 150px;
+  color: rgb(255, 255, 255);
+  text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  font-weight: 600;
+  font-family: Parisienne, cursive;
+  font-size: 59px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: -10px;
+  border: 2px solid white;
+  border-radius: 10px;
+  object-fit: cover;
+  background-image: url(${winter});
+  background-size: cover;
+  background-position: center;
+}
+
+.btn2-primary:hover {
+  box-shadow: 0px 0px 10px 0.2rem rgb(255, 255, 255);
+  -webkit-transform: scale(1.06);
+  transform: scale(1.06);
+  -webkit-transition: transform 0.55s ease-in-out;
+}
+
+.btn2-primary:focus {
+  box-shadow: none;
+}
+
+
 .btn-secondary {
   height: 30px;
   margin-top: 20px;
@@ -982,3 +1013,5 @@ canvas.webgl {
 .webgl {
   height: 10px;
 }
+
+
