@@ -150,7 +150,7 @@ function Footer() {
             <AiFillGithub size="3rem" />
           </SocialIcons>
           <SocialIcons href="https://discord.gg/kNhV2WPCUP">
-            <Box width="55px" height="55px">
+            <Box width="75px" height="55px">
               <Image
                 src="/images/discord.png"
                 alt="Discord Icon"

@@ -56,7 +56,7 @@ const FooterContainer = styled.div`
 
 
     @media (max-width: 960px) {
-        margin-top: 60px;
+      margin-top: 60px;
     }
 `
 
@@ -98,87 +98,87 @@ const BlurContainer = styled.div`
 `
 
 const Bandingo = props => {
-    return (
-        <>
-          <ParticleComponent />
-            <Layout>
-                <Container maxW='2x1'>
-                    <GridContainer>
-                        <SimpleGrid 
-                            columns={[1, 1, 1]} 
-                            gap={10}
-                            style={{
-                                marginTop: "10px", 
-                                height: "56vh",
-                                justifyItems: "center",
-                                padding: "20px",
-                                borderRadius: "10px"
-                            }} 
-                        >
-                            <BlurContainer>
-                              <TitleContainer>
-                                <ImageContainer>
-                                    <Image
-                                        fit="cover"
-                                        mr={20}
-                                        src="/images/logos/bandingo.png"
-                                        style={{  
-                                            boxShadow: "0 0 20px rgba(80, 78, 78, 0.9)", 
-                                            borderRadius: "50px", 
-                                            padding: "10px",
-                                            height: "120px"
-                                        }}
-                                    />
-                                </ImageContainer>
-                                    <h1><Badge colorScheme="blue"> Bingo PWA</Badge></h1> 
-                                </TitleContainer>
-                                <BodyContainer>
-                                    <h1>
-                                    React progressive web application that generates a unique bingo card and triggers a transactional email to be sent to the user upon registration
-                                    </h1>
-                                    <List ml={4} my={4} style={{display: "flex", flexDirection: "column"}}>
-                                        <ListItem>
-                                            <Badge2>Platform</Badge2>
-                                            <span>Netlify, Redux, tsParticles, Styled-Components, Axios, AntD, Sendgrid, CoutAPI</span>
-                                        </ListItem>
-                                        <ListItem>
-                                            <Badge2>Website</Badge2>
-                                            <Link 
-                                                href="https://www.playoriginalbandingo.com/"
-                                                target="_blank"
-                                                style={{
-                                                    color: "#b900ff"
-                                                }}
-                                            >
-                                            https://www.playoriginalbandingo.com/
-                                                <ExternalLinkIcon mx="2px" />
-                                            </Link>
-                                        </ListItem>
-                                        <ListItem>
-                                            <Badge2>Source</Badge2>
-                                            <Link 
-                                                href="https://github.com/hyperridetech/Bandingo-PWA"
-                                                target="_blank"
-                                                style={{
-                                                    color: "#b900ff"
-                                                }}
-                                            >
-                                            https://github.com/hyperridetech/Bandingo-PWA
-                                                <ExternalLinkIcon mx="2px" />
-                                            </Link>
-                                        </ListItem>
-                                    </List>
-                                </BodyContainer>
-                            </BlurContainer>
-                        </SimpleGrid>
-                        <FooterContainer>
-                            <Footer />
-                        </FooterContainer>
-                    </GridContainer>
-                </Container>
-            </Layout>
-        </>
-    )
+  return (
+    <>
+      <ParticleComponent />
+      <Layout>
+        <Container maxW='2x1'>
+          <GridContainer>
+            <SimpleGrid
+              columns={[1, 1, 1]}
+              gap={10}
+              style={{
+                marginTop: "10px",
+                height: "56vh",
+                justifyItems: "center",
+                padding: "20px",
+                borderRadius: "10px"
+              }}
+            >
+              <BlurContainer>
+                <TitleContainer>
+                  <ImageContainer>
+                    <Image
+                      fit="cover"
+                      mr={20}
+                      src="/images/logos/bandingo.png"
+                      style={{
+                        boxShadow: "0 0 20px rgba(80, 78, 78, 0.9)",
+                        borderRadius: "50px",
+                        padding: "10px",
+                        height: "120px"
+                      }}
+                    />
+                  </ImageContainer>
+                  <h1><Badge colorScheme="blue"> Bingo PWA</Badge></h1>
+                </TitleContainer>
+                <BodyContainer>
+                  <h1>
+                    React progressive web application that generates a unique bingo card and triggers a transactional email to be sent to the user upon registration
+                  </h1>
+                  <List ml={4} my={4} style={{ display: "flex", flexDirection: "column" }}>
+                    <ListItem>
+                      <Badge2>Platform</Badge2>
+                      <span>Netlify, Redux, tsParticles, Styled-Components, Axios, AntD, Sendgrid, CoutAPI</span>
+                    </ListItem>
+                    <ListItem>
+                      <Badge2>Website</Badge2>
+                      <Link
+                        href="https://bandingo.netlify.app/"
+                        target="_blank"
+                        style={{
+                          color: "#b900ff"
+                        }}
+                      >
+                        https://bandingo.netlify.app/
+                        <ExternalLinkIcon mx="2px" />
+                      </Link>
+                    </ListItem>
+                    <ListItem>
+                      <Badge2>Source</Badge2>
+                      <Link
+                        href="https://github.com/Darkskittlz/Bandingo-PWA"
+                        target="_blank"
+                        style={{
+                          color: "#b900ff"
+                        }}
+                      >
+                        https://github.com/Darkskittlz/Bandingo-PWA
+                        <ExternalLinkIcon mx="2px" />
+                      </Link>
+                    </ListItem>
+                  </List>
+                  <FooterContainer>
+                    <Footer />
+                  </FooterContainer>
+                </BodyContainer>
+              </BlurContainer>
+            </SimpleGrid>
+          </GridContainer>
+        </Container>
+      </Layout>
+    </>
+  )
 }
 
 export default Bandingo;
