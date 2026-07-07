@@ -1,12 +1,12 @@
-import '../Styles/App.css';
-import styled, { keyframes } from 'styled-components';
-import Layout from '../components/layouts/article'
-import Section from '../components/section'
-import ParticleComponent from '../ParticleBackground2';
-import Footer from './footer';
-import Intro from './Intro';
-import Timeline from './TimeLine';
-import { Suspense } from 'react';
+import "../Styles/App.css";
+import styled, { keyframes } from "styled-components";
+import Layout from "../components/layouts/article";
+import Section from "../components/section";
+import ParticleComponent from "../ParticleBackground2";
+import Footer from "./footer";
+import Intro from "./Intro";
+import Timeline from "./TimeLine";
+import { Suspense } from "react";
 import {
   Link,
   Box,
@@ -14,29 +14,29 @@ import {
   Image,
   Container,
   LinkOverlay,
-} from '@chakra-ui/react'
-import Technologies from './Technologies';
-import { FooterContainer, SectionDivider } from '../Styles/GlobalStyles';
-import Planet from './threeJS/Earth';
-import ChakraModal from './Modal';
-import StarBackground from '../ParticleBackground4';
-import StarboardIMG from "../assets/images/Starboard.jpg"
+} from "@chakra-ui/react";
+import Technologies from "./Technologies";
+import { FooterContainer, SectionDivider } from "../Styles/GlobalStyles";
+import Planet from "./threeJS/Earth";
+import ChakraModal from "./Modal";
+import StarBackground from "../ParticleBackground4";
+import StarboardIMG from "../assets/images/Starboard.jpg";
 import GithubIcon from "../assets/images/logos/github.png";
 import WebIcon from "../assets/images/logos/website.jpg";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
-import StripeIMG from "../assets/images/works/stripeIMG.png"
+import StripeIMG from "../assets/images/works/stripeIMG.png";
 
 const GridContainer = styled.div`
   height: 100%;
   width: 50%;
   margin-left: 26%;
-  z-index:0;
+  z-index: 0;
 
-	@media (max-width: 960px) {
-		margin-left: 27px;
-		width: 90%;		
-	}
-`
+  @media (max-width: 960px) {
+    margin-left: 27px;
+    width: 90%;
+  }
+`;
 
 const GridContainer2 = styled.div`
   width: 100%;
@@ -49,8 +49,7 @@ const GridContainer2 = styled.div`
 		width: 100%;		
     justify-content: center;
 	}
-`
-
+`;
 
 const Animation = keyframes`
   0% { box-shadow: 0 0 10px #09EE9A; } 
@@ -58,45 +57,47 @@ const Animation = keyframes`
   50% { box-shadow: 0 0 20px #09DEEE;  } 
   70% { box-shadow: 0 0 30px rgba(102, 37, 177, 1);  } 
   100% { box-shadow: 0 0 30px rgba(102, 37, 177, 1);  } 
-`
+`;
 
 const HeadingContainer = styled.div`
-	display: flex;
-	justify-content: flex-start;
-	width: 100%;
-	flex-direction: column;
-	margin-bottom: 10px;
-	z-index: 999;
-	
-	h1 {
-		color: var(--text-color);
-		font-size: 50px;
-		border-radius: 10px;
-	}
-`
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  flex-direction: column;
+  margin-bottom: 10px;
+  z-index: 999;
 
+  h1 {
+    color: var(--text-color);
+    font-size: 50px;
+    border-radius: 10px;
+  }
+`;
 
 export const PortfolioContainer = styled.div`
-	width: 200px;
-	margin-top: 10px;
-	padding: 40px;
-	border-radius: 10px;
-	color: var(--text-color);
-	box-shadow: 0 0 10px #09EE9A;
-	backdrop-filter: blur(40px);
-	background: rgb(15,207,188);
-	background: linear-gradient(28deg, rgba(15,207,188,1) 0%, rgba(233,89,207,1) 100%);
+  width: 200px;
+  margin-top: 10px;
+  padding: 40px;
+  border-radius: 10px;
+  color: var(--text-color);
+  box-shadow: 0 0 10px #09ee9a;
+  backdrop-filter: blur(40px);
+  background: rgb(15, 207, 188);
+  background: linear-gradient(
+    28deg,
+    rgba(15, 207, 188, 1) 0%,
+    rgba(233, 89, 207, 1) 100%
+  );
 
-	h1 {
-		font-size: 20px;
-	}
+  h1 {
+    font-size: 20px;
+  }
 
-	@media screen (max-width: 900px) {
-	  margin-left: 20%;
-	  height: 200px;
-	}
-`
-
+  @media screen (max-width: 900px) {
+    margin-left: 20%;
+    height: 200px;
+  }
+`;
 
 const Container2 = styled.div`
   width: 50%;
@@ -106,7 +107,7 @@ const Container2 = styled.div`
   flex-direction: column;
   width: 100%;
   justify-content: center;
-	color: var(--text-color);
+  color: var(--text-color);
   border-radius: 20px;
   backdrop-filter: blur(50px);
   animation-name: ${Animation};
@@ -114,7 +115,7 @@ const Container2 = styled.div`
   animation-iteration-count: infinite;
 
   #spanText {
-	color: var(--text-color);
+    color: var(--text-color);
     @media (max-width: 960px) {
       display: flex;
       justify-items: flex-start;
@@ -137,7 +138,6 @@ const Container2 = styled.div`
     }
   }
 
-
   h1 {
     font-size: 25px;
   }
@@ -147,7 +147,6 @@ const Container2 = styled.div`
     width: 420px;
     border-radius: 10px;
   }
-
 
   @media (max-width: 960px) {
     height: 75%;
@@ -163,7 +162,7 @@ const Container2 = styled.div`
       object-fit: cover;
     }
   }
-    @media (max-width: 930px) {
+  @media (max-width: 930px) {
     height: 75%;
     width: 100%;
     margin-left: 1%;
@@ -177,23 +176,20 @@ const Container2 = styled.div`
       object-fit: cover;
     }
   }
-`
+`;
 
 const IMGContainer = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
   grid-gap: 100px;
-`
-
+`;
 
 const Homepage = () => {
-
   return (
     <GridContainer>
       <StarBackground />
-      <Layout >
-
+      <Layout>
         <Suspense fallback={null}>
           <Planet />
         </Suspense>
@@ -201,9 +197,7 @@ const Homepage = () => {
           <Intro />
         </Section>
 
-
-
-        <Container className="homePageContainer" >
+        <Container className="homePageContainer">
           <Section delay={0.2}>
             <HeadingContainer>
               <h1>Bio</h1>
@@ -212,29 +206,41 @@ const Homepage = () => {
             <h1>
               Hi,
               <br />
-              I'm a react developer who specializes in the MERN/PERN stack. I enjoy developing frontend user interfaces that prioritize sleek design, integrating background animations in my work, and consuming APIs to display dynamic information in my UIs.
+              I'm a react developer who specializes in the MERN/PERN stack. I
+              enjoy developing frontend user interfaces that prioritize sleek
+              design, integrating background animations in my work, and
+              consuming APIs to display dynamic information in my UIs.
             </h1>
           </Section>
-
 
           <Section delay={0.3}>
             <Heading as="h3" variant="section-title">
               I ❤
             </Heading>
-            <h1>Programming,
+            <h1>
+              Programming,
               <Link
                 style={{ color: "#00ccff", textDecoration: "none" }}
                 href="https://www.youtube.com/watch?v=J_eNHNsUKPA"
-              > Youtube, </Link>
-              3D Rendering, Drums, Guitar, Hiking, {' '}
+              >
+                {" "}
+                Youtube,{" "}
+              </Link>
+              3D Rendering, Drums, Guitar, Hiking,{" "}
               <Link
                 style={{ color: "#42fad0", textDecoration: "none" }}
                 href="https://darkmeowfi.netlify.app/"
-              >Lofi, </Link> Rock Climbing, Parkour,
+              >
+                Lofi,{" "}
+              </Link>{" "}
+              Rock Climbing, Parkour,
               <Link
                 style={{ color: "crimson", textDecoration: "none" }}
                 href="https://beacons.ai/darkskittlz"
-              > Cosplay, </Link>
+              >
+                {" "}
+                Cosplay,{" "}
+              </Link>
               and Skateboarding.
             </h1>
           </Section>
@@ -245,37 +251,49 @@ const Homepage = () => {
             <Heading as="h2" variant="section-title">
               Portofolio Inspiration
             </Heading>
-            <h1>{' '}
+            <h1>
+              {" "}
               <Link
                 href="https://www.craftz.dog/"
                 style={{
                   textDecoration: "none",
-                  color: "green"
-                }}>Takuyama Matsuyama </Link>
+                  color: "green",
+                }}
+              >
+                Takuyama Matsuyama{" "}
+              </Link>
             </h1>
             <br />
             <Heading as="h2" variant="section-title">
               Totoro Model
             </Heading>
-            <h1>{' '}
+            <h1>
+              {" "}
               <Link
                 href="https://www.cgtrader.com/jkielr"
                 style={{
                   textDecoration: "none",
-                  color: "#ff00d5"
-                }}>Jesse Ragos</Link>
+                  color: "#ff00d5",
+                }}
+              >
+                Jesse Ragos
+              </Link>
             </h1>
             <br />
             <Heading as="h2" variant="section-title">
               Planet Model
             </Heading>
-            <h1>{' '}
+            <h1>
+              {" "}
               <Link
                 href="https://sketchfab.com/ThomasKole"
                 style={{
                   textDecoration: "none",
-                  color: "#FF3E33"
-                }}>Thomas Kole</Link>
+                  color: "#FF3E33",
+                }}
+              >
+                Thomas Kole
+              </Link>
             </h1>
             <br />
           </Section>
@@ -287,10 +305,23 @@ const Homepage = () => {
           <Section delay={0.6}>
             <GridContainer2>
               <Container2>
-                <Heading as="h1" variant="section-title" style={{ textAlign: "center", marginBottom: "5px", fontSize: "35px", textDecoration: "underline" }}>
+                <Heading
+                  as="h1"
+                  variant="section-title"
+                  style={{
+                    textAlign: "center",
+                    marginBottom: "5px",
+                    fontSize: "35px",
+                    textDecoration: "underline",
+                  }}
+                >
                   Featured Project:
                 </Heading>
-                <Heading as="h2" variant="section-title" style={{ textAlign: "center", fontSize: "30px" }}>
+                <Heading
+                  as="h2"
+                  variant="section-title"
+                  style={{ textAlign: "center", fontSize: "30px" }}
+                >
                   Stripe Payment Demo
                 </Heading>
                 <LinkOverlay href={`works/Stripe`}>
@@ -306,7 +337,8 @@ const Homepage = () => {
                   />
                 </LinkOverlay>
                 <IMGContainer>
-                  <h1>{' '}
+                  <h1>
+                    {" "}
                     <Link
                       href="https://github.com/Darkskittlz/PaymentAnalytics"
                       target="blank"
@@ -314,28 +346,31 @@ const Homepage = () => {
                         textDecoration: "none",
                         color: "#bb800c",
                         textAlign: "center",
-                        cusor: "pointer"
-                      }}>
+                        cusor: "pointer",
+                      }}
+                    >
                       <img
                         src={GithubIcon}
                         style={{
                           marginTop: "17px",
                           height: "50px",
-                          width: "50px"
+                          width: "50px",
                         }}
                         alt="github"
                       />
                     </Link>
                   </h1>
-                  <h1>{' '}
+                  <h1>
+                    {" "}
                     <Link
                       href="https://stripepaymentdemo.netlify.app/"
                       target="blank"
                       style={{
                         textDecoration: "none",
                         textAlign: "center",
-                        cusor: "pointer"
-                      }}>
+                        cusor: "pointer",
+                      }}
+                    >
                       <img
                         src={WebIcon}
                         alt="Website Icon"
@@ -343,13 +378,12 @@ const Homepage = () => {
                           height: "50px",
                           width: "50px",
                           marginTop: "20px",
-                          borderRadius: "50px"
+                          borderRadius: "50px",
                         }}
                       />
                     </Link>
                   </h1>
                 </IMGContainer>
-
               </Container2>
             </GridContainer2>
           </Section>
@@ -371,7 +405,6 @@ const Homepage = () => {
           <Section delay={0.9}>
             <ChakraModal />
           </Section>
-
         </Container>
       </Layout>
       <FooterContainer>
