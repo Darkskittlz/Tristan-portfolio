@@ -6,73 +6,77 @@ source: https://sketchfab.com/3d-models/planet-earth-alt-drag-to-change-lighting
 title: Planet Earth (Alt-Drag to change Lighting)
 */
 
-import React, { Suspense, useRef } from 'react'
-import { useGLTF, OrbitControls } from '@react-three/drei'
-import { Canvas, useFrame } from 'react-three-fiber'
-import styled from "styled-components"
+import React, { Suspense, useRef } from "react";
+import { useGLTF, OrbitControls } from "@react-three/drei";
+import { Canvas, useFrame } from "react-three-fiber";
+import styled from "styled-components";
 
 const GridContainer = styled.div`
   display: flex;
   width: 100%;
   justify-content: center;
-`
-
-
-
+`;
 
 function EarthModel({ ...props }) {
-  const group = useRef()
-  const { nodes, materials } = useGLTF('/gltf/earth.gltf')
-  useFrame(() => {
-    group.current.rotation.y += 0.003
-  })
+   const group = useRef();
+   const { nodes, materials } = useGLTF("/gltf/earth.gltf");
+   useFrame(() => {
+      group.current.rotation.y += 0.003;
+   });
 
-  return (
-    <group ref={group} {...props} dispose={null}>
-      <group 
-        rotation={[-Math.PI / 2, 0, 5]}
-      >
-        <mesh 
-          geometry={nodes.Sphere_1.geometry} 
-          material={materials['Material.004']}
-        />
-        <group scale={1.02}>
-          <mesh geometry={nodes.Sphere001_1.geometry} material={materials['Material.005']} />
-        </group>
+   return (
+      <group ref={group} {...props} dispose={null}>
+         <group rotation={[-Math.PI / 2, 0, 5]}>
+            <mesh
+               geometry={nodes.Sphere_1.geometry}
+               material={materials["Material.004"]}
+            />
+            <group scale={1.02}>
+               <mesh
+                  geometry={nodes.Sphere001_1.geometry}
+                  material={materials["Material.005"]}
+               />
+            </group>
+         </group>
       </group>
-    </group>
-  )
+   );
 }
 
-useGLTF.preload('/earth.gltf')
+useGLTF.preload("/earth.gltf");
 
 export default function Planet() {
-  return (
-    <GridContainer>
-      <Canvas style={{
-          backdropFilter: "blur(10px)",
-          backgroundColor: "rgb(255,255,255, 0.02)",
-          borderRadius: "10px",
-          margin:"10px",
-          height: "40vh",
-          width: "50vh",
-          zIndex: "1"
-        }}
-        camera={{
-          fov: 4, 
-          near: 3, 
-          position: [10,6,35],
-        }}
-      >
-
-
-        <ambientLight intensity={1} />
-        <spotLight intensity={0.5} angle={0.1} penumbra={1} position={[10, 15, 10]} castShadow />
-          <Suspense fallback={null}>
-            <EarthModel />
-          </Suspense>
-          <OrbitControls />
-      </Canvas>
-    </GridContainer>
-  )
+   return (
+      <GridContainer>
+         <Canvas
+            style={{
+               backdropFilter: "blur(10px)",
+               backgroundColor: "rgb(255,255,255, 0.02)",
+               borderRadius: "10px",
+               margin: "10px",
+               height: "40vh",
+               width: "50vh",
+               zIndex: "1",
+            }}
+            camera={{
+               fov: 3.5,
+               near: 3,
+               position: [10, 6, 35],
+            }}
+         >
+            <ambientLight intensity={1} />
+            <spotLight
+               intensity={0.5}
+               angle={0.1}
+               penumbra={1}
+               position={[10, 15, 10]}
+               castShadow
+            />
+            <Suspense fallback={null}>
+               <EarthModel />
+            </Suspense>
+            <OrbitControls />
+         </Canvas>
+      </GridContainer>
+   );
 }
+
