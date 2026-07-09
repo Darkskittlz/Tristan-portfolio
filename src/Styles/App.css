@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Parisienne&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -35,7 +35,9 @@ body {
   background: var(--background-color);
   color: var(--text-color);
   font-weight: var(--font-weight);
-  transition: background 0.3s ease-in-out, color 0.6s ease-in-out;
+  transition:
+    background 0.3s ease-in-out,
+    color 0.6s ease-in-out;
   overflow-x: hidden;
 }
 
@@ -57,7 +59,6 @@ nav {
   justify-content: space-evenly;
   align-items: center;
   background: var(--text-color);
-
 }
 
 nav a {
@@ -75,7 +76,6 @@ nav a {
   height: 100vh;
   background-color: black;
 }
-
 
 .navbarItems {
   display: flex;
@@ -103,7 +103,7 @@ nav a {
   width: 100%;
   z-index: 1;
   position: relative;
-  margin-top: 60px;
+  margin-top: 20px;
 
   @media screen (max-width: 960px) {
     width: 95%;
@@ -114,7 +114,6 @@ nav a {
   font-size: 20px;
 }
 
-
 .Layout {
   position: relative;
   width: 100%;
@@ -123,7 +122,6 @@ nav a {
     display: flex;
   }
 }
-
 
 .projectThumbnail {
   display: flex;
@@ -154,7 +152,6 @@ nav a {
     /* width: 250px; */
   }
 }
-
 
 .PostsContainer {
   display: flex;
@@ -188,7 +185,6 @@ nav a {
 
 .ModalContentID {
   width: 50px;
-
 }
 
 div.chakra-select__icon-wrapper.css-162mkon {
@@ -207,8 +203,7 @@ div.chakra-linkbox.css-16kwgao {
 div.chakra-linkbox.css-16kwgao:hover {
   box-shadow: 0 0 30px rgba(199, 239, 255, 0.74);
   transform: scale(1.06);
-  -webkit-transition: transform .55s ease-in-out;
-
+  -webkit-transition: transform 0.55s ease-in-out;
 }
 
 .modal-backdrop {
@@ -220,7 +215,11 @@ div.chakra-linkbox.css-16kwgao:hover {
   height: 150px;
   background: none;
   color: rgb(255, 255, 255);
-  text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  text-shadow:
+    -1px -1px 0 #000000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
   font-weight: 600;
   font-family: Parisienne, cursive;
   font-size: 59px;
@@ -233,15 +232,13 @@ div.chakra-linkbox.css-16kwgao:hover {
   border: none;
   background-image: url("../assets/images/tranquil2-1.jpeg");
   background-color: none;
-
-
 }
 
 .btn-primary:hover {
   background-image: url("../assets/images/tranquil2-1.jpeg");
-  box-shadow: 0px 0px 10px .2rem rgb(255, 255, 255);
+  box-shadow: 0px 0px 10px 0.2rem rgb(255, 255, 255);
   transform: scale(1.06);
-  -webkit-transition: transform .55s ease-in-out;
+  -webkit-transition: transform 0.55s ease-in-out;
 }
 
 .btn-primary:focus {
@@ -281,4 +278,3 @@ canvas.webgl {
 .webgl {
   height: 10px;
 }
-

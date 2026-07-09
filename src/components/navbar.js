@@ -1,11 +1,20 @@
 import React, { useState } from "react";
-import { HamburgerIcon } from '@chakra-ui/icons'
-import Logo from './logo'
-import DarkMode from "./DarkMode.js"
-import '../Styles/App.css';
-import { Container, Container2, Div1, Div2, Div3, NavLink, SocialIcons, Span } from '../Styles/HeaderStyles';
-import { GlobalStyle } from '../Styles/GlobalStyles';
-import styled from 'styled-components';
+import { HamburgerIcon } from "@chakra-ui/icons";
+import Logo from "./logo";
+import DarkMode from "./DarkMode.js";
+import "../Styles/App.css";
+import {
+  Container,
+  Container2,
+  Div1,
+  Div2,
+  Div3,
+  NavLink,
+  SocialIcons,
+  Span,
+} from "../Styles/HeaderStyles";
+import { GlobalStyle } from "../Styles/GlobalStyles";
+import styled from "styled-components";
 import {
   Box,
   Stack,
@@ -18,24 +27,25 @@ import {
   IconButton,
   Link,
   useColorModeValue,
-  Image
-} from '@chakra-ui/react'
+  Image,
+} from "@chakra-ui/react";
 
-import ResumeIcon from '../assets/images/document.png'
-import GithubIcon from '../assets/images/github.svg'
-import MenuIcon from "../assets/images/menuIcon.svg"
-import Resume from "../assets/resume/TristanResume.pdf"
+import ResumeIcon from "../assets/images/document.png";
+import GithubIcon from "../assets/images/github.svg";
+import MenuIcon from "../assets/images/menuIcon.svg";
+import Resume from "../assets/resume/TristanResume.pdf";
 import { Modal } from "./Modal";
-
 
 const IconContainer = styled.div`
   background-size: 50px 50px;
   filter: grayscale(100%);
   border: none;
   border-radius: 50%;
-  transition: background-color 0.3s ease-in-out, filter 0.3s ease-in-out;
+  transition:
+    background-color 0.3s ease-in-out,
+    filter 0.3s ease-in-out;
   z-index: 999;
-  
+
   img {
     background-color: gray;
     padding: 5px;
@@ -43,13 +53,12 @@ const IconContainer = styled.div`
     height: 50px;
     width: 80px;
   }
-`
+`;
 
 const MenuIMG = styled.img`
   width: 25px;
-  margin-top:2px;
-  
-`
+  margin-top: 2px;
+`;
 
 const GridContainer = styled.div`
   display: flex;
@@ -61,30 +70,29 @@ const GridContainer = styled.div`
   border-radius: 10px;
   width: 50%;
   backdrop-filter: blur(20px);
-  
-	@media (max-width: 960px) {
-		flex-direction: column;
+
+  @media (max-width: 960px) {
+    flex-direction: column;
     width: 100%;
     backdrop-filter: none;
     margin-left: 50%;
     justify-content: center;
-	}
-`
-
+  }
+`;
 
 const Grid1 = styled.div`
   display: flex;
   width: 100%;
-`
+`;
 
 const Grid2 = styled.div`
+  margin-left: 50px;
   display: flex;
-`
+`;
 
-
-const Navbar = props => {
+const Navbar = (props) => {
   const [showModal, setShowModal] = useState(false);
-  const { path } = props
+  const { path } = props;
 
   const openModal = () => {
     setShowModal((prev) => !prev);
@@ -118,7 +126,7 @@ const Navbar = props => {
 
         <Grid2>
           <Div3>
-            <SocialIcons href="https://github.com/Darkskittlz" target='_blank'>
+            <SocialIcons href="https://github.com/Darkskittlz" target="_blank">
               <IconContainer>
                 <img src={GithubIcon} />
               </IconContainer>
@@ -126,7 +134,7 @@ const Navbar = props => {
 
             <SocialIcons>
               <IconContainer>
-                <Link href={Resume} target='blank'>
+                <Link href={Resume} target="blank">
                   <img src={ResumeIcon} />
                   <GlobalStyle />
                 </Link>
@@ -143,22 +151,31 @@ const Navbar = props => {
                   style={{
                     borderRadius: "10px",
                     paddingLeft: "8px",
-                    backgroundColor: "var(--text-color)"
+                    backgroundColor: "var(--text-color)",
                   }}
                 >
                   <MenuIMG src={MenuIcon} />
                 </MenuButton>
-                <MenuList style={{ zIndex: "999" }}>
-                  <Link color="var(--text-color)" href='/'>
+                <MenuList
+                  style={{
+                    zIndex: "999",
+                    background: "rgba(0,0,0,0.4)",
+                    padding: "10px",
+                    borderRadius: "10px",
+                    fontSize: "20px",
+                    backdropFilter: "blur(10px)",
+                  }}
+                >
+                  <Link color="var(--text-color)" href="/">
                     <MenuItem as={Link}>Home</MenuItem>
                   </Link>
-                  <Link color="var(--text-color)" href='/works'>
+                  <Link color="var(--text-color)" href="/works">
                     <MenuItem as={Link}>Portfolio</MenuItem>
                   </Link>
-                  <Link color="var(--text-color)" href='/ThreeJS'>
+                  <Link color="var(--text-color)" href="/ThreeJS">
                     <MenuItem as={Link}>ThreeJS</MenuItem>
                   </Link>
-                  <Link color="var(--text-color)" href='/posts'>
+                  <Link color="var(--text-color)" href="/posts">
                     <MenuItem as={Link}>Blog</MenuItem>
                   </Link>
                 </MenuList>
@@ -168,7 +185,7 @@ const Navbar = props => {
         </Grid2>
       </GridContainer>
     </Container>
-  )
-}
+  );
+};
 
 export default Navbar;
