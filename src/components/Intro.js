@@ -28,6 +28,7 @@ const SectionTitle = styled.h2`
 const GridContainer = styled.div`
   margin-top: 20px;
   margin-bottom: 20px;
+  width: 100%;
 `;
 
 const Intro = (props) => {

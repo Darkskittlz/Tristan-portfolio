@@ -74,7 +74,7 @@ export const Container2 = styled.div`
   }
 
   @media (max-width: 960px) {
-    width: 100%;
+    width: 400px;
     height: 8vh;
   }
 `;
